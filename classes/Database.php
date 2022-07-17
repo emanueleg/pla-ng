@@ -1519,7 +1519,7 @@ class Database
 				{
 					if($comments)
 					{
-						echo "\r\n----".$crlf;
+						echo $crlf."----".$crlf;
 						echo "-- ".$lang['drop']." ".$result[$i]['type']." ".$lang['for']." ".$result[$i]['name'].$crlf;
 						echo "----".$crlf;
 					}
@@ -1529,7 +1529,7 @@ class Database
 				{
 					if($comments)
 					{
-						echo "\r\n----".$crlf;
+						echo $crlf."----".$crlf;
 						if($result[$i]['type']=="table" || $result[$i]['type']=="view")
 							echo "-- ".ucfirst($result[$i]['type'])." ".$lang['struct_for']." ".$result[$i]['tbl_name'].$crlf;
 						else // index or trigger
@@ -1546,7 +1546,7 @@ class Database
 					if($comments)
 					{
 						$numRows = $this->numRows($result[$i]['tbl_name']);
-						echo "\r\n----".$crlf;
+						echo $crlf."----".$crlf;
 						echo "-- ".$lang['data_dump']." ".$result[$i]['tbl_name'].", ".sprintf($lang['total_rows'], $numRows).$crlf;
 						echo "----".$crlf;
 					}
