@@ -1,17 +1,10 @@
 <?php
 // Español LatinoAmericano.
 // Traducido por Leandro G. Ortega - SuperBalgas - leandro@g-ortega.com.ar
+// mod by Pink Pantherchen
 // Idioma: Español Latino Americano - Argentina
-
+// Version 1.9.8.2
 $lang = array(
-	// Agregado para la version 1.9.5
-	"no" => "No",
-	"none" => "ninguno",
-	"as_defined" => "Personalizado",
-	"expression" => "Expresi&oacute;n",
-	"ques_primarykey_add" => "&iquest;Est&aacute; seguro de querer agregar una PRIMARY KEY para la columna (s) %s en la tabla '%s'?",
-	"ques_column_delete" => "&iquest;Est&aacute; seguro de que desea eliminar la columna (s) %s de la tabla '%s'?",
-
 	"direction" => "LTR",
 	"date_format" => 'd-m-Y \a \l\a\s g:ia (T)',  // Formato Argentino, 19-01-1992 a las 8:00AM
 	"ver" => "versi&oacute;n",
@@ -19,6 +12,7 @@ $lang = array(
 	"to" => "a",
 	"go" => "Ir",
 	"yes" => "Si",
+	"no" => "No",
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "Esa tabla CSV, pertenece a",
@@ -62,6 +56,11 @@ $lang = array(
 	"autoincrement" => "Incremento autom&aacute;tico",
 	"not_null" => "No NULL",
 	"attention" => "Atenci&oacute;n",
+	"none" => "ninguno",
+	"as_defined" => "Personalizado",
+	"expression" => "Expresi&oacute;n",
+	"download" => "Descargar",
+	"open_in_browser" => "Abrir en el navegador",
 	
 	"sqlite_ext" => "Extensi&oacute;n SQLite",
 	"sqlite_ext_support" => "Parece que ninguna de las extensiones de la biblioteca SQLite est&aacute;n disponibles en su instalaci&oacute;n de PHP. Por el momento no puede usar %s hasta que instale por lo menos uno de ellos.",
@@ -72,6 +71,7 @@ $lang = array(
 	"sqlite_limit" => "Debido a las limitaciones de SQLite, s&oacute;lo el nombre del campo y tipo de datos se pueden modificar.",
 	
 	"php_v" => "PHP versi&oacute;n",
+	"new_version" => "¡Hay una nueva versión!",
 	
 	"db_dump" => "database dump",
 	"db_f" => "Archivo database",
@@ -89,6 +89,7 @@ $lang = array(
 	"db_not_writeable" => "La base de datos, '%s', no existe y no se puede crear porque el directorio que contiene, '%s', no tiene permisos de escritura. La aplicaci&oacute;n no se puede usar hasta que lo hagas de escritura.",
 	"db_setup" => "Hubo un problema para establecer su base de datos, %s. Se har&aacute; un intento de averiguar lo que est&aacute; pasando para que pueda solucionar el problema con mayor facilidad",
 	"db_exists" => "Una base de datos, otro archivo o directorio del nombre '%s' ya existe.",
+	"db_blank" => "El nombre de la base de datos no puede estar en blanco.",
 	
 	"exported" => "Exportado",
 	"struct" => "Estructura",
@@ -103,9 +104,12 @@ $lang = array(
 	"bad_php_directive" => "Parece que la directiva de PHP, 'register_globals' est&aacute; habilitada. Esto es malo. Tiene que desactivar antes de continuar.",
 	"page_gen" => "P&aacute;gina generada en %s segundos.",
 	"powered" => "Powered by",
+	"free_software" => "Esto es software gratuito.",
+	"please_donate" => "Por favor, done.",
 	"remember" => "Recordarme",
 	"no_db" => "Bienvenido a %s. Parece que usted ha seleccionado para escanear un directorio de bases de datos para la gesti&oacute;n. Sin embargo, %s no pudo encontrar ninguna base de datos SQLite v&aacute;lida. Usted puede utilizar el siguiente formulario para crear su primera base de datos.",
 	"no_db2" => "El directorio especificado no contiene las bases de datos existentes para la gesti&oacute;n y el directorio no tiene permisos de escritura. Esto significa que no se puede crear ninguna nueva base de datos utilizando %s. Haga el directorio escribible o cargue manualmente las bases de datos en el directorio.",
+	"dir_not_executable" => "El directorio que especificaste no se puede escanear en busca de bases de datos porque %s no tiene permisos de ejecución. En Linux, usa 'chmod +x %s' para arreglar esto.",
 	
 	"create" => "Crear",
 	"created" => "ha sido creado",
@@ -164,20 +168,26 @@ $lang = array(
 	"query_time" => "(La consulta tom&oacute; %s seg)",
 	"syntax_err" => "Hay un problema con la sintaxis de la consulta (La Query no se ha ejecutado)",
 	"run_sql" => "Ejecutar consultas SQL/consultas en base de datos '%s'",
+	"recent_queries" => "Consultas recientes",
+	"full_texts" => "Mostrar textos completos",
+	"no_full_texts" => "Acortar textos largos",
 	
-	"ques_table_empty" => "&iquest;Est&aacute; seguro de querer vaciar la(s) tabla(s) '%s'?",
-	"ques_table_drop" => "&iquest;Est&aacute; seguro de querer borrar la(s) tabla(s) / vista(s) '%s'?",
-	"ques_row_delete" => "&iquest;Est&aacute; seguro de querer borrar la(s) fila(s) %s de la tabla '%s'?",
-	"ques_database_delete" => "&iquest;Est&aacute; seguro de querer borrar la base de datos '%s'?",
-	"ques_index_delete" => "&iquest;Est&aacute; seguro de querer borrar el &iacute;ndice '%s'?",
-	"ques_trigger_delete" => "&iquest;Est&aacute; seguro de querer borrar el trigger '%s'?",
+	"ques_empty" => "&iquest;Est&aacute; seguro de querer vaciar la(s) tabla(s) '%s'?",
+	"ques_drop" => "&iquest;Est&aacute; seguro de querer borrar la(s) tabla(s) / vista(s) '%s'?",
+	"ques_drop_view" => "&iquest;Est&aacute; seguro de querer borrar la vista '%s'?",
+	"ques_del_rows" => "&iquest;Est&aacute; seguro de querer borrar la(s) fila(s) %s de la tabla '%s'?",
+	"ques_del_db" => "&iquest;Est&aacute; seguro de querer borrar la base de datos '%s'?",
+	"ques_column_delete" => "&iquest;Est&aacute; seguro de que desea eliminar la columna (s) %s de la tabla '%s'?",
+	"ques_del_index" => "&iquest;Est&aacute; seguro de querer borrar el &iacute;ndice '%s'?",
+	"ques_del_trigger" => "&iquest;Est&aacute; seguro de querer borrar el trigger '%s'?",
+	"ques_primarykey_add" => "&iquest;Est&aacute; seguro de querer agregar una PRIMARY KEY para la columna (s) %s en la tabla '%s'?",
 	
 	"export_struct" => "Exportar con estructura",
 	"export_data" => "Exportar con datos",
 	"add_drop" => "A&ntilde;adir DROP TABLE",
 	"add_transact" => "A&ntilde;adir TRANSACTION",
 	"fld_terminated" => "Campos terminadas en",
-	"fld_enclosed" => "Fields enclosed by",
+	"fld_enclosed" => "Campos delimitados por",
 	"fld_escaped" => "Campos escapados por",
 	"fld_names" => "Los nombres de campo en la primera fila",
 	"rep_null" => "Reemplazar NULL por",
@@ -187,6 +197,7 @@ $lang = array(
 	"import_suc" => "Importaci&oacute;n realizada correctamente.",
 	"import_into" => "Importar into",
 	"import_f" => "Archivo para importar",
+	"max_file_size" => "Tamaño máximo de archivo",
 	"rename_tbl" => "Renombrar tabla '%s' a",
 	
 	"rows_records" => "fila(s) partiendo del registro # ",
@@ -226,10 +237,11 @@ $lang = array(
 	"new_fld" => "Agregar un nuevo campo(s) a la tabla '%s'",
 	"add_flds" => "Agregar Campo",
 	"edit_col" => "Editar columna '%s'",
-	"vac" => "Vacuum",
+	"vac" => "Vacío",
 	"vac_desc" => "Grandes bases de datos a veces tienen que limpiarse para reducir su huella en el servidor. Haga click en el bot&oacute;n de abajo para limpiar la base de datos '%s'.",
+	"vac_on_empty"=>"Reconstruir el archivo de la base de datos para recuperar el espacio no utilizado (vacío)",
 	"event" => "Evento",
-	"each_row" => "For Each Row",
+	"each_row" => "Por cada fila",,
 	"define_index" => "Definir propiedades del &iacute;ndice",
 	"dup_val" => "Duplicar valores",
 	"allow" => "Permitido",
@@ -238,6 +250,8 @@ $lang = array(
 	"desc" => "Descendente",
 	"warn0" => "Estas advertido.",
 	"warn_passwd" => "Est&aacute; usando la contrase&ntilde;a por defecto, y puede ser peligrosa. Puede cambiarla f&aacute;cilmente en la parte superior de %s.",
+	"warn_dumbass" => "No cambi&oacute; el valor",
+	"counting_skipped" => "Se ha omitido el conteo de registros para algunas tablas porque su base de datos es comparativamente grande y algunas tablas no tienen claves principales asignadas, por lo que el conteo puede ser lento. Agregue una clave principal a estas tablas o %s force conteo %s.",
 	"sel_state" => "Seleccione declaraci&oacute;n",
 	"delimit" => "Delimitador",
 	"back_top" => "Volver al principio",
@@ -250,8 +264,10 @@ $lang = array(
 	"db_moved_outside" => "Usted trat&oacute; de mover la base de datos a un directorio donde no se puede administrar, o comprobar. Si usted hizo este intento fracas&oacute; debido a la falta de derechos.",
 	"extension_not_allowed" => "La extensi&oacute;n proporcionada no est&aacute; dentro de la lista de extensiones. Por favor use una de las siguientes extensiones",
 	"add_allowed_extension" => "Usted puede agregar extensiones a esta lista mediante la adici&oacute;n de su extensi&oacute;n a \$allowed_extensions en la configuraci&oacute;n.",
+	"database_not_writable" => "No se puede escribir en el archivo de la base de datos, por lo que su contenido no se puede cambiar de ninguna manera.",
 	"directory_not_writable" => "La base de datos de archivo en s&iacute; es modificable, pero para escribir en &eacute;l, el directorio debe tener permisos de escritura as&iacute;. Esto es debido a que SQLite pone los archivos temporales all&iacute; por bloqueos.",
 	"tbl_inexistent" => "La tabla %s no existe",
+	"col_inexistent" => "La columna %s no existe",
 
 	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
 	"alter_failed" => "Falla al alterar la tabla %s ",
@@ -284,6 +300,10 @@ $lang = array(
 	"help8_x" => "Durante el proceso para exportar a un archivo SQL, puede optar por concluir las consultas en torno a una Transaction de modo que si se produce un error en cualquier momento durante el proceso de importaci&oacute;n bas&aacute;ndose en el archivo exportado, la base de datos se puede revertir a su estado anterior, lo que impide parcialmente datos actualizados de poblar la base de datos.",
 	"help9" => "Agregar Comentarios a Archivo SQL Exportado",
 	"help9_x" => "Durante el proceso para exportar a un archivo SQL, puede optar por incluir comentarios que explican cada paso del proceso para que un ser humano puede entender mejor lo que est&aacute; sucediendo."
-	
+	"help10" => "Índices parciales",
+	"help10_x" => "Los índices parciales son índices sobre un subconjunto de las filas de una tabla especificada por una cláusula WHERE. Tenga en cuenta que esto requiere al menos SQLite 3.8.0 y los archivos de base de datos con índices parciales no podrán leerse ni escribirse en versiones anteriores Consulte la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentación de SQLite.</a>",
+	"help11" => "Tamaño máximo de carga de archivos",
+	"help11_x" => "El tamaño máximo de carga de archivos está determinado por tres configuraciones de PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> y <em>memory_limit</em>. La más pequeña de estas tres limita el tamaño máximo para cargar archivos. Para cargar archivos más grandes, ajuste estos valores en su archivo <em>php.ini</em>."
+		
 	);
 ?>

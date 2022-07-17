@@ -1,7 +1,8 @@
 <?php
 // German language file by Christopher Kramer (crazy4chrissi)
+// mod by Pink Pantherchen
 // Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 1.9.8
+// Version 1.9.8.2
 $lang = array(
 	"direction" => "LTR",
 	"date_format" => '\a\m d.m.Y \u\m H:i:s (T)',
@@ -100,7 +101,7 @@ $lang = array(
 	"not_dir" => "Das Verzeichnis, welches Sie angegeben haben um daran nach Datenbanken zu suchen, existiert nicht oder ist kein Verzeichnis.",
 	"bad_php_directive" => "Es erscheint so, also ob die PHP-Einstellung 'register_globals' aktiv ist. Dies ist schlecht. Sie müssen die Einstellung deaktivieren bevor Sie fortfahren können.",
 	"page_gen" => "Seite erzeugt in %s Sekunden.",
-	"powered" => "Powered by",
+	"powered" => "Unterstützt von",
 	"free_software" => "Dies is freie Software.",
 	"please_donate" => "Bitte spende für die Entwicklung.",
 	"remember" => "Eingeloggt bleiben",
@@ -170,13 +171,14 @@ $lang = array(
 	"no_full_texts" => "Kürze lange Texte",
 
 	
-	"ques_table_empty" => "Sind Sie sicher, dass Sie die Tabelle(n) '%s' leeren möchten?",
-	"ques_table_drop" => "Sind Sie sicher, dass Sie die Tabelle(n) / Sicht(en) '%s' löschen möchten?",
-	"ques_row_delete" => "Sind Sie sicher, dass Sie die Zeile(n) %s aus der Tabelle '%s' löschen möchten?",
-	"ques_database_delete" => "Sind Sie sicher, dass Sie die Datenbank '%s' löschen möchten?",
+	"ques_empty" => "Sind Sie sicher, dass Sie die Tabelle(n) '%s' leeren möchten?",
+	"ques_drop" => "Sind Sie sicher, dass Sie die Tabelle(n) / Sicht(en) '%s' löschen möchten?",
+	"ques_drop_view" => "Sind Sie sicher, dass Sie die Sicht '%s' löschen möchten?",
+	"ques_del_rows" => "Sind Sie sicher, dass Sie die Zeile(n) %s aus der Tabelle '%s' löschen möchten?",
+	"ques_del_db" => "Sind Sie sicher, dass Sie die Datenbank '%s' löschen möchten?",
 	"ques_column_delete" => "Sie Sie sicher, dass Sie die Spalten %s aus der Tabelle '%s' löschen möchten?",
-	"ques_index_delete" => "Sind Sie sicher, dass Sie den Index '%s' löschen möchten?",
-	"ques_trigger_delete" => "Sind Sie sicher, dass Sie den Trigger '%s' löschen möchten?",
+	"ques_del_index" => "Sind Sie sicher, dass Sie den Index '%s' löschen möchten?",
+	"ques_del_trigger" => "Sind Sie sicher, dass Sie den Trigger '%s' löschen möchten?",
  	"ques_primarykey_add" => "Sind Sie sicher, dass Sie einen Primärschlüssel für die Spalte(n) %s in der Tabelle '%s' anlegen möchten?",
 
 	"export_struct" => "Mit Struktur exportieren",
@@ -194,6 +196,7 @@ $lang = array(
 	"import_suc" => "Import war erfolgreich.",
 	"import_into" => "Importiere nach",
 	"import_f" => "Zu importierende Datei",
+	"max_file_size" => "Maximale Dateigrösse",
 	"rename_tbl" => "Benenne Tabelle '%s' um in",
 	
 	"rows_records" => "Zeile(n) beginnend ab Datensatz Nr. ",
@@ -233,10 +236,10 @@ $lang = array(
 	"new_fld" => "Neue Felder zur Tabelle '%s' hinzufügen",
 	"add_flds" => "Felder hinzufügen",
 	"edit_col" => "Bearbeite Spalte '%s'",
-	"vac" => "Vacuum",
+	"vac" => "Vakuum",
 	"vac_desc" => "Große Datenbanken müssen manchmal geVACUUMt werden, um ihre Größe auf dem Server zu reduzieren. Klicke auf den folgenden Button um die Datenbank '%s' zu VACUUMen.",
-	"vac_on_empty"=>"Datenbank-Datei aufräumen um ungenutzen Speicherplatz freizubekommen (Vacuum)",
-	"event" => "Event",
+	"vac_on_empty"=>"Datenbank-Datei aufräumen um ungenutzen Speicherplatz freizubekommen (Vakuum)",
+	"event" => "Ereignis",
 	"each_row" => "Für jede Zeile",
 	"define_index" => "Index-Eigenschaften angeben",
 	"dup_val" => "Duplikate",
@@ -246,6 +249,7 @@ $lang = array(
 	"desc" => "Absteigend",
 	"warn0" => "Sie wurden gewarnt.",
 	"warn_passwd" => "Sie verwenden das Standard-Password, was gefährlich sein kann. Sie können es leicht im oberen Bereich von %s ändern.",
+	"warn_dumbass" => "Sie haben den Wert nicht verwendet.",
 	"counting_skipped" => "Das Zählen der Anzahl Datensätze einiger Tabellen wurde übersprungen, da die Datenbank verhältnismäßig groß ist und 
 	für einige Tabellen kein Primärschlüssel definiert ist, sodass das Zählen der Datensätze lange dauern kann. Füge einen Primärschlüssel hinzu oder %serzwinge das Zählen%s.",
 	"sel_state" => "Select-Ausdruck",
@@ -260,6 +264,7 @@ $lang = array(
 	"db_moved_outside" => "Sie haben entweder versucht, die Datenbank in ein Verzeichnis zu verschieben, wo sie nicht mehr verwaltet werden kann, oder die Überprüfung, ob Sie das getan haben, schlug wegen ungenügenden Rechten fehl.",
 	"extension_not_allowed" => "Die angegebene Dateierweiterung ist nicht in der Liste erlaubter Dateierweiterungen. Bitte verwenden Sie eine der folgenden Dateierweiterungen",
 	"add_allowed_extension" => "Sie können die gewählte Dateierweiterung zur Liste erlaubter Dateierweiterungen hinzufügen, indem Sie sie \$allowed_extensions in der Konfiguration hinzufügen.",
+	"database_not_writable" => "Die Datenbank-Datei ist nicht beschreibbar, der Inhalt konnte nicht geändert werden.",
 	"directory_not_writable" => "Die Datenbank-Datei selbst ist schreibbar, aber um darin zu schreiben, muss auch das Verzeichnis, indem sie liegt schreibbar sein. Dies liegt daran, dass SQLite eine temporäre Sperrdatei darin ablegen muss.",
 	"tbl_inexistent" => "Tabelle %s existiert nicht",
 	"col_inexistent" => "Spalte %s  existiert nicht",
@@ -297,4 +302,6 @@ $lang = array(
 	"help9_x" => "Wenn Sie eine SQL-Datei exportieren, können Sie auswählen, dass in die SQL-Datei Kommentare eingefügt werden, welche die einzelnen Abschnitte der Datei erklären, sodass ein Mensch den Inhalt der Datei besser nachvollziehen kann.",
 	"help10" => "Partielle Indizes",
 	"help10_x" => "Partielle Indizes sind Indizes über einen Teil der Zeilen, der durch einen WHERE-Ausdruck definiert wird. Beachte, dass dies mindestens SQLite 3.8.0 erfordert and Datenbanken die partielle Indizes enthalten können nicht mehr mit älteren SQLite-Versionen geöffnet werden. Siehe <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite Dokumentation</a>.",
+	"help11" => "Maximale Größe von Datei-Uploads",
+	"help11_x" => "Die maximale Größe von Datei-Uploads wird durch drei PHP-Einstellungen bestimmt: <em>upload_max_filesize</em>, <em>post_max_size</em> und <em>memory_limit</em>. Die kleinste der dre begrenzt die maximale Größe für Datei-Uploads. Um größere Dateien hochzuladen, passen Sie diese Werte in Ihrer <em>php.ini</em>-Datei an."
 );

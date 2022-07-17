@@ -3,8 +3,10 @@
 // file by FRANCO TASSI - franco7tassi@gmail.com
 // (http://www.linkedin.com/profile/view?id=73367896) 
 // (http://www.facebook.com/franco.tassi) 
-// Rev.0 - 25.3.2013 
+// mod by Pink Pantherchen
+// Rev.1 - 16.01.2022 
 // Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+// Version 1.9.8.2
 $lang = array(
 	"direction" => "LTR",
 	"date_format" => 'G:i \d\e\l j M, Y \A\.\D\. (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
@@ -13,6 +15,7 @@ $lang = array(
 	"to" => "a",
 	"go" => "Vai",
 	"yes" => "Si",
+	"no" => "No",
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "Table that CSV pertains to",
@@ -56,9 +59,11 @@ $lang = array(
 	"autoincrement" => "Autoincremento",
 	"not_null" => "Not NULL",
 	"attention" => "Attenzione",
-	"none" => "None",   #todo: translate
-	"as_defined" => "As defined",  #todo: translate
-	"expression" => "Expression",  #todo: translate
+	"none" => "Nessuno",
+	"as_defined" => "Come definito",
+	"expression" => "Espressione",
+	"download" => "Scarica",
+	"open_in_browser" => "Apri nel browser",
 	
 	"sqlite_ext" => "Estensione di SQLite",
 	"sqlite_ext_support" => "Sembra che nessuna delle librerie SQLite supportate sono disponibili nella tua installazione di PHP. Potresti non essere in grado di usare %s finchè non ne installi almeno una.",
@@ -68,6 +73,7 @@ $lang = array(
 	"sqlite_limit" => "A causa delle limitazioni di SQLite, solo i campi nome e tipo di data possono essere modificati.",
 	
 	"php_v" => "Versione di PHP",
+	"new_version" => "C'è una nuova versione!",
 	
 	"db_dump" => "database dump",
 	"db_f" => "database file",
@@ -85,6 +91,7 @@ $lang = array(
 	"db_not_writeable" => "Il database, '%s', non esiste e non può essere creato perchè la directory che lo ospita, '%s', non ha il permesso di scrittura. Il programma non è utilizzabile finchè non modifi i permessi di scrittura.",
 	"db_setup" => "C'è stato un problema con il tuo database, %s. Verrà fatto un tentativo per scoprire cosa succede in modo da consentirti di sistemare il problema più facilemtne",
 	"db_exists" => "Un database, un latro file oppure il nome di una directory '%s' già esiste.",
+	"db_blank" => "Il nome del database non può essere vuoto.",
 	
 	"exported" => "Esportato",
 	"struct" => "Struttura",
@@ -99,9 +106,12 @@ $lang = array(
 	"bad_php_directive" => "sembra che la direttiva PHP, 'register_globals' è abilitata. Questo è male. Hai bisogno di disabilitarla prima di continuare.",
 	"page_gen" => "Pagina generata in %s secondi.",
 	"powered" => "Powered by",
+	"free_software" => "Questo è un software gratuito.",
+	"please_donate" => "Per favore, dona.",
 	"remember" => "Ricordami",
 	"no_db" => "Benvenuto in %s. Sembra che tu abbia scelto di scansionare una directory per gestire i database. Comunque, %s potrebbe non trovare alcun valido database SQLite. Puoi usare la forma sottostante per creare il tuo primo database.",
 	"no_db2" => "La directory che hai specificato non contiene alcun database da gestire, e la directory non è scrivibile. Questo significa che non puoi creare nessun nuovo database usando %s. Rendi la directory scrivibile oppure aggiungi manualmente del databases nella directory.",
+	"dir_not_executable" => "La directory che hai specificato non può essere scansionata per i database poiché %s non ha permessi di esecuzione su di essa. Su Linux, usa 'chmod +x %s' per risolvere questo problema.",
 	
 	"create" => "Crea",
 	"created" => "è stata creata",
@@ -161,15 +171,19 @@ $lang = array(
 	"syntax_err" => "C'è un problema con la sintassi della tua query (La query non è stata eseguita)",
 	"run_sql" => "Esegui la(e) query SQL sul database '%s'",
 	
-	"ques_table_empty" => "Sei sicuro di voler svuotare la(e) tabella(e) '%s'?",
-	"ques_table_drop" => "Sei sicuro di voler eliminare la(e) tabella(e) / view '%s'?",
-	"ques_row_delete" => "Sei sicuro di voler cancellare la(e) riga(e) %s dalla tabella '%s'?",
-	"ques_database_delete" => "Sei sicuro di voler cancellare il database '%s'?",
+	"recent_queries" => "Query recenti",
+	"full_texts" => "Mostra testi completi",
+	"no_full_texts" => "Abbrevia i testi lunghi",	
+	
+	"ques_empty" => "Sei sicuro di voler svuotare la(e) tabella(e) '%s'?",
+	"ques_drop" => "Sei sicuro di voler eliminare la(e) tabella(e) / view '%s'?",
+	"ques_drop_view" => "Sei sicuro di voler eliminare la view '%s'?",
+	"ques_del_rows" => "Sei sicuro di voler cancellare la(e) riga(e) %s dalla tabella '%s'?",
+	"ques_del_db" => "Sei sicuro di voler cancellare il database '%s'?",
 	"ques_column_delete" => "Sei sicuro di voler cancellare la(e) coonna(e) \"%s\" dalla tabella '%s'?",
-	"ques_index_delete" => "Sei sicuro di vole cancellare l'indice '%s'?",
-	"ques_trigger_delete" => "Sei sicuro di voler cancellare il trigger '%s'?",
-	#todo: translate
-	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",
+	"ques_del_index" => "Sei sicuro di vole cancellare l'indice '%s'?",
+	"ques_del_trigger" => "Sei sicuro di voler cancellare il trigger '%s'?",
+	"ques_primarykey_add" => "Sei sicuro di voler aggiungere una chiave primaria per le colonne %s nella tabella '%s'?",
 	
 	"export_struct" => "Export with structure",
 	"export_data" => "Export with data",
@@ -186,6 +200,7 @@ $lang = array(
 	"import_suc" => "Importato con successo.",
 	"import_into" => "Importa dentro",
 	"import_f" => "File da importare",
+	"max_file_size" => "Dimensione massima del file",
 	"rename_tbl" => "Rinomina la tabella '%s' in",
 	
 	"rows_records" => "riga(e) partendo dal record # ",
@@ -227,6 +242,7 @@ $lang = array(
 	"edit_col" => "Editing column '%s'",
 	"vac" => "Vacuum",
 	"vac_desc" => "Large databases sometimes need to be VACUUMed per ridurre l'impronta sul server. Clicca il bottone sotto per eseguire il VACUUM del database '%s'.",
+	"vac_on_empty"=>"Ricostruisci il file del database per recuperare lo spazio inutilizzato (Vacuum)",
 	"event" => "Event",
 	"each_row" => "Per ogni riga",
 	"define_index" => "Define index properties",
@@ -237,8 +253,8 @@ $lang = array(
 	"desc" => "Discendente",
 	"warn0" => "Sei stato avvisato.",
 	"warn_passwd" => "Stai usando la password di default, può essere pericoloso. Puoi cambiarla facilmente editando %s.",
-	#todo: translate
-	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
+	"warn_dumbass" => "Non hai cambiato dumbass ;-)",
+	"counting_skipped" => "Il conteggio dei record è stato ignorato per alcune tabelle perché il tuo database è relativamente grande e alcune tabelle non hanno chiavi primarie assegnate, quindi il conteggio potrebbe essere lento. Aggiungi una chiave primaria a queste tabelle o %s force conteggio %s.",
 	"sel_state" => "Seleziona l'istruzione",
 	"delimit" => "Delimitatore",
 	"back_top" => "Torna in cima",
@@ -251,8 +267,10 @@ $lang = array(
 	"db_moved_outside" => "Hai certato di spotare dentro una direcotry dove non può essere gestita anylonger, oppure il controllo è fallito per la mancanza di diritti.",
 	"extension_not_allowed" => "L'estensione che hai fornito non è contenuta nella lista delle estensioni consentire. Per favore usa una delle seguenti estensioni",
 	"add_allowed_extension" => "Puoi aggiungere estensioni per questa lista aggiungendo la tua estensione to \$allowed_extensions nella configurazione.",
+	"database_not_writable" => "Il file di database non è scrivibile, quindi il suo contenuto non può essere modificato in alcun modo.",
 	"directory_not_writable" => "Il file del database è di per se editabile, ma per poterci scrivere, anche la direcotory che lo ospita deve essere aggiornabile. Questo perchè SQLite ha bisogno di inserirvi file temporanei per il locking.",
 	"tbl_inexistent" => "La tabella %s non esiste",
+	"col_inexistent" => "La colonna %s non esiste",
 
 	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
 	"alter_failed" => "Altering of Table %s failed",
@@ -285,6 +303,10 @@ $lang = array(
 	"help8_x" => "Durante il processo di esportazione verso un file SQL, puoi scegliere di includere le istruzioni (query) around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the database can be reverted to its previous state, preventing partially updated data from populating the database.",
 	"help9" => "Aggiungi commenti al File esportato",
 	"help9_x" => "Durante il processo di esportazione verso un file SQL, puoi includere commenti spiegano ogni passo del processo così che umano può comprendere meglio cosa sta succedendo."
+	"help10" => "Indici parziali",
+	"help10_x" => "Gli indici parziali sono indici su un sottoinsieme delle righe di una tabella specificata da una clausola WHERE. Nota che richiede almeno SQLite 3.8.0 e i file di database con indici parziali non saranno leggibili o scrivibili dalle versioni precedenti . Consulta la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentazione SQLite.</a>",
+	"help11" => "Dimensione massima dei file caricati",
+	"help11_x" => "La dimensione massima dei file caricati è determinata da tre impostazioni PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> e <em>memory_limit</em>. La più piccola di queste tre limita la dimensione massima per i caricamenti di file. Per caricare file più grandi, regola questi valori nel tuo file <em>php.ini</em>."
 	
 	);
 

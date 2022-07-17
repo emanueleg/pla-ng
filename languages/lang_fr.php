@@ -1,6 +1,8 @@
 <?php
 // French language-texts by Olivier Briat (nospam@briat.org)
+// mod by Pink Pantherchen
 // Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+// Version 1.9.8.2
 $lang = array(
 	"direction" => "LTR",
 	"date_format" => '\à G\hi \l\e d/m/Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
@@ -9,6 +11,7 @@ $lang = array(
 	"to" => "à",
 	"go" => "Exécuter",
 	"yes" => "Oui",
+	"no" => "No",
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "Table à laquelle le CSV se rapporte",
@@ -53,6 +56,11 @@ $lang = array(
 	"not_null" => "Non NULL",
 	"attention" => "Attention",
 	
+	"none" => "Aucun",
+	"as_defined" => "Comme défini",
+	"expression" => "Expression",
+	"download" => "Télécharger",
+	"open_in_browser" => "Ouvrir dans le navigateur",	
 	"sqlite_ext" => "Extension SQLite",
 	"sqlite_ext_support" => "Il semble qu'aucune des extensions de la bibliothèque SQLite supportées ne soit disponible dans votre installation de PHP. Vous ne pourrez pas utiliser %s tant que vous n'aurez pas installé l'une d'entre elles.",
 	"sqlite_v" => "Version de SQLite",
@@ -61,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Due à des limitations de SQLite, seules le nom du champ et le type de données peuvent être modifiées.",
 	
 	"php_v" => "Version de PHP",
+	"new_version" => "Il y a une nouvelle version!",
 	
 	"db_dump" => "Export de base",
 	"db_f" => "Fichier de la base de données",
@@ -78,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "La base, '%s', n'existe pas et n'a pu être créée car le répertoire cible, '%s', n'est pas inscriptible. L'application ne peut être utilisée tant que vous ne l'aurez pas rendu inscriptible.",
 	"db_setup" => "Il y a un problème pour paramétrer votre base, %s. Une tentative pour trouver l'origine du problème va être lancée, cela devrait vous aider à le réparer",
 	"db_exists" => "Une base, un fichier ou répertoire portant ce nom (%s) existe déjà.",
+	"db_blank" => "Le nom de la base de données ne peut pas être vide.",
 	
 	"exported" => "Exportée",
 	"struct" => "Structure",
@@ -92,9 +102,12 @@ $lang = array(
 	"bad_php_directive" => "Il semble que la directive PHP, 'register_globals' est activée. Vous devez la désactiver avant de continuer.",
 	"page_gen" => "Page générée en %s seconds.",
 	"powered" => "Propulsé par",
+	"free_software" => "Ceci est un logiciel gratuit.",
+	"please_donate" => "Veuillez faire un don.",
 	"remember" => "Se souvenir de moi",
 	"no_db" => "Bienvenu dans %s. Il semble que vous ayez choisi un répertoire dans lequel rechercher une base à gérer. Mais, %s ne trouve pas de base SQLite valide. Utilisez le formulaire ci-dessous pour créer votre première base.",
 	"no_db2" => "Le répertoire que vous avez sélectionné ne contient pas de base à gérer et il n'est pas inscriptible. Cela signifie que vous ne pouvez pas créer de nouvelle base avec %s. Vous devez soit rendre ce répertoire inscriptible, soit charger manuellement la base dans ce répertoire.",
+	"dir_not_executable" => "Le répertoire que vous avez spécifié ne peut pas être scanné pour les bases de données car %s n'a pas de permissions d'exécution dessus. Sous Linux, utilisez 'chmod +x %s' pour résoudre ce problème.",
 	
 	"create" => "Créer",
 	"created" => "créée",
@@ -153,15 +166,18 @@ $lang = array(
 	"query_time" => "(Traitement en %s sec)",
 	"syntax_err" => "Il y a un problème dans la syntaxe de votre requête, elle n'a pas été exécutée.",
 	"run_sql" => "Exécuter une ou des requêtes SQL sur la base '%s'",
+	"recent_queries" => "Requêtes récentes",
+	"full_texts" => "Afficher les textes complets",
+	"no_full_texts" => "Raccourcir les textes longs",
 	
-	"ques_table_empty" => "Êtes-vous sûr de vouloir vider la ou les table(s) '%s' ?",
-	"ques_table_drop" => "Êtes-vous sûr de vouloir supprimer la ou les table(s) / vue(s) '%s' ?",
-	"ques_row_delete" => "Êtes-vous sûr de vouloir supprimer la ou les ligne(s) %s de la table '%s' ?",
-	"ques_database_delete" => "Êtes-vous sûr de vouloir effacer la base '%s'?",
+	"ques_empty" => "Êtes-vous sûr de vouloir vider la ou les table(s) '%s' ?",
+	"ques_drop" => "Êtes-vous sûr de vouloir supprimer la ou les table(s) / vue(s) '%s' ?",
+	"ques_drop_view" => "Êtes-vous sûr de vouloir supprimer la vue '%s' ?",
+	"ques_del_rows" => "Êtes-vous sûr de vouloir supprimer la ou les ligne(s) %s de la table '%s' ?",
+	"ques_del_db" => "Êtes-vous sûr de vouloir effacer la base '%s'?",
 	"ques_column_delete" => "Êtes-vous sûr de vouloir effacer la ou les colonne(s) %s de la table '%s' ?",
-	"ques_index_delete" => "Êtes-vous sûr de vouloir effacer l'index '%s' ?",
-	"ques_trigger_delete" => "Êtes-vous sûr de vouloir effacer le déclencheur '%s' ?",
-	#todo: translate
+	"ques_del_index" => "Êtes-vous sûr de vouloir effacer l'index '%s' ?",
+	"ues_del_trigger" => "Êtes-vous sûr de vouloir effacer le déclencheur '%s' ?",
 	"ques_primarykey_add" => "Êtes-vous sûr de vouloir ajouter une clé primaire pour la ou les colonnes %s de la table '%s'?",
 	
 	"export_struct" => "Exporter avec la structure",
@@ -179,6 +195,7 @@ $lang = array(
 	"import_suc" => "L'import s'est correctement déroulé.",
 	"import_into" => "Importer dans",
 	"import_f" => "Fichier à importer",
+	"max_file_size" => "Taille maximale du fichier",
 	"rename_tbl" => "Renommer la table '%s' en",
 	
 	"rows_records" => "ligne(s) à partir de l'Enregistrement # ",
@@ -220,6 +237,7 @@ $lang = array(
 	"edit_col" => "Édition de la colonne '%s'",
 	"vac" => "Nettoyer",
 	"vac_desc" => "Les bases de grande taille ont parfois besoin d'être nettoyées (VACUUMed) pour réduire leur empreinte sur le serveur. Cliquer sur le bouton ci-dessous pour nettoyer la base '%s'.",
+	"vac_on_empty"=>"Reconstruire le fichier de base de données pour récupérer l'espace inutilisé (Vacuum)",
 	"event" => "Evénement",
 	"each_row" => "Pour chaque ligne",
 	"define_index" => "Définir les propriétés de l'Index",
@@ -230,6 +248,7 @@ $lang = array(
 	"desc" => "Descendant",
 	"warn0" => "Vous avez été prévenu.",
 	"warn_passwd" => "Vous utilisez le mot de passe par défaut, cela est risqué. Vous pouvez le modifier facilement en haut du fichier %s.",
+	"warn_dumbass" => "Vous n'avez pas utilisé cette valeur.",
 	"counting_skipped" => "Le dénombrement des enregistrements n'a pas été effectué pour certaines tables car votre base de données est volumineuse et certaines de ses tables n'ont pas de clés primaires rendant leur dénombrement particulièrement long à calculer. Ajoutez une clé primaires à ses tables ou %sforcer le dénombrement%s.",
 	"sel_state" => "Choisir une déclaration",
 	"delimit" => "Délimiteur",
@@ -243,8 +262,10 @@ $lang = array(
 	"db_moved_outside" => "Vous avez soit essayé de déplacer la base dans un répertiure où elle ne peut plus être administrée, soit la vérification a échouée doit à un manque de droits.",
 	"extension_not_allowed" => "L'extension fournie ne fait pas partie de la liste des extensions autorisées. Merci d'utiliser une de celles-ci",
 	"add_allowed_extension" => "Vous pouvez ajouter des extensions à cette liste en ajoutant votre extension à \$allowed_extensions dans la configuration.",
+	"database_not_writable" => "Le fichier de base de données n'est pas accessible en écriture, donc son contenu ne peut en aucun cas être modifié.",
 	"directory_not_writable" => "Le fichier de la base est bien inscriptible, mais pour le modifier, le répertoire parent doit être également inscriptible. Cela est dû au fait que SQLite place à l'intérieur de celui-ci des fichiers temporaire de verrouillage.",
 	"tbl_inexistent" => "La table %s n'existe pas",
+	"col_inexistent" => "La colonne %s n'existe pas",
 
 	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
 	"alter_failed" => "L'ALTERation de la table %s a échouée",
@@ -277,6 +298,10 @@ $lang = array(
 	"help8_x" => "Au cours du processus d'export vers un fichier SQL, vous pouvez faire le choix de placer les requêtes dans des TRANSACTION, ainsi en cas d'erreur lors de l'import du fichier, la base pourra être rétablie dans son état précédent, empêchant des données partiellement à jour d'être inscrite dans la base.",
 	"help9" => "Ajout des commentaires au fichier d'export SQL",
 	"help9_x" => "Au cours du processus d'export vers un fichier SQL, vous pouvez inclure des commentaires expliquant chaque étape de celui-ci, donnant ainsi une meilleur compréhension à un utilisateur de ce qui se passe."
+	"help10" => "Index partiels",
+	"help10_x" => "Les index partiels sont des index sur un sous-ensemble des lignes d'une table spécifiée par une clause WHERE. Notez que cela nécessite au moins SQLite 3.8.0 et les fichiers de base de données avec des index partiels ne seront pas lisibles ou inscriptibles par les anciennes versions . Voir la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentation SQLite.</a>",
+	"help11" => "Taille maximale des téléchargements de fichiers",
+	"help11_x" => "La taille maximale des téléchargements de fichiers est déterminée par trois paramètres PHP : <em>upload_max_filesize</em>, <em>post_max_size</em> et <em>memory_limit</em>. Le plus petit d'entre eux trois limite la taille maximale des téléchargements de fichiers. Pour télécharger des fichiers plus volumineux, ajustez ces valeurs dans votre fichier <em>php.ini</em>."
 	
 	);
 ?>
