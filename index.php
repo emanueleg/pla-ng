@@ -2664,7 +2664,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 			echo $params->getForm(array('action'=>'row_create','confirm'=>'1'), 'post', true);
 			$tableInfo = $db->getTableInfo($target_table);
 			if(isset($_GET['newRows']))
-				$num = $_GET['newRows'];
+				$num = (int)$_GET['newRows'];
 			else
 				$num = 1;
 			echo "<input type='hidden' name='newRows' value='".$num."'/>";
