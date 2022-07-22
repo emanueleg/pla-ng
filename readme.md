@@ -1,8 +1,10 @@
-# phpLiteAdmin
+# pla2 - a phpLiteAdmin fork
 
-Website: https://www.phpliteadmin.org/
+## What is PLA2?
 
-Bitbucket: https://bitbucket.org/phpliteadmin/public/
+phpLiteAdmin development is stalling: PLA2 is a fork of this well known tool which integrates recent updates and small patches.
+
+PLA2 is not a rewrite of phpLiteAdmin, nor will never be. Consider PLA2 just an "updated version of phpLiteAdmin", usable on PHP 8 without much troubles.
 
 ## What is phpLiteAdmin?
 
@@ -13,7 +15,13 @@ that is dropped into a directory on a server and then visited in a browser.
 There is no installation required. The available operations, feature set,
 interface, and user experience is comparable to that of phpMyAdmin.
 
+Official Website: https://www.phpliteadmin.org/
+
+Official Bitbucket: https://bitbucket.org/phpliteadmin/public/
+
 ## News
+
+**22.07.2022: PLA2 1.9.9.1 released [Download now](https://github.com/emanueleg/pla2/releases)**
 
 **05.09.2019: phpLiteAdmin 1.9.8.2 released [Download now](https://www.phpliteadmin.org/download/)**
 
