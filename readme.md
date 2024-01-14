@@ -1,10 +1,11 @@
-# pla2 - a phpLiteAdmin fork
+# pla2 - a phpLiteAdmin fork (aka phpLiteAdmin 2)
 
 ## What is PLA2?
 
 phpLiteAdmin development is stalling: PLA2 is a fork of this well known tool which integrates recent updates and small patches.
 
-PLA2 is not a rewrite of phpLiteAdmin, nor will never be. Consider PLA2 just an "updated version of phpLiteAdmin", usable on PHP 8 without much troubles.
+PLA2 is not a rewrite of phpLiteAdmin, nor will never be. Consider PLA2 just an "updated version of phpLiteAdmin", usable on PHP >= 8.0 without much troubles.
+
 
 ## What is phpLiteAdmin?
 
@@ -15,13 +16,13 @@ that is dropped into a directory on a server and then visited in a browser.
 There is no installation required. The available operations, feature set,
 interface, and user experience is comparable to that of phpMyAdmin.
 
-Official Website: https://www.phpliteadmin.org/
+Official Website of the original version: https://www.phpliteadmin.org/
 
-Official Bitbucket: https://bitbucket.org/phpliteadmin/public/
+phpLiteAdmin 2 Github: https://github.com/emanueleg/pla2/
 
 ## News
 
-**22.07.2022: PLA2 1.9.9.1 released [Download now](https://github.com/emanueleg/pla2/releases)**
+**13.01.2024: PLA2 1.9.9.1 released [Download now](https://github.com/emanueleg/pla2/releases)**
 
 **05.09.2019: phpLiteAdmin 1.9.8.2 released [Download now](https://www.phpliteadmin.org/download/)**
 
@@ -61,10 +62,12 @@ Official Bitbucket: https://bitbucket.org/phpliteadmin/public/
 -   Allows multiple installations on the same server, each with a different password
 -   Secure password-protected interface with login screen and cookies
 
+
 ## Demo
 
 A live demo of phpLiteAdmin can be found here:
 https://demo.phpliteadmin.org/
+
 
 ## Requirements
 
@@ -75,17 +78,17 @@ https://demo.phpliteadmin.org/
 PHP version 5.3.0 and greater usually comes with the SQLite3 extension installed
 and enabled by default so no custom action is necessary.
 
+
 ## Download
 
 The files in the source repositories are meant for development, not for use in production.
 
 You can find the latest downloads here:
-https://www.phpliteadmin.org/download/
+https://github.com/emanueleg/pla2/releases
 
 ## Installation
 
-See https://bitbucket.org/phpliteadmin/public/wiki/Installation
-
+See instructions at https://bitbucket.org/phpliteadmin/public/wiki/Installation
 
 ## Configuration
 
@@ -132,18 +135,17 @@ See https://bitbucket.org/phpliteadmin/public/wiki/Configuration for details.
      
 ## Code Repository and pull requests
 
-The code repository is available both on bitbucket and github:
+The code repository is available both on github:
 
-Github: https://github.com/phpLiteAdmin/pla
-
-Bitbucket: https://bitbucket.org/phpliteadmin/public/src
+Github: https://github.com/emanueleg/pla2
 
 You are welcome to fork the project and send us pull requests on any of these
 platforms.
 
+
 ## Installing a theme
 	
-1.   Download the themes package from the [project Downloads page](https://www.phpliteadmin.org/download/).
+1.   Download the themes package from the [original phpLiteAdmin Download page](https://www.phpliteadmin.org/download/).
 	
 2.   Unzip the file and choose your desired theme.
 	
@@ -155,16 +157,14 @@ platforms.
 
 ## Getting help
 
-The project's wiki provides information on how to do certain things and is
+The original project's wiki provides information on how to do certain things and is
 located at https://bitbucket.org/phpliteadmin/public/wiki/Home .
-In addition, the project's discussion group is located at
-https://groups.google.com/group/phpliteadmin .
 
 
 ## Reporting errors and bugs
 
 If you find any issues while using the tool, please report them at
-https://bitbucket.org/phpliteadmin/public/issues?status=new&status=open .
+https://github.com/emanueleg/pla2/issues .
 
 ## License
 
