@@ -42,10 +42,10 @@ define("PROJECT", "phpLiteAdmin");
 define("VERSION", "1.9.9.1");
 define("FORCETYPE", false); //force the extension that will be used (set to false in almost all circumstances except debugging, possible values: false, "PDO", "SQLite3", "SQLiteDatabase")
 define("SYSTEMPASSWORD", $password); // Makes things easier.
-define('PROJECT_URL','https://www.phpliteadmin.org/');
+define('PROJECT_URL','https://github.com/emanueleg/pla2/');
 define('DONATE_URL','https://www.phpliteadmin.org/donate/');
-define('VERSION_CHECK_URL','https://www.phpliteadmin.org/current_version.php');
-define('PROJECT_BUGTRACKER_LINK','<a href="https://bitbucket.org/phpliteadmin/public/issues?status=new&status=open" target="_blank">https://bitbucket.org/phpliteadmin/public/issues?status=new&status=open</a>');
+define('VERSION_CHECK_URL','https://emanueleg.github.io/pla2/current_version.txt');
+define('PROJECT_BUGTRACKER_LINK','<a href="https://github.com/emanueleg/pla2/issues" target="_blank">https://github.com/emanueleg/pla2/issues</a>');
 define('PROJECT_INSTALL_LINK','<a href="https://bitbucket.org/phpliteadmin/public/wiki/Installation" target="_blank">https://bitbucket.org/phpliteadmin/public/wiki/Installation</a>');
 
 // up here, we don't output anything. debug output might appear here which is catched by ob and thrown later
