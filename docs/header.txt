@@ -1,6 +1,6 @@
 
 Project: phpLiteAdmin-ng (https://github.com/emanueleg/pla-ng/)
-Version: 1.9.9.1
+Version: 2.0.0
 Summary: PHP-based admin tool to manage SQLite2 and SQLite3 databases on the web
 Last updated: ###build_date###
 Developers:

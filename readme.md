@@ -24,7 +24,7 @@ phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 
 ## News
 
-**tbd: pla-ng 2.0.0 released [Download now](https://github.com/emanueleg/pla-ng/releases)**
+**19.01.2023: pla-ng 2.0.0 released [Download now](https://github.com/emanueleg/pla-ng/releases)**
 
 **05.09.2019: phpLiteAdmin 1.9.8.2 released [Download now](https://www.phpliteadmin.org/download/)**
 
