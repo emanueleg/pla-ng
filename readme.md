@@ -1,10 +1,12 @@
-# pla2 - a phpLiteAdmin fork (aka phpLiteAdmin 2)
+# pla-ng - a phpLiteAdmin fork (aka phpLiteAdmin 2)
 
-## What is PLA2?
+## What is pla-ng?
 
-phpLiteAdmin development is stalling: PLA2 is a fork of this well known tool which integrates recent updates and small patches.
+phpLiteAdmin development is stalling: pla-ng is a fork of this well known tool 
+which integrates recent updates and small patches.
 
-PLA2 is not a rewrite of phpLiteAdmin, nor will never be. Consider PLA2 just an "updated version of phpLiteAdmin", usable on PHP >= 8.0 without much troubles.
+pla-ng is not a rewrite of phpLiteAdmin, nor will never be. Consider pla-ng just 
+an "updated version of phpLiteAdmin", usable on PHP >= 8.0 without much troubles.
 
 
 ## What is phpLiteAdmin?
@@ -18,11 +20,11 @@ interface, and user experience is comparable to that of phpMyAdmin.
 
 Official Website of the original version: https://www.phpliteadmin.org/
 
-phpLiteAdmin 2 Github: https://github.com/emanueleg/pla2/
+phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 
 ## News
 
-**13.01.2024: PLA2 1.9.9.1 released [Download now](https://github.com/emanueleg/pla2/releases)**
+**tbd: pla-ng 2.0.0 released [Download now](https://github.com/emanueleg/pla-ng/releases)**
 
 **05.09.2019: phpLiteAdmin 1.9.8.2 released [Download now](https://www.phpliteadmin.org/download/)**
 
@@ -84,7 +86,7 @@ and enabled by default so no custom action is necessary.
 The files in the source repositories are meant for development, not for use in production.
 
 You can find the latest downloads here:
-https://github.com/emanueleg/pla2/releases
+https://github.com/emanueleg/pla-ng/releases
 
 ## Installation
 
@@ -137,7 +139,7 @@ See https://bitbucket.org/phpliteadmin/public/wiki/Configuration for details.
 
 The code repository is available both on github:
 
-Github: https://github.com/emanueleg/pla2
+Github: https://github.com/emanueleg/pla-ng
 
 You are welcome to fork the project and send us pull requests on any of these
 platforms.
@@ -164,7 +166,7 @@ located at https://bitbucket.org/phpliteadmin/public/wiki/Home .
 ## Reporting errors and bugs
 
 If you find any issues while using the tool, please report them at
-https://github.com/emanueleg/pla2/issues .
+https://github.com/emanueleg/pla-ng/issues .
 
 ## License
 
