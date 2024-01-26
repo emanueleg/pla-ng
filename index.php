@@ -1694,7 +1694,7 @@ if ($target_table)
 echo "<br/><br/>";
 
 //- Show the various tab views for a table
-if($target_table)
+if($target_table && isset($_GET['action']))
 {
 	//- HTML: tabs
 	echo $params->getLink(array('action'=>'row_view'), $lang['browse'],
