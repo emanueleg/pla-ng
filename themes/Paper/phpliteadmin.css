@@ -1,0 +1,256 @@
+/**
+ * phpLiteAdmin Paper Theme
+ * Created by RobiNN on 20/6/17
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 1.846;
+    color: #546E7A;
+    background-color: #efefef;
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:focus, a:hover {
+    color: #0a6ebd;
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: #bbb;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+h1 #logo {
+    color: #455A64;
+}
+
+h1 #version {
+    color: #455A64;
+    font-size: 14px;
+}
+
+#loginBox input:not(.btn),
+input[type=text],
+select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 4px;
+    font-family: monospace;
+    width: 100%;
+}
+
+#loginBox input:not(.btn):focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #888;
+}
+
+textarea {
+    height: 4em;
+    margin-bottom: 5px;
+}
+
+select {
+    width: auto;
+}
+
+.btn,
+.btn:visited {
+    text-transform: uppercase;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #444;
+    background-color: #fff;
+    border-color: transparent;
+    padding: 3px 10px;
+}
+
+.btn:hover,
+.btn:visited:hover {
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+*:focus {
+    outline: none !important;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.left_td {
+    padding: 0 !important;
+    width: 300px !important;
+}
+
+#leftNav {
+    float: left;
+    background-color: #FFF;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#leftNav fieldset {
+    border-bottom: 1px solid #ddd;
+    margin: auto !important;
+    padding: 20px 15px;
+}
+
+#leftNav fieldset legend {
+    padding-top: 10px;
+}
+
+#leftNav input[name=new_dbname] {
+    margin-right: 2px;
+}
+
+#leftNav input[name=logout] {
+    margin-top: 15px;
+    width: 89%;
+}
+
+#loginBox {
+    max-width: 500px;
+    margin: 100px auto 0 auto;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#loginBox input:not(.btn) {
+    width: auto;
+}
+
+#loginBox label {
+    margin-left: -20px;
+}
+
+.tab {
+    padding: 5px 10px;
+    float: left;
+    border: none;
+    color: #546E7A;
+    box-shadow: inset 0 -2px 0 #ddd;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.tab:hover,
+.tab_pressed {
+    padding: 5px 10px;
+    float: left;
+    border: none;
+    box-shadow: inset 0 -2px 0 #2196f3;
+    color: #2196f3;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.tab.delete_db,
+.tab.drop,
+.tab.empty {
+    box-shadow: inset 0 -2px 0 #F44336;
+    color: #F44336;
+}
+
+.tab.delete_db:hover,
+.tab.drop:hover,
+.tab.empty:hover {
+    box-shadow: inset 0 -2px 0 #B71C1C;
+    color: #B71C1C;
+}
+
+.right_td {
+    padding: 0 !important;
+}
+
+#main {
+    border: none;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+#headerlinks {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.viewTable {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.td1,
+.td2 {
+    padding: 8px;
+    line-height: 1.846;
+    border-top: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.td1 {
+    background-color: #f9f9f9;
+}
+
+.tdheader {
+    font-weight: bold;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+}
+
+.confirm {
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: dashed;
+    padding: 15px;
+    background-color: #fff;
+}
