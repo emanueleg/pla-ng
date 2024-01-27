@@ -44,7 +44,7 @@ phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 
 -   Lightweight - consists of a single 200KB source file for portability
 -   Supports SQLite3 and SQLite2 databases
--   Translated and available in [15 languages](https://bitbucket.org/phpliteadmin/public/wiki/Localization) - and counting
+-   Translated and available in [15 languages](https://github.com/emanueleg/pla-ng/wiki/Localization) - and counting
 -   Specify and manage an unlimited number of databases
 -   Specify a directory and optionally its subdirectories to scan for databases
 -   Create and delete databases
@@ -59,7 +59,7 @@ phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 -   Create and run your own custom SQL queries in the free-form query editor/builder
 -   Easily apply core SQLite functions to column values using the GUI
 -   Write your own PHP functions to be available to apply to column values
--   Design your own theme using CSS or install a pre-made [theme from the community](https://bitbucket.org/phpliteadmin/public/wiki/Themes)
+-   Design your own theme using CSS or install a pre-made [theme from the community](https://github.com/emanueleg/pla-ng/wiki/Themes)
 -   All presented in an intuitive, easy-to-use GUI that allows non-technical, SQL-illiterate users to fully manage databases 
 -   Allows multiple installations on the same server, each with a different password
 -   Secure password-protected interface with login screen and cookies
@@ -67,7 +67,7 @@ phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 
 ## Demo
 
-A live demo of phpLiteAdmin can be found here:
+A live demo of the original phpLiteAdmin can be found here:
 https://demo.phpliteadmin.org/
 
 
@@ -90,7 +90,7 @@ https://github.com/emanueleg/pla-ng/releases
 
 ## Installation
 
-See instructions at https://bitbucket.org/phpliteadmin/public/wiki/Installation
+See instructions at https://github.com/emanueleg/pla-ng/wiki/Installation
 
 ## Configuration
 
@@ -101,7 +101,7 @@ you want to do this:
 -   do not change the settings in `phpliteadmin.php` but in
     `phpliteadmin.config.php`
 
-See https://bitbucket.org/phpliteadmin/public/wiki/Configuration for details.
+See https://github.com/emanueleg/pla-ng/wiki/Configuration for details.
 
 1.   Open `phpliteadmin.config.php` (or `phpliteadmin.php` before 1.9.4) in
      a text editor.
@@ -159,8 +159,8 @@ platforms.
 
 ## Getting help
 
-The original project's wiki provides information on how to do certain things and is
-located at https://bitbucket.org/phpliteadmin/public/wiki/Home .
+The project's wiki provides information on how to do certain things and is
+located at https://github.com/emanueleg/pla-ng/wiki/Home .
 
 
 ## Reporting errors and bugs
