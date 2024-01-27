@@ -45,8 +45,8 @@ define("SYSTEMPASSWORD", $password); // Makes things easier.
 define('PROJECT_URL','https://github.com/emanueleg/pla-ng/');
 define('DONATE_URL','https://github.com/emanueleg/pla-ng/');
 define('VERSION_CHECK_URL','https://emanueleg.github.io/pla-ng/current_version.txt');
-define('PROJECT_BUGTRACKER_LINK','<a href="https://github.com/emanueleg/pla2/issues" target="_blank">https://github.com/emanueleg/pla2/issues</a>');
-define('PROJECT_INSTALL_LINK','<a href="https://bitbucket.org/phpliteadmin/public/wiki/Installation" target="_blank">https://bitbucket.org/phpliteadmin/public/wiki/Installation</a>');
+define('PROJECT_BUGTRACKER_LINK','<a href="https://github.com/emanueleg/pla-ng/issues" target="_blank">https://github.com/emanueleg/pla-ng/issues</a>');
+define('PROJECT_INSTALL_LINK','<a href="https://github.com/emanueleg/pla-ng/wiki/Installation" target="_blank">https://github.com/emanueleg/pla-ng/wiki/Installation</a>');
 
 // up here, we don't output anything. debug output might appear here which is catched by ob and thrown later
 ob_start();

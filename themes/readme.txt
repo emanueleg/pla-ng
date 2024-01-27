@@ -1,1 +1,1 @@
-See https://bitbucket.org/phpliteadmin/public/wiki/Themes for instructions.
+See https://github.com/emanueleg/pla-ng/wiki/Themes for instructions.
