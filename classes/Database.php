@@ -36,10 +36,8 @@ class Database
 					$this->db = new PDO("sqlite:".$this->data['path']);
 					if($this->db!=NULL)
 					{
-						if (version_compare(phpversion(), '8.0', '>='))
-						{
-							$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
-						}
+						// Stick with PHP before 8 default error handling.
+						$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
 						$this->type = "PDO";
 						break;
 					}
