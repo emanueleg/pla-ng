@@ -39,7 +39,7 @@ if (is_readable($config_filename))
 
 //constants 1
 define("PROJECT", "phpLiteAdmin-ng");
-define("VERSION", "2.0.1");
+define("VERSION", "2.0.2");
 define("FORCETYPE", false); //force the extension that will be used (set to false in almost all circumstances except debugging, possible values: false, "PDO", "SQLite3", "SQLiteDatabase")
 define("SYSTEMPASSWORD", $password); // Makes things easier.
 define('PROJECT_URL','https://github.com/emanueleg/pla-ng/');
