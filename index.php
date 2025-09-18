@@ -45,6 +45,7 @@ define("SYSTEMPASSWORD", $password); // Makes things easier.
 define('PROJECT_URL','https://github.com/emanueleg/pla-ng/');
 define('DONATE_URL','https://github.com/emanueleg/pla-ng/');
 define('VERSION_CHECK_URL','https://emanueleg.github.io/pla-ng/current_version.txt');
+define('CHECK_VERSION', true);
 define('PROJECT_BUGTRACKER_LINK','<a href="https://github.com/emanueleg/pla-ng/issues" target="_blank">https://github.com/emanueleg/pla-ng/issues</a>');
 define('PROJECT_INSTALL_LINK','<a href="https://github.com/emanueleg/pla-ng/wiki/Installation" target="_blank">https://github.com/emanueleg/pla-ng/wiki/Installation</a>');
 
@@ -3440,7 +3441,8 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<b>".$lang['php_v']."</b>: ".phpversion()."<br/>";
 		echo "<b>".PROJECT." ".$lang["ver"]."</b>: ".VERSION;
 		echo " <a href='".PROJECT_URL."' target='_blank' id='oldVersion' style='display: none;' class='warning'>".$lang['new_version']."</a><br/><br/>";
-		echo "<script type='text/javascript'>checkVersion('".VERSION."','".VERSION_CHECK_URL."');</script>";
+		if(CHECK_VERSION)
+				echo "<script type='text/javascript'>checkVersion('".VERSION."','".VERSION_CHECK_URL."');</script>";
 
 		if(isset($_GET['sort']) && ($_GET['sort']=='type' || $_GET['sort']=='name'))
 			$_SESSION[COOKIENAME.'sortTables'] = $_GET['sort'];
