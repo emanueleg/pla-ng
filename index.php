@@ -1605,6 +1605,7 @@ if(count($databases)==0) // the database array is empty, offer to create a new d
 		echo "<input type='submit' value='".$lang['create']."' class='btn'/>";
 		echo "</form>";
 		echo "</fieldset>";
+		echo "<br/>";
 	}
 	elseif($directory!==false && !is_executable($directory) && DIRECTORY_SEPARATOR === '/')
 	{
@@ -1618,6 +1619,11 @@ if(count($databases)==0) // the database array is empty, offer to create a new d
 		echo $lang['err'].": ".sprintf($lang['no_db2'], PROJECT);
 		echo "</div><br/>";
 	}
+	echo "<div style='text-align:center;'>";
+	echo "<span style='font-size:11px;'>".$lang['powered']." <a href='".PROJECT_URL."' target='_blank' style='font-size:11px;'>".PROJECT."</a> | ";
+	printf($lang['page_gen'], $pageTimer);
+	echo "</span></div>";
+	echo "</body></html>";
 	exit();
 }
 
