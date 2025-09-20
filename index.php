@@ -2097,16 +2097,16 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 			echo "<input type='hidden' value='".htmlencode($target_table)."' name='single_table'/>";
 			echo "<div style='float:left;'>".$lang['fld_terminated']."</div>";
 			echo "<input type='text' value=';' name='import_csv_fieldsterminated' style='float:right;'/>";
-			echo "<div style='clear:both;'>";
+			echo "<div style='clear:both;'></div>";
 			echo "<div style='float:left;'>".$lang['fld_enclosed']."</div>";
 			echo "<input type='text' value='\"' name='import_csv_fieldsenclosed' style='float:right;'/>";
-			echo "<div style='clear:both;'>";
+			echo "<div style='clear:both;'></div>";
 			echo "<div style='float:left;'>".$lang['fld_escaped']."</div>";
 			echo "<input type='text' value='\' name='import_csv_fieldsescaped' style='float:right;'/>";
-			echo "<div style='clear:both;'>";
+			echo "<div style='clear:both;'></div>";
 			echo "<div style='float:left;'>".$lang['rep_null']."</div>";
 			echo "<input type='text' value='NULL' name='import_csv_replacenull' style='float:right;'/>";
-			echo "<div style='clear:both;'>";
+			echo "<div style='clear:both;'></div>";
 			echo "<label><input type='checkbox' checked='checked' name='import_csv_fieldnames'/> ".$lang['fld_names']."</label>";
 			echo "</fieldset>";
 
@@ -2118,6 +2118,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 			echo "<input type='file' value='".$lang['choose_f']."' name='file' style='background-color:transparent; border-style:none; margin:0; padding:0' onchange='checkFileSize(this)'/>";
 			echo "<input type='submit' value='".$lang['import']."' name='import' class='btn'/>";
 			echo "</fieldset>";
+			echo "</form>";
 			break;
 
 		//- Rename table (=table_rename)
@@ -3394,7 +3395,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 			}
 			break;
 	}
-	echo "</div>";
+	//echo "</div>";
 }
 
 //- HMTL: views for databases
@@ -3764,16 +3765,16 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<fieldset style='float:left; max-width:350px; display:none;' id='exportoptions_csv'><legend><b>".$lang['options']."</b></legend>";
 		echo "<div style='float:left;'>".$lang['fld_terminated']."</div>";
 		echo "<input type='text' value=';' name='export_csv_fieldsterminated' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['fld_enclosed']."</div>";
 		echo "<input type='text' value='\"' name='export_csv_fieldsenclosed' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['fld_escaped']."</div>";
 		echo "<input type='text' value='\' name='export_csv_fieldsescaped' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['rep_null']."</div>";
 		echo "<input type='text' value='NULL' name='export_csv_replacenull' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<label><input type='checkbox' name='export_csv_crlf'/> ".$lang['rem_crlf']."</label><br/>";
 		echo "<label><input type='checkbox' checked='checked' name='export_csv_fieldnames'/> ".$lang['put_fld']."</label>";
 		echo "</fieldset>";
@@ -3823,19 +3824,19 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 			echo "<option value='".htmlencode($tableName)."'>".htmlencode($tableName)."</option>";
 		}
 		echo "</select>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['fld_terminated']."</div>";
 		echo "<input type='text' value=';' name='import_csv_fieldsterminated' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['fld_enclosed']."</div>";
 		echo "<input type='text' value='\"' name='import_csv_fieldsenclosed' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['fld_escaped']."</div>";
 		echo "<input type='text' value='\' name='import_csv_fieldsescaped' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<div style='float:left;'>".$lang['null_represent']."</div>";
 		echo "<input type='text' value='NULL' name='import_csv_replacenull' style='float:right;'/>";
-		echo "<div style='clear:both;'>";
+		echo "<div style='clear:both;'></div>";
 		echo "<label><input type='checkbox' checked='checked' name='import_csv_fieldnames'/> ".$lang['fld_names']."</label>";
 		echo "</fieldset>";
 
@@ -3847,6 +3848,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<input type='file' value='".$lang['choose_f']."' name='file' style='background-color:transparent; border-style:none; margin:0; padding:0' onchange='checkFileSize(this)'/>";
 		echo "<input type='submit' value='".$lang['import']."' name='import' class='btn'/>";
 		echo "</fieldset>";
+		echo "</form>";
 	}
 	else if($view=="rename")
 	{
@@ -3869,7 +3871,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "</form>";
 	}
 
-	echo "</div>";
+	//echo "</div>";
 }
 echo "</div>";
 
