@@ -62,7 +62,8 @@ class GetParameters
 		if($csrf && $method == 'post')
 			$hidden .= '<input type="hidden" name="token" value="'.$_SESSION[COOKIENAME.'token'].'" />';
 		
-		return "<form action='". $url ."' method='" . $method . "'" .
+		$formAction = $url ? "action='". $url ."'" : "";
+		return "<form ". $formAction ." method='" . $method . "'" .
 			($name!=''? " name='". $name ."'" : '') .
 			($upload? " enctype='multipart/form-data'" : '') . ">" .
 			$hidden;
