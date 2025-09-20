@@ -297,7 +297,7 @@ $lang = array(
 	"help8" => "Ajout de Transaction au fichier d'export SQL",
 	"help8_x" => "Au cours du processus d'export vers un fichier SQL, vous pouvez faire le choix de placer les requêtes dans des TRANSACTION, ainsi en cas d'erreur lors de l'import du fichier, la base pourra être rétablie dans son état précédent, empêchant des données partiellement à jour d'être inscrite dans la base.",
 	"help9" => "Ajout des commentaires au fichier d'export SQL",
-	"help9_x" => "Au cours du processus d'export vers un fichier SQL, vous pouvez inclure des commentaires expliquant chaque étape de celui-ci, donnant ainsi une meilleur compréhension à un utilisateur de ce qui se passe."
+	"help9_x" => "Au cours du processus d'export vers un fichier SQL, vous pouvez inclure des commentaires expliquant chaque étape de celui-ci, donnant ainsi une meilleur compréhension à un utilisateur de ce qui se passe.",
 	"help10" => "Index partiels",
 	"help10_x" => "Les index partiels sont des index sur un sous-ensemble des lignes d'une table spécifiée par une clause WHERE. Notez que cela nécessite au moins SQLite 3.8.0 et les fichiers de base de données avec des index partiels ne seront pas lisibles ou inscriptibles par les anciennes versions . Voir la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentation SQLite.</a>",
 	"help11" => "Taille maximale des téléchargements de fichiers",

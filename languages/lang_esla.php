@@ -299,7 +299,7 @@ $lang = array(
 	"help8" => "Agregar Transaction a Archivo SQL Exportado",
 	"help8_x" => "Durante el proceso para exportar a un archivo SQL, puede optar por concluir las consultas en torno a una Transaction de modo que si se produce un error en cualquier momento durante el proceso de importaci&oacute;n bas&aacute;ndose en el archivo exportado, la base de datos se puede revertir a su estado anterior, lo que impide parcialmente datos actualizados de poblar la base de datos.",
 	"help9" => "Agregar Comentarios a Archivo SQL Exportado",
-	"help9_x" => "Durante el proceso para exportar a un archivo SQL, puede optar por incluir comentarios que explican cada paso del proceso para que un ser humano puede entender mejor lo que est&aacute; sucediendo."
+	"help9_x" => "Durante el proceso para exportar a un archivo SQL, puede optar por incluir comentarios que explican cada paso del proceso para que un ser humano puede entender mejor lo que est&aacute; sucediendo.",
 	"help10" => "Índices parciales",
 	"help10_x" => "Los índices parciales son índices sobre un subconjunto de las filas de una tabla especificada por una cláusula WHERE. Tenga en cuenta que esto requiere al menos SQLite 3.8.0 y los archivos de base de datos con índices parciales no podrán leerse ni escribirse en versiones anteriores Consulte la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentación de SQLite.</a>",
 	"help11" => "Tamaño máximo de carga de archivos",

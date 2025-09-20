@@ -300,7 +300,7 @@ $lang = array(
 	"help8" => "Aggiungi Transaction al file SQL esportato",
 	"help8_x" => "Durante il processo di esportazione verso un file SQL, è possibile includere le istruzioni (query) all'interno di una transazione (TRANSACTION) così che, se dovesse verificarsi un qualsiasi errore durante il processo di importazione, il database verrebbe riportato al suo stato precedente evitando l'inserimento solo parziale di dati.",
 	"help9" => "Aggiungi commenti al file esportato",
-	"help9_x" => "Durante il processo di esportazione verso un file SQL, è possibile includere commenti che spiegano ogni passo del processo così che un utente può comprendere meglio cosa sta succedendo."
+	"help9_x" => "Durante il processo di esportazione verso un file SQL, è possibile includere commenti che spiegano ogni passo del processo così che un utente può comprendere meglio cosa sta succedendo.",
 	"help10" => "Indici parziali",
 	"help10_x" => "Gli indici parziali sono indici su un sottoinsieme delle righe di una tabella specificata da una clausola WHERE. Notare che è richiesto almeno SQLite 3.8.0 e i file di database con indici parziali non saranno leggibili o scrivibili dalle versioni precedenti. Consultare la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentazione SQLite.</a>",
 	"help11" => "Dimensione massima dei file caricati",
