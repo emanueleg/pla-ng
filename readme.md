@@ -1,4 +1,4 @@
-# pla-ng - a phpLiteAdmin fork (aka phpLiteAdmin 2)
+# pla-ng - a phpLiteAdmin fork (or phpLiteAdmin 2.0)
 
 ## What is pla-ng?
 
@@ -20,7 +20,7 @@ interface, and user experience is comparable to that of phpMyAdmin.
 
 Official Website of the original version: https://www.phpliteadmin.org/
 
-phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
+phpLiteAdmin 2.0 (NextGen) Github: https://github.com/emanueleg/pla-ng/
 
 ## News
 
@@ -30,13 +30,13 @@ phpLiteAdmin 2 Github: https://github.com/emanueleg/pla-ng/
 
 **19.01.2024: pla-ng 2.0.0 released**
 
-**05.09.2019: phpLiteAdmin 1.9.8.2 released [Download now](https://www.phpliteadmin.org/download/)**
+**05.09.2019: phpLiteAdmin 1.9.8.2 released**
 
 ## Features
 
 -   Lightweight - consists of a single 250KB source file for portability
 -   Supports SQLite3 and SQLite2 databases
--   Translated and available in [15 languages](https://github.com/emanueleg/pla-ng/wiki/Localization) - and counting
+-   Translated and available in [19 languages](https://github.com/emanueleg/pla-ng/wiki/Localization) - and counting
 -   Specify and manage an unlimited number of databases
 -   Specify a directory and optionally its subdirectories to scan for databases
 -   Create and delete databases
@@ -65,11 +65,11 @@ https://demo.phpliteadmin.org/
 
 ## Requirements
 
--   a server with PHP >= 5.2.4 installed
+-   a server with PHP >= 5.2.4 installed (but PHP >= 7.0 is a nice-to-have requirement)
 -   at least one PHP SQLite library extension installed and enabled: PDO,
     SQLite3, or SQLiteDatabase
     
-PHP version 5.3.0 and greater usually comes with the SQLite3 extension installed
+PHP usually comes with the SQLite3 extension installed
 and enabled by default so no custom action is necessary.
 
 
