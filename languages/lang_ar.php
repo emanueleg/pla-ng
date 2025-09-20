@@ -1,6 +1,8 @@
 <?php
-// Arabic language file by Ayman Teryaki (teryaki1963)
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Arabic language-texts
+// Translated by Ayman Teryaki (teryaki1963)
+//
 $lang = array(
 	"direction" => "RTL",
 	"date_format" => '\a\m d.m.Y \u\m H:i:s (T)',
@@ -52,19 +54,22 @@ $lang = array(
 	"chk_ext" => "تحقق إن كانت نسخة بي-أتش-بي لديك تعمل بها أس-كيو-لايت",
 	"autoincrement" => "ترتيب تسلسلى",
 	"not_null" => "غير فارغة",
-	"none" => "None",   #todo: translate
-	"as_defined" => "As defined",  #todo: translate
-	"expression" => "Expression",  #todo: translate
+	"attention" => "Attention",	 // not yet translated
+	"none" => "None",
+	"as_defined" => "As defined",
+	"expression" => "Expression",
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "إضافة ل أس-كيو-لايت",
 	"sqlite_ext_support" => "يبدو أن نسخة بي-أتش-بي لديك ليست مهيئة لإضافات أس-كيو-لايت. لا تقدر إستخدام %s من قبل تركيب هذه الإضافات.",
 	"sqlite_v" => "رقم نسخة أش-كيو-لايت",
-	"sqlite_v3_error" => "يبدوا أن بنك المعلومات لديك مبني على نسخة أس-كيو-لايت رقم 2 ولكن بي-أتش-بي ليس لديه هذه الإضافة. لحل هذه المشكلة إما أن تمحي بنك المعلومات وتبدأ ب %s من جديد أو تضع بنك معلومات للنسخة 2 بنفسك.",
-	"sqlite_v2_error" => "يبدوا أن بنك المعلومات لديك مبني على نسخة أس-كيو-لايت رقم 3 ولكن بي-أتش-بي ليس لديه هذه الإضافة. لحل هذه المشكلة إما أن تمحي بنك المعلومات وتبدأ ب %s من جديد أو تضع بنك معلومات للنسخة 3 بنفسك.",
+	"sqlite_v_error" => "It appears that your database is of SQLite version %s but your installation of PHP does not contain the necessary extensions to handle this version. To fix the problem, either delete the database and allow %s to create it automatically or recreate it manually as SQLite version %s.",	 // not yet translated
 	"report_issue" => "لم نستطيع تحديد المشكلة, لهذا نرجوا أن تبعثوا لنا توضيح لها ",
 	"sqlite_limit" => "بسبب التقييدات الناتجة من أس-كيو-لايت لا تستطيع التغيير إلا إسم الحقل أو نوع المعلومات.",
 	
 	"php_v" => "نسخة بي-أتش-بي",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "إستيداع بنك المعلومات",
 	"db_f" => "ملف بنك المعلومات",
@@ -82,8 +87,9 @@ $lang = array(
 	"db_not_writeable" => "بنك المعلومات '%s' غير موجود ولا نستطيع تركيبه لأن مكان التخزين '%s' لا يسمح بهذا. لإمكانية الإستخدام يجب إعطاء السماح لمكان التخزين.",
 	"db_setup" => "هناك مشكلة في تركيب بنك المعلومات %s وسنحاول البحث عنها حتى تتمكن من حلها",
 	"db_exists" => "هناك بنك معلومات آخر بنفس الإسم '%s'.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
-	"exp_on" => "تم التصدير في تاريخ",
+	"exported" => "Exported",	 // not yet translated
 	"struct" => "الهيكل",
 	"struct_for" => "هيكل ل",
 	"on_tbl" => "للجدول",
@@ -96,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "يبدوا أن 'register_globals' في نسخة بي-أنش-بي لديك نشطة. وهذا الأمر بشكل خطورة. من الأفضل إقفال هذا الخيار من قبل أن تكمل.",
 	"page_gen" => "بنيت الصفحة في خلال %s ثواني.",
 	"powered" => "تمت البرمجة من:",
+	"free_software" => "This is free software.",	 // not yet translated
+	"please_donate" => "Please donate.",	 // not yet translated
 	"remember" => "البقاء مسجل",
 	"no_db" => "مرحبا بكم في phpLiteAdmin. يبدوا أنك وضعت مكان خاص لملفات بنوك المعلومات. ولكننا لم نجد أي بنك معلومات في هذا المكان. بإمكانك تعبأة الطلب التالى لتضع بنك معلومات جديد.",
 	"no_db2" => "المكان الذي إخترته لبنك المعلومات لا يحتوي على هذا الملف ولا يمكننا أن نكتب به شيئا. ولهذا السبب لم نستطيع وضع ملف جديد في هذا المكان. إما أن تعطي السماحية لهذا المكان للكتابة به أو تضع أنت الملف بنفسك به.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "وضع",
 	"created" => "تم وضعه",
@@ -157,20 +167,19 @@ $lang = array(
 	"query_time" => "(العملية إحتاجت %s ثواني)",
 	"syntax_err" => "هناك مشكلة بالتعبير الذي كتبته (العملية لم تنجح)",
 	"run_sql" => "نفذ أمر أس-كيو-أل التالي في بنك المعلومات هذا: '%s'",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "هل أنت متأكد من إفراغ جدول '%s' ؟",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "هل أنت متأكد من محي جدول '%s' ؟",
-	"ques_drop_view" => "هل أنت متأكد من محي عرض '%s' ؟",
 	"ques_row_delete" => "هل أنت متأكد من محي السطر/السطور %s من جدول '%s' ؟",
 	"ques_database_delete" => "هل أنت متأكد من محي بنك المعلومات '%s' ؟",
 	"ques_column_delete" => "هل أنت متأكد من محي العامود/العواميج %s من جدول '%s' ؟",
 	"ques_index_delete" => "هل أنت متأكد من محي الفهرس '%s' ؟",
 	"ques_trigger_delete" => "هل أنت متأكد من محي المؤثر '%s' ؟",
-	#todo: translate
 	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",
-
+	
 	"export_struct" => "تصدير مع الهيكل",
 	"export_data" => "تصدير مع كافة المعلومات",
 	"add_drop" => "أضف التعبير DROP TABLE (محي الجدول)",
@@ -186,6 +195,7 @@ $lang = array(
 	"import_suc" => "لقد تم التصدير بنجاح.",
 	"import_into" => "التصدير إلى",
 	"import_f" => "إختيار الملف للتصدير",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "تغيير إسم جدول '%s' ل",
 	
 	"rows_records" => "تبدأ السطور من البيان رقم: ",
@@ -227,6 +237,7 @@ $lang = array(
 	"edit_col" => "تحرير العامود '%s'",
 	"vac" => "تحجبم",
 	"vac_desc" => "من وقت لآخر يجب تصغير حجم بنك المعلومات لكي لا يزداد من عبر المعلومات الفائضة. إضغظ على الزر التالي لكي تقوم بتحجيم بنك المعلومات: '%s'",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "الحدث",
 	"each_row" => "لكل سطر",
 	"define_index" => "إعطاء نوعية الفهرس",
@@ -237,7 +248,7 @@ $lang = array(
 	"desc" => "من الأعلى للأسفل",
 	"warn0" => "لقد قمنا بتحزيرك.",
 	"warn_passwd" => "إنك تستخدم كلمة السر المعروفة وهذا يشكل خطر على بنك المعلومات. بإمكانك تغيير كلمة السر بسهولة في المكان الأعلى من ملف %s .",
-	#todo: translate
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
 	"sel_state" => "التعبير: Select",
 	"delimit" => "تقسيم الأمر عبر هذه العلامة",
@@ -245,27 +256,27 @@ $lang = array(
 	"choose_f" => "إختيار الملف",
 	"instead" => "عوضا عن",
 	"define_in_col" => "قم بإختيار عامود الفهرس أو الفهارس",
-
+	
 	"delete_only_managed" => "لا نستطيع محي بنوك المعلومات إلا التي وضعت بهذا البرنامج!",
 	"rename_only_managed" => "لا نستطيع تغيير إسم بنوك المعلومات إلا التي وضعت بهذا البرنامج!",
 	"db_moved_outside" => "ربما قد وضعت ملف بنك المعلومات في مكان آخر, حيث أننا لا نستطيع التعامل معه أو أن عملية التحقق منه لم تنجح بسبب إنعدام الصلاحية المفروضة.",
 	"extension_not_allowed" => "الإضاف الخاصة بالملفات لا توجد في لائحة الملفات المسموحة. الرجاء إستخدام إضافة الملفات التالية",
 	"add_allowed_extension" => "بإمكانك وضع إضافة الملفات المختارة في لائحة الملفات المسموحة عن طريق كتابة المصطلح  \$allowed_extensions في مكان المكونات.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "قد أستطيع الكتابة في ملف بنك المعلومات ولكن يبدوا أن المكان الذي يوجد به الملف ليس لديه الصلاحية للكتابة به. لهذا يجب إعطاء الصلاحية للمكان أيضا لأن برنامج أس-كيو-لابت يحاول أن يضع ملف جديد من قبل التخزين.",
 	"tbl_inexistent" => "لا يوجد جدول بإسم %s ",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "لم ننجح بتغيير الجدول %s ",
 	"alter_tbl_name_not_replacable" => "لم ننجح بتغيير إسم الجدول",
 	"alter_no_def" => "لا يوجد تعبير خاص للتغيير",
-	"alter_parse_failed" =>"عملية التحليل لتعبير ALTER لم تنجح",
+	"alter_parse_failed" => "عملية التحليل لتعبير ALTER لم تنجح",
 	"alter_action_not_recognized" => "لم نقدر بالتعرف على عملية التغيير",
 	"alter_no_add_col" => "لم نستطيع التعرف على أي عامود وضعته من خلال التعبير (تغيير)",
-	"alter_pattern_mismatch"=>"التعبير CREATE TABLE لا يتناسب مع الشكل الحالي",
+	"alter_pattern_mismatch" => "التعبير CREATE TABLE لا يتناسب مع الشكل الحالي",
 	"alter_col_not_recognized" => "لم نقدر بالتعرف على أي سطور جديدة أو قديمة",
 	"alter_unknown_operation" => "عملية تغيير غير معروفة!",
 	
-	/* Help documentation */
 	"help_doc" => "وثائق مساعدة",
 	"help1" => "مكتبة الأضافات ل أس-كيو-لايت",
 	"help1_x" => "برنامج phpLiteAdmin يستخدم إضافات بي-أتش-بي التي تسمح بالتعامل مع بنوك المعلومات ل أس-كيو-لايت. في الوقت الحالي phpLiteAdmin يدعم PDO, SQLite3 و SQLiteDatabase. أما PDO و SQLite3 فهم بحاجة لنسخة أس-كيو-لايت رقم 3 و SQLiteDatabase بحاجة فقط للنسخة رقم 2. في حال برنامج بي-أتش-بي لديه أكثر من إضافة واحدة ل أس-كيو-لايت فالأفضل إستخدام PDO و SQLite3 حتى نتمكن من إستغلال الفوائد منهم. وفي حال يوجد عندك بنك معلومات للنسخة رقم 2 فسيتعامل phpLiteAdmin معها بشكل تلقائي. ليس من الضروري أن تكون جميع بنوك المعلومات نفس رقم النسخة. لوضع ملف جديد من الأفضل إستخدام أحدث نسخة متواجدة.",
@@ -284,5 +295,10 @@ $lang = array(
 	"help8" => "أضف التعبير TRANSACTION للملف المصدر",
 	"help8_x" => "During the process for exporting to an SQL file, you may choose to wrap the queries around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the database can be reverted to its previous state, preventing partially updated data from populating the database.",
 	"help9" => "أضف التعليقات للملف المصدر",
-	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening."
+	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
+	
 );

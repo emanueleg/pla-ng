@@ -1,13 +1,17 @@
 <?php
-// Brazilian Portuguese translation by Nicole Sigaud
+//
+// Brazilian Portuguese language-texts
+// Translated by Nicole Sigaud
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'd.m.Y, H:i:s (O T)',  // (formato brasileiro dd.mm.aaaa, hh:mm:ss) see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'd.m.Y, H:i:s (O T)',
 	"ver" => "versão",
 	"for" => "para",
 	"to" => "a",
 	"go" => "Ir",
 	"yes" => "Sim",
+	"no" => "No",	 // not yet translated
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "Tabela à qual o CSV pertence",
@@ -51,6 +55,11 @@ $lang = array(
 	"autoincrement" => "Autoincremento",
 	"not_null" => "Não Nulo (NULL)",
 	"attention" => "Atenção",
+	"none" => "None",	 // not yet translated
+	"as_defined" => "As defined",	 // not yet translated
+	"expression" => "Expression",	 // not yet translated
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "ExtensãoSQLite",
 	"sqlite_ext_support" => "Aparentemente nenhuma das extensões da biblioteca SQLite estão disponíveis na sua instalação de PHP. Você não poderá usar o %s até instalar ao menos uma delas.",
@@ -60,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Devido às limitações do SQLite, somente o nome do campo e tipo de dados podem ser modificados.",
 	
 	"php_v" => "Versão PHP",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "despejo (dump) de banco de dados",
 	"db_f" => "arquivo de banco de dados",
@@ -77,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "O Banco de Dados, '%s', não existe e não pode ser criado porque o diretório '%s' não ter permissão de escrita. O aplicativo está inutilizado para uso até que isso seja sanado.",
 	"db_setup" => "Houve um problema ao configurar seu banco de dados, o %s. Uma tentativa será feita para encontrar a razão disso e tentar consertá-lo mais facilmente",
 	"db_exists" => "Um banco de dados, outro arquivo ou diretório com o nome %s já existe",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "Exportado",
 	"struct" => "Estrutura",
@@ -91,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "Parece que a diretiva 'register_globals' está ativa. Isso é mau. Você precisa desabilitá-la antes de continuar.",
 	"page_gen" => "Página gerada em %s segundos.",
 	"powered" => "Produzido com",
+	"free_software" => "This is free software.",	 // not yet translated
+	"please_donate" => "Please donate.",	 // not yet translated
 	"remember" => "Lembre-se de mim",
 	"no_db" => "Bem-vindo(a) ao %s. Parece que você selecionou procurar por bancos de dados em um diretório, para gerenciamento. Acontece que %s não encontrou um banco de dados SQLite válido sequer. Você pode usar o formulário abaixo para criar seu primeiro banco de dados.",
 	"no_db2" => "O diretório que você especificou não contém um banco de dados para gerenciar, além do diretório não poder ser gravado. Isso significa que você não pode criar qualquer banco de dados usando %s. Ou faça com que o diretório seja gravável ou envie manualmente os bancos de dados para o diretório.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Criar",
 	"created" => "foi criado(a)",
@@ -152,16 +167,17 @@ $lang = array(
 	"query_time" => "(A pesquisa levou %s segundos)",
 	"syntax_err" => "Existe um problema com a sintaxe da sua pesquisa (a Pesquisa não foi efetuada)",
 	"run_sql" => "Rode pesquisa(s) SQL no banco de dados '%s'",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
 	"ques_table_empty" => "Tem certeza de que quer esvaziar a tabela '%s'?",
 	"ques_table_drop" => "Tem certeza de que quer eliminar a tabela '%s'?",
-	"ques_drop_view" => "Tem certeza de que quer eliminar a vista (View) '%s'?",
 	"ques_row_delete" => "Tem certeza de que quer eliminar a(s) linha(s) %s da tabela '%s'?",
 	"ques_database_delete" => "Tem certeza de que quer eliminar o banco de dados '%s'?",
 	"ques_column_delete" => "Tem certeza de que quer eliminar a(s) coluna(s) %s da tabela '%s'?",
 	"ques_index_delete" => "Tem certeza de que quer eliminar o índice '%s'?",
 	"ques_trigger_delete" => "Tem certeza de que quer eliminar o gatilho (trigger) '%s'?",
-	#todo: translate
 	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",
 	
 	"export_struct" => "Exportar com estrutura",
@@ -179,6 +195,7 @@ $lang = array(
 	"import_suc" => "Importado com sucesso.",
 	"import_into" => "Importar em",
 	"import_f" => "Arquivo para importar",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "Renomear tabela '%s' para",
 	
 	"rows_records" => "linha(s) começando pelo registro # ",
@@ -220,6 +237,7 @@ $lang = array(
 	"edit_col" => "Editando coluna '%s'",
 	"vac" => "Vacuum",
 	"vac_desc" => "Bancos de dados grandes precisam, de vez em quando, ser limpos (VACUUM) para reduzir os registros de uso (footprint) do servidor. Clique no botão abaixo para 'passar o aspirador' no banco de dados '%s'.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "Evento",
 	"each_row" => "Para Cada Linha",
 	"define_index" => "Definir propriedades do índice",
@@ -230,6 +248,8 @@ $lang = array(
 	"desc" => "Descendente",
 	"warn0" => "Você foi avisado.",
 	"warn_passwd" => "Você está usando a senha-padrão, o que pode ser perigoso. Você pode mudar isso facilmente no topo de %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
+	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",	 // not yet translated
 	"sel_state" => "Selecionar Comando",
 	"delimit" => "Delimitador",
 	"back_top" => "Voltar para cima",
@@ -242,21 +262,21 @@ $lang = array(
 	"db_moved_outside" => "Ou você tentou mover o banco de dados para um diretório que não pode mais ser gerenciado, ou verifique se isso falhou por causa de privilégios perdidos.",
 	"extension_not_allowed" => "A extensão que você deu não está na lista de extensões permitidas. Por favor use uma das seguintes extensões",
 	"add_allowed_extension" => "Você pode adicionar extensões a essa lista colocando sua extensão em \$allowed_extensions na configuração.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "O banco de dados em si é editável, mas para escrever nele o diretório precisa ser gravável também. Isso acontece porque o SQLite coloca arquivos temporários lá para fechamento.",
 	"tbl_inexistent" => "A Tabela %s não existe",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "A alteração da tabela %s falhou",
 	"alter_tbl_name_not_replacable" => "não pode renomear a tabela com o nome temporário",
 	"alter_no_def" => "sem definição do comando ALTER",
-	"alter_parse_failed" =>"falhou em ler a definição de ALTER",
+	"alter_parse_failed" => "falhou em ler a definição de ALTER",
 	"alter_action_not_recognized" => "a ação ALTER não pode ser reconhecida",
 	"alter_no_add_col" => "nenhuma coluna a ser adicionada foi detectada pelo comando ALTER",
-	"alter_pattern_mismatch"=>"O padrão não combinou com o seu comando original CREATE TABLE",
+	"alter_pattern_mismatch" => "O padrão não combinou com o seu comando original CREATE TABLE",
 	"alter_col_not_recognized" => "não conseguiu reconhecer nome de coluna, novo ou antigo",
 	"alter_unknown_operation" => "Operação ALTER desconhecida!",
 	
-	/* Help documentation */
 	"help_doc" => "Documento de Ajuda",
 	"help1" => "Extensões da Biblioteca SQLite",
 	"help1_x" => "%s usa extensões da biblioteca PHP que permitem a interação com bancos de dados SQLite. Por enquanto, %s suporta PDO, SQLite3 e SQLiteDatabase. Ambos PDO e SQLite3 lidam com a versão 3 do SQLite, enquanto o SQLiteDatabase lida com a versão 2. Portanto, se a sua instalação de PHP inclui mais do que uma biblioteca de extensão SQLite, o PDO e SQLite3 vão ter a precedência para fazer uso de tecnologi amais moderna. No entanto, se você tem bancos de dados que são de versão 2 do SQLite, o %s vai ser forçado a usar o SQLiteDatabase para esses bancos de dados somente. Nem todos os bancos de dados precisam ser de mesma versão. Durante a criação do banco de dados, entretanto, a extensão mais moderna será usada.",
@@ -275,7 +295,10 @@ $lang = array(
 	"help8" => "Adicionar a Transação para Arquivo SQL Exportado",
 	"help8_x" => "Durante o processo de exportação para um arquivo SQL, você pode optar por envolver as pesquisas (Queries) em uma TRANSACTION fazendo com que, se um erro surgir em qualquer tempo durante a importação usando o arquivo exportado, o banco de dados possa ser revertido para o seu estado original, impedindo parcialmente que a atualização de dados ocorra e preencha o banco de dados.",
 	"help9" => "Adicionar comentários para o arquivo SQL exportado",
-	"help9_x" => "Durante o processo de exportação para um arquivo SQL você pode optar por incluir comentários que expliquem cada passo do processo, fazendo com que uma pessoa possa entender melhor o que está acontecendo."
+	"help9_x" => "Durante o processo de exportação para um arquivo SQL você pode optar por incluir comentários que expliquem cada passo do processo, fazendo com que uma pessoa possa entender melhor o que está acontecendo.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
 	
-	);
-?>
+);

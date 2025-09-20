@@ -1,13 +1,11 @@
 <?php
-// Swedish language file by Jörgen Hedkvist (hedkvist@gmail.com)
-# REMOVE_FROM_BUILD
-// Version 1.9.8
-// This file is only meant as a basis for you to do your own translation!
-# END REMOVE_FROM_BUILD
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Swedish language-texts
+// Translated by Jörgen Hedkvist (hedkvist@gmail.com)
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'c (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'c (T)',
 	"ver" => "version",
 	"for" => "för",
 	"to" => "till",
@@ -21,7 +19,7 @@ $lang = array(
 	"srch_again" => "Sök igen",
 	"login" => "Logga in",
 	"logout" => "Logga ut",
-	"view" => "Vy",              // here, the noun SQL view is meant, not the verb "to view"
+	"view" => "Vy",
 	"confirm" => "Bekräfta",
 	"cancel" => "Avbryt",
 	"save_as" => "Spara som",
@@ -62,17 +60,17 @@ $lang = array(
 	"expression" => "Uttryck",
 	"download" => "Ladda ner",
 	"open_in_browser" => "Öppna i webläsare",
-
+	
 	"sqlite_ext" => "SQLite utökning",
 	"sqlite_ext_support" => "Det verkar som att ingen av de stödda SQLite utökningarna är tillgängliga i din installation av PHP. Du kan inte använda %s föränn du installerat minst en av dem.",
 	"sqlite_v" => "SQLite version",
 	"sqlite_v_error" => "Det verkar som att din database är av SQLite version %s men din installation av PHP innehåller inte de nödvändiga utökningarna för att hantera denna version. För att åtgärda problemet, radera databasen och tillåt %s att skapa den automatiskt eller återskapa den manuellt som SQLite version %s.",
 	"report_issue" => "Problemet kan inte diagnostiseras ordentligt. Vänligen rapportera felet på",
 	"sqlite_limit" => "På grund av begränsningarna i SQLite kan bara fältets namn och datatyp modifieras.",
-
+	
 	"php_v" => "PHP version",
 	"new_version" => "Det finns en ny version!",
-
+	
 	"db_dump" => "databasdump",
 	"db_f" => "databasfil",
 	"db_ch" => "Ändra Databas",
@@ -90,7 +88,7 @@ $lang = array(
 	"db_setup" => "Ett fel uppstod vid skapande av databas, %s. Ett försök att ta reda på vad som fick fel har gjorts så att du enklare kan rätta till problemet",
 	"db_exists" => "En databas, annan fil eller katalog med namnet '%s' finns redan.",
 	"db_blank" => "Databasnamn kan inte vara tomt.",
-
+	
 	"exported" => "Exporterad",
 	"struct" => "Struktur",
 	"struct_for" => "struktur för",
@@ -111,7 +109,7 @@ $lang = array(
 	"no_db2" => "Katalogen du specifierade inehåller inga existerande databaser att hantera och katalogen är inte skrivbar. Detta innebär att du inte kan skapa nya databaser med %s. Antingen gör du katalogen skrivbar eller så laddar du manuellt upp databaser till katalogen.",
 	"dir_not_executable" => "Katalogen du specifierade kan inte sökas igenom efter databaser då %s inte har behörighet att lista filer. I Linux använder du 'chmod +x %s' för att fixa detta.",
 	"filesystem_permission_denied" => "Åtkomst nekad. Kontrollera filsystembehörigheter.",
-
+	
 	"create" => "Skapa",
 	"created" => "har skapats",
 	"create_tbl" => "Skapa ny tabell",
@@ -120,7 +118,7 @@ $lang = array(
 	"create_index" => "Skapar nytt index på tabell",
 	"create_index1" => "Skapa Index",
 	"create_view" => "Skapa ny vy i databas",
-
+	
 	"trigger" => "Trigger",
 	"triggers" => "Triggrar",
 	"trigger_name" => "Triggernamn",
@@ -156,11 +154,11 @@ $lang = array(
 	"val" => "Värde",
 	"update" => "Uppdatera",
 	"comments" => "Kommentarer",
-
+	
 	"specify_fields" => "Du måste ange antalet tabellfält.",
 	"specify_tbl" => "Du måste ange ett tabellnamn.",
 	"specify_col" => "Du måste ange en kolumn.",
-
+	
 	"tbl_exists" => "En tabell med samma namn existerar redan.",
 	"show" => "Visa",
 	"show_rows" => "Visar %s rad(er). ",
@@ -172,7 +170,7 @@ $lang = array(
 	"recent_queries" => "Nyliga Frågor",
 	"full_texts" => "Visa hela texter",
 	"no_full_texts" => "Förkorta långa texter",
-
+	
 	"ques_table_empty" => "Är du säker att du vill tömma tabell(en/erna) '%s'?",
 	"ques_table_drop" => "Är du säker att du vill radera tabell(en/erna) / vy(n/erna) '%s'?",
 	"ques_row_delete" => "Är du säker att du vill radera rad(en/erna) %s från tabellen '%s'?",
@@ -181,7 +179,7 @@ $lang = array(
 	"ques_index_delete" => "Är du säker att du vill radera index '%s'?",
 	"ques_trigger_delete" => "Är du säker att du vill radera trigger '%s'?",
 	"ques_primarykey_add" => "Är du säker att du vill lägga till en primärnyckel för column(en/erna) %s i tabellen '%s'?",
-
+	
 	"export_struct" => "Exportera med struktur",
 	"export_data" => "Exportera med data",
 	"add_drop" => "Lägg till DROP TABLE",
@@ -199,21 +197,21 @@ $lang = array(
 	"import_f" => "Fil att importera",
 	"max_file_size" => "Maximal filstorlek",
 	"rename_tbl" => "Döp om tabell '%s' till",
-
+	
 	"rows_records" => "rad(er) med start från # ",
 	"rows_aff" => "rad(er) påverkade. ",
-
+	
 	"as_a" => "som en",
 	"readonly_tbl" => "'%s' är en vy, vilket betyder att det är ett SELECT-uttryck som behandlas som en skrivskyddad tabell. Du får inte editera eller infoga nya uppgifter.",
 	"chk_all" => "Kontrollera alla",
 	"unchk_all" => "Avbocka alla",
 	"with_sel" => "Med markerade",
-
+	
 	"no_tbl" => "Ingen tabell i databasen.",
 	"no_chart" => "Om du kan läsa detta innebär det att diagrammet inte kunde genereras. Den data du försöker visa kan inte visas som ett diagram.",
 	"no_rows" => "Det är inga rader i tabellen för det omfång du valt.",
 	"no_sel" => "Du markerade inget.",
-
+	
 	"chart_type" => "Diagramtyp",
 	"chart_bar" => "Stapeldiagram",
 	"chart_pie" => "Tårtdiagram",
@@ -258,7 +256,7 @@ $lang = array(
 	"choose_f" => "Välj Fil",
 	"instead" => "Istället för",
 	"define_in_col" => "Definiera indexkolumn(er)",
-
+	
 	"delete_only_managed" => "Du kan bara radera databaser hanterade av detta verktyg!",
 	"rename_only_managed" => "Du kan bara ändra namn på databaser hanterade av detta verktyg!",
 	"db_moved_outside" => "Antingen försökte du flytta databasen in i en mapp där du inte längre kan hantera den, eller så misslyckades kontrollen att du gjorde detta då du saknar behörighet.",
@@ -268,19 +266,17 @@ $lang = array(
 	"directory_not_writable" => "Databasfilen är skrivbar, men för att skriva till den, behöver katalogen som innehåller databasen vara skrivbar likaså. Detta är för att SQLite lägger temporära filer i katalogen för låsning av databasen.",
 	"tbl_inexistent" => "Tabellen %s existerar inte",
 	"col_inexistent" => "Kolumnen %s existerar inte",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "Ändring av tabellen %s misslyckades",
 	"alter_tbl_name_not_replacable" => "kunde inte ersätta tabellens namn med ett temporärt",
 	"alter_no_def" => "ingen ALTER definition",
 	"alter_parse_failed" => "misslyckades att analysera ALTER definitionen",
 	"alter_action_not_recognized" => "ALTER handligen kunde inte kännas igen",
 	"alter_no_add_col" => "ingen kolumn att lägga till detekterades i ALTER uttrycket",
-	"alter_pattern_mismatch"=> "Mönstret matchade inte på ditt ordinarie CREATE TABLE uttryck",
+	"alter_pattern_mismatch" => "Mönstret matchade inte på ditt ordinarie CREATE TABLE uttryck",
 	"alter_col_not_recognized" => "kunde inte känna igen det nya eller gamla kolumnnamnet",
 	"alter_unknown_operation" => "Okänd ALTER operation!",
-
-	/* Help documentation */
+	
 	"help_doc" => "Hjälpdokumentation",
 	"help1" => "SQLite Biblioteksuttökningar",
 	"help1_x" => "%s använder PHP-bibliotekstillägg som möjliggör interaktion med SQLite-databaser. För närvarande stöder %s PDO, SQLite3 och SQLiteDatabase. Både PDO och SQLite3 hanterar version 3 av SQLite, medan SQLiteDatabase hanterar version 2. Så om din PHP-installation innehåller mer än ett SQLite-bibliotekstillägg, kommer PDO och SQLite3 att ha företräde för att använda den bättre tekniken. Men om du har befintliga databaser som är av version 2 av SQLite kommer %s att tvingas använda SQLiteDatabase för endast dessa databaser. Alla databaser behöver inte ha samma version. Under databasskapandet kommer dock det mest avancerade tillägget att användas.",
@@ -304,5 +300,5 @@ $lang = array(
 	"help10_x" => "Delvisa index är index över en delmängd av raderna i en tabell som anges av en WHERE-sats. Observera att detta kräver minst SQLite 3.8.0 och databasfiler med delvisa index kan inte läsas eller skrivas av äldre versioner. Se <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite dokumentation.</a>",
 	"help11" => "Maximal storlek på filöverföringar",
 	"help11_x" => "Den maximala storleken på filöverföringar bestäms av tre PHP-inställningar: <em>upload_max_filesize</em>, <em>post_max_size</em> och <em>memory_limit</em>. Den minsta av dessa tre begränsar den maximala storleken för filöverföringar. Om du vill ladda upp större filer justerar du dessa värden i filen <em>php.ini</em>."
-
+	
 );

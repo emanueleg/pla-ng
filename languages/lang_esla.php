@@ -1,12 +1,12 @@
 <?php
-// Español LatinoAmericano.
-// Traducido por Leandro G. Ortega - SuperBalgas - leandro@g-ortega.com.ar
-// mod by Pink Pantherchen
-// Idioma: Español Latino Americano - Argentina
-// Version 1.9.8.2
+//
+// Español Latino Americano language-texts
+// Translated by Leandro G. Ortega - SuperBalgas - leandro@g-ortega.com.ar
+// Updated by Pink Pantherchen
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'd-m-Y \a \l\a\s g:ia (T)',  // Formato Argentino, 19-01-1992 a las 8:00AM
+	"date_format" => 'd-m-Y \a \l\a\s g:ia (T)',
 	"ver" => "versi&oacute;n",
 	"for" => "para",
 	"to" => "a",
@@ -64,7 +64,6 @@ $lang = array(
 	
 	"sqlite_ext" => "Extensi&oacute;n SQLite",
 	"sqlite_ext_support" => "Parece que ninguna de las extensiones de la biblioteca SQLite est&aacute;n disponibles en su instalaci&oacute;n de PHP. Por el momento no puede usar %s hasta que instale por lo menos uno de ellos.",
-	
 	"sqlite_v" => "SQLite versi&oacute;n",
 	"sqlite_v_error" => "Parece que tu base de datos es de SQLite %s, pero tu instalaci&oacute;n de PHP no contiene las extensiones necesarias para manejar esta versi&oacute;n. Para solucionar el problema, elimine la base de datos y permita que %s pueda crear autom&aacute;ticamente o vuelva a crear de forma manual como SQLite %s.",
 	"report_issue" => "El problema no se puede diagnosticar correctamente. Por favor, enviar un informe de asunto",
@@ -110,6 +109,7 @@ $lang = array(
 	"no_db" => "Bienvenido a %s. Parece que usted ha seleccionado para escanear un directorio de bases de datos para la gesti&oacute;n. Sin embargo, %s no pudo encontrar ninguna base de datos SQLite v&aacute;lida. Usted puede utilizar el siguiente formulario para crear su primera base de datos.",
 	"no_db2" => "El directorio especificado no contiene las bases de datos existentes para la gesti&oacute;n y el directorio no tiene permisos de escritura. Esto significa que no se puede crear ninguna nueva base de datos utilizando %s. Haga el directorio escribible o cargue manualmente las bases de datos en el directorio.",
 	"dir_not_executable" => "El directorio que especificaste no se puede escanear en busca de bases de datos porque %s no tiene permisos de ejecución. En Linux, usa 'chmod +x %s' para arreglar esto.",
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Crear",
 	"created" => "ha sido creado",
@@ -172,14 +172,13 @@ $lang = array(
 	"full_texts" => "Mostrar textos completos",
 	"no_full_texts" => "Acortar textos largos",
 	
-	"ques_empty" => "&iquest;Est&aacute; seguro de querer vaciar la(s) tabla(s) '%s'?",
-	"ques_drop" => "&iquest;Est&aacute; seguro de querer borrar la(s) tabla(s) / vista(s) '%s'?",
-	"ques_drop_view" => "&iquest;Est&aacute; seguro de querer borrar la vista '%s'?",
-	"ques_del_rows" => "&iquest;Est&aacute; seguro de querer borrar la(s) fila(s) %s de la tabla '%s'?",
-	"ques_del_db" => "&iquest;Est&aacute; seguro de querer borrar la base de datos '%s'?",
+	"ques_table_empty" => "&iquest;Est&aacute; seguro de querer vaciar la(s) tabla(s) '%s'?",
+	"ques_table_drop" => "&iquest;Est&aacute; seguro de querer borrar la(s) tabla(s) / vista(s) '%s'?",
+	"ques_row_delete" => "&iquest;Est&aacute; seguro de querer borrar la(s) fila(s) %s de la tabla '%s'?",
+	"ques_database_delete" => "&iquest;Est&aacute; seguro de querer borrar la base de datos '%s'?",
 	"ques_column_delete" => "&iquest;Est&aacute; seguro de que desea eliminar la columna (s) %s de la tabla '%s'?",
-	"ques_del_index" => "&iquest;Est&aacute; seguro de querer borrar el &iacute;ndice '%s'?",
-	"ques_del_trigger" => "&iquest;Est&aacute; seguro de querer borrar el trigger '%s'?",
+	"ques_index_delete" => "&iquest;Est&aacute; seguro de querer borrar el &iacute;ndice '%s'?",
+	"ques_trigger_delete" => "&iquest;Est&aacute; seguro de querer borrar el trigger '%s'?",
 	"ques_primarykey_add" => "&iquest;Est&aacute; seguro de querer agregar una PRIMARY KEY para la columna (s) %s en la tabla '%s'?",
 	
 	"export_struct" => "Exportar con estructura",
@@ -239,7 +238,7 @@ $lang = array(
 	"edit_col" => "Editar columna '%s'",
 	"vac" => "Vacío",
 	"vac_desc" => "Grandes bases de datos a veces tienen que limpiarse para reducir su huella en el servidor. Haga click en el bot&oacute;n de abajo para limpiar la base de datos '%s'.",
-	"vac_on_empty"=>"Reconstruir el archivo de la base de datos para recuperar el espacio no utilizado (vacío)",
+	"vac_on_empty" => "Reconstruir el archivo de la base de datos para recuperar el espacio no utilizado (vacío)",
 	"event" => "Evento",
 	"each_row" => "Por cada fila",
 	"define_index" => "Definir propiedades del &iacute;ndice",
@@ -250,7 +249,7 @@ $lang = array(
 	"desc" => "Descendente",
 	"warn0" => "Estas advertido.",
 	"warn_passwd" => "Est&aacute; usando la contrase&ntilde;a por defecto, y puede ser peligrosa. Puede cambiarla f&aacute;cilmente en la parte superior de %s.",
-	"warn_dumbass" => "No cambi&oacute; el valor",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Se ha omitido el conteo de registros para algunas tablas porque su base de datos es comparativamente grande y algunas tablas no tienen claves principales asignadas, por lo que el conteo puede ser lento. Agregue una clave principal a estas tablas o %s force conteo %s.",
 	"sel_state" => "Seleccione declaraci&oacute;n",
 	"delimit" => "Delimitador",
@@ -268,19 +267,17 @@ $lang = array(
 	"directory_not_writable" => "La base de datos de archivo en s&iacute; es modificable, pero para escribir en &eacute;l, el directorio debe tener permisos de escritura as&iacute;. Esto es debido a que SQLite pone los archivos temporales all&iacute; por bloqueos.",
 	"tbl_inexistent" => "La tabla %s no existe",
 	"col_inexistent" => "La columna %s no existe",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "Falla al alterar la tabla %s ",
 	"alter_tbl_name_not_replacable" => "no podr&iacute;a reemplazar el nombre de tabla con el temporal",
 	"alter_no_def" => "no hay definici&oacute;n ALTER",
-	"alter_parse_failed" =>"no se pudo analizar la definci&oacute;n ALTER",
+	"alter_parse_failed" => "no se pudo analizar la definci&oacute;n ALTER",
 	"alter_action_not_recognized" => "Acci&oacute;n ALTER no pudo ser reconocido",
 	"alter_no_add_col" => "no se detect&oacute; la columna a agregar en la sentencia ALTER",
-	"alter_pattern_mismatch"=>"Patr&oacute;n no encontrado en su sentencia CREATE TABLE",
+	"alter_pattern_mismatch" => "Patr&oacute;n no encontrado en su sentencia CREATE TABLE",
 	"alter_col_not_recognized" => "no se pudo reconocer el nuevo o viejo nombre de la columna",
 	"alter_unknown_operation" => "Operaci&oacute; ALTER desconocida!",
 	
-	/* Help documentation */
 	"help_doc" => "Documentaci&oacute;n de Ayuda",
 	"help1" => "Librer&iacute;a de Extensiones SQLite",
 	"help1_x" => "%s utiliza extensiones de la biblioteca de PHP que permiten la interacci&oacute;n con bases de datos SQLite. Actualmente,%s soporta PDO, SQLite3 y SQLiteDatabase. PDO y SQLite3 lidian con la versi&oacute;n 3 de SQLite, mientras que SQLiteDatabase trata con la versi&oacute;n 2. Por lo tanto, si su instalaci&oacute;n de PHP incluye m&aacute;s de una extensi&oacute;n de la biblioteca SQLite,PDO y SQLite3 tendr&aacute;n prioridad para hacer uso de la mejor tecnolog&iacute;a. Sin embargo, si tiene bases de datos existentes que son de la versi&oacute;n 2 de SQLite,%s se ven obligados a utilizar SQLiteDatabase solo para aquellas bases de datos. No todas las bases de datos tienen que ser de la misma versi&oacute;n. Durante la creaci&oacute;n de bases de datos, sin embargo, se utilizar&aacute; la extensi&oacute;n m&aacute;s avanzada.",
@@ -304,6 +301,5 @@ $lang = array(
 	"help10_x" => "Los índices parciales son índices sobre un subconjunto de las filas de una tabla especificada por una cláusula WHERE. Tenga en cuenta que esto requiere al menos SQLite 3.8.0 y los archivos de base de datos con índices parciales no podrán leerse ni escribirse en versiones anteriores Consulte la <a href='https://www.sqlite.org/partialindex.html' target='_blank'>documentación de SQLite.</a>",
 	"help11" => "Tamaño máximo de carga de archivos",
 	"help11_x" => "El tamaño máximo de carga de archivos está determinado por tres configuraciones de PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> y <em>memory_limit</em>. La más pequeña de estas tres limita el tamaño máximo para cargar archivos. Para cargar archivos más grandes, ajuste estos valores en su archivo <em>php.ini</em>."
-		
-	);
-?>
+	
+);

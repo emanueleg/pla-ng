@@ -1,14 +1,17 @@
 <?php
-// Chinese language-texts for phpLiteAdmin
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Chinese language-texts
+// Translated by 
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'Y/m/d H:i:s',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'Y/m/d H:i:s',
 	"ver" => "版本",
 	"for" => "for",
 	"to" => "to",
 	"go" => "转到",
 	"yes" => "Yes",
+	"no" => "No",	 // not yet translated
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "和CSV关联的表为",
@@ -52,9 +55,11 @@ $lang = array(
 	"autoincrement" => "自动增量",
 	"not_null" => "非NULL",
 	"attention" => "Attention",
-	"none" => "None",   #todo: translate
-	"as_defined" => "As defined",  #todo: translate
-	"expression" => "Expression",  #todo: translate
+	"none" => "None",
+	"as_defined" => "As defined",
+	"expression" => "Expression",
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "SQLite扩展",
 	"sqlite_ext_support" => "It appears that none of the supported SQLite library extensions are available in your installation of PHP. You may not use %s until you install at least one of them.",
@@ -64,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Due to the limitations of SQLite, only the field name and data type can be modified.",
 	
 	"php_v" => "PHP版本",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "数据库转储",
 	"db_f" => "数据库文件",
@@ -81,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "数据库, '%s', 不存在并不能创建因为当前目录, '%s', 不可写. 除非使之可写否则程序不能使用.",
 	"db_setup" => "设置数据库, %s 出现问题. 将尝试找出发生了什么事情, 这样你就可以更容易地解决这个问题",
 	"db_exists" => "名称为 '%s' 的数据库, 文件或目录已存在.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "导出",
 	"struct" => "结构",
@@ -95,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "PHP指令，启用'register_globals的'。这是不好的。你需要禁用它，然后再继续。",
 	"page_gen" => "页面呈现 %s 秒.",
 	"powered" => "Powered by",
+	"free_software" => "This is free software.",	 // not yet translated
+	"please_donate" => "Please donate.",	 // not yet translated
 	"remember" => "记住我",
 	"no_db" => "欢迎到 %s。似乎你已经选择好要扫描的目录数据库来管理。然而，%s 无法找到任何有效的SQLite数据库。您可以使用下面的表格来创建你的第一个数据库。",
 	"no_db2" => "您指定的目录不包含任何现有的数据库管理，目录不可写。这意味着你不能用%s创建任何新的数据库。要么使目录可写或手动上传目录数据库。",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "创建",
 	"created" => "创建完毕",
@@ -156,18 +167,17 @@ $lang = array(
 	"query_time" => "(查询使用 %s 秒)",
 	"syntax_err" => "你查询的语法有出现问题 (查询未被执行)",
 	"run_sql" => "在数据库 '%s' 中执行查询",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "你确定要清空表 '%s'?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "你确定要删除表 '%s'?",
-	"ques_drop_view" => "你确定要删除视图 '%s'?",
 	"ques_row_delete" => "你确定要删除行 %s 从表 '%s'?",
 	"ques_database_delete" => "你确定要删除数据库 '%s'?",
 	"ques_column_delete" => "你确定要删除列 %s 从表 '%s'?",
 	"ques_index_delete" => "你确定要删除索引 '%s'?",
 	"ques_trigger_delete" => "你确定要删除触发器 '%s'?",
-	#todo: translate
 	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",
 	
 	"export_struct" => "导出结构",
@@ -185,6 +195,7 @@ $lang = array(
 	"import_suc" => "导入成功.",
 	"import_into" => "导入",
 	"import_f" => "导入文件",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "表 '%s' 改名为",
 	
 	"rows_records" => "行, 开始于 # ",
@@ -226,6 +237,7 @@ $lang = array(
 	"edit_col" => "修改列 '%s'",
 	"vac" => "压缩[Vacuum]",
 	"vac_desc" => "大型数据库有时需要在服务器上进行压缩. 点下面的按钮开始压缩[VACUUM]数据库 '%s'.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "事件",
 	"each_row" => "在每行",
 	"define_index" => "定义索引属性",
@@ -236,7 +248,7 @@ $lang = array(
 	"desc" => "下降[DESC]",
 	"warn0" => "你已经受到警告.",
 	"warn_passwd" => "你正在使用默认的密码, 这比较危险的. 你可以很方便的在 %s 文件的中进行修改.",
-	#todo: translate
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
 	"sel_state" => "选择语句",
 	"delimit" => "分隔符",
@@ -250,21 +262,21 @@ $lang = array(
 	"db_moved_outside" => "You either tried to move the database into a directory where it cannot be managed anylonger, or the check if you did this failed because of missing rights.",
 	"extension_not_allowed" => "The extension you provided is not within the list of allowed extensions. Please use one of the following extensions",
 	"add_allowed_extension" => "You can add extensions to this list by adding your extension to \$allowed_extensions in the configuration.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "The database-file itself is writable, but to write into it, the containing directory needs to be writable as well. This is because SQLite puts temporary files in there for locking.",
 	"tbl_inexistent" => "Table %s does not exist",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "Altering of Table %s failed",
 	"alter_tbl_name_not_replacable" => "could not replace the table name with the temporary one",
 	"alter_no_def" => "no ALTER definition",
-	"alter_parse_failed" =>"failed to parse ALTER definition",
+	"alter_parse_failed" => "failed to parse ALTER definition",
 	"alter_action_not_recognized" => "ALTER action could not be recognized",
 	"alter_no_add_col" => "no column to add detected in ALTER statement",
-	"alter_pattern_mismatch"=>"Pattern did not match on your original CREATE TABLE statement",
+	"alter_pattern_mismatch" => "Pattern did not match on your original CREATE TABLE statement",
 	"alter_col_not_recognized" => "could not recognize new or old column name",
 	"alter_unknown_operation" => "Unknown ALTER operation!",
 	
-	/* Help documentation */
 	"help_doc" => "帮助文档",
 	"help1" => "SQLite 库扩展",
 	"help1_x" => "%s uses PHP library extensions that allow interaction with SQLite databases. Currently, %s supports PDO, SQLite3, and SQLiteDatabase. Both PDO and SQLite3 deal with version 3 of SQLite, while SQLiteDatabase deals with version 2. So, if your PHP installation includes more than one SQLite library extension, PDO and SQLite3 will take precedence to make use of the better technology. However, if you have existing databases that are of version 2 of SQLite, %s will be forced to use SQLiteDatabase for only those databases. Not all databases need to be of the same version. During the database creation, however, the most advanced extension will be used.",
@@ -283,7 +295,10 @@ $lang = array(
 	"help8" => "Add Transaction to Exported SQL File",
 	"help8_x" => "During the process for exporting to an SQL file, you may choose to wrap the queries around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the database can be reverted to its previous state, preventing partially updated data from populating the database.",
 	"help9" => "Add Comments to Exported SQL File",
-	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening."
+	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
 	
-	);
-?>
+);

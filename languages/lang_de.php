@@ -1,8 +1,9 @@
 <?php
-// German language file by Christopher Kramer (crazy4chrissi)
-// mod by Pink Pantherchen
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 1.9.8.2
+//
+// German language-texts
+// Translated by Christopher Kramer (crazy4chrissi)
+// Updated by Pink Pantherchen
+//
 $lang = array(
 	"direction" => "LTR",
 	"date_format" => '\a\m d.m.Y \u\m H:i:s (T)',
@@ -57,7 +58,7 @@ $lang = array(
 	"attention" => "Achtung",
 	"none" => "Keiner",
 	"as_defined" => "Wie definiert",
-    "expression" => "Ausdruck",
+	"expression" => "Ausdruck",
 	"download" => "Download",
 	"open_in_browser" => "Im Browser öffnen",
 	
@@ -88,7 +89,7 @@ $lang = array(
 	"db_setup" => "Es gab ein Problem beim Öffnen Ihrer Datenbank %s. Es wird versucht herauszufinde, was das Problem ist, damit Sie das Problem leichter lösen können",
 	"db_exists" => "Eine Datenbank, eine andere Datei oder ein Verzeichnis mit Namen '%s' existiert bereits.",
 	"db_blank" => "Der Datenbankname darf nicht leer sein.",
-
+	
 	"exported" => "Exportiert",
 	"struct" => "Struktur",
 	"struct_for" => "Struktur für",
@@ -107,8 +108,9 @@ $lang = array(
 	"remember" => "Eingeloggt bleiben",
 	"no_db" => "Willkommen zu %s. Es erscheint so, als ob Sie konfiguriert haben, dass in einem Verzeichnis nach zu verwaltenden Datenbanken gesucht wird. Allerdings konnte %s in dem angegebenen Verzeichnis keine SQLite Datenbank gefunden werden. Sie können das folgende Formular nutzen um Ihre erste Datenbank anzulegen.",
 	"no_db2" => "Das von Ihnen angegebene Verzeichnis enthält keine SQLite Datenbanken und ist darüber hinaus nicht schreibbar. Aus diesem Grund können Sie mit %s keine neuen Datenbanken in diesem Verzeichnis anlegen. Machen Sie entweder das Verzeichnis beschreibbar oder laden Sie manuell Datenbanken in das angegebene Verzeichnis.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
 	"filesystem_permission_denied" => "Zugriff verweigert. Prüfen Sie die Zugriffsrechte des Dateisystems.",
-
+	
 	"create" => "Erzeugen",
 	"created" => "wurde erzeugt",
 	"create_tbl" => "Erzeuge neue Tabelle",
@@ -169,18 +171,16 @@ $lang = array(
 	"recent_queries" => "Kürzliche Abfragen",
 	"full_texts" => "Zeige lange Texte komplett",
 	"no_full_texts" => "Kürze lange Texte",
-
 	
-	"ques_empty" => "Sind Sie sicher, dass Sie die Tabelle(n) '%s' leeren möchten?",
-	"ques_drop" => "Sind Sie sicher, dass Sie die Tabelle(n) / Sicht(en) '%s' löschen möchten?",
-	"ques_drop_view" => "Sind Sie sicher, dass Sie die Sicht '%s' löschen möchten?",
-	"ques_del_rows" => "Sind Sie sicher, dass Sie die Zeile(n) %s aus der Tabelle '%s' löschen möchten?",
-	"ques_del_db" => "Sind Sie sicher, dass Sie die Datenbank '%s' löschen möchten?",
+	"ques_table_empty" => "Sind Sie sicher, dass Sie die Tabelle(n) '%s' leeren möchten?",
+	"ques_table_drop" => "Sind Sie sicher, dass Sie die Tabelle(n) / Sicht(en) '%s' löschen möchten?",
+	"ques_row_delete" => "Sind Sie sicher, dass Sie die Zeile(n) %s aus der Tabelle '%s' löschen möchten?",
+	"ques_database_delete" => "Sind Sie sicher, dass Sie die Datenbank '%s' löschen möchten?",
 	"ques_column_delete" => "Sie Sie sicher, dass Sie die Spalten %s aus der Tabelle '%s' löschen möchten?",
-	"ques_del_index" => "Sind Sie sicher, dass Sie den Index '%s' löschen möchten?",
-	"ques_del_trigger" => "Sind Sie sicher, dass Sie den Trigger '%s' löschen möchten?",
- 	"ques_primarykey_add" => "Sind Sie sicher, dass Sie einen Primärschlüssel für die Spalte(n) %s in der Tabelle '%s' anlegen möchten?",
-
+	"ques_index_delete" => "Sind Sie sicher, dass Sie den Index '%s' löschen möchten?",
+	"ques_trigger_delete" => "Sind Sie sicher, dass Sie den Trigger '%s' löschen möchten?",
+	"ques_primarykey_add" => "Sind Sie sicher, dass Sie einen Primärschlüssel für die Spalte(n) %s in der Tabelle '%s' anlegen möchten?",
+	
 	"export_struct" => "Mit Struktur exportieren",
 	"export_data" => "Mit Daten exportieren",
 	"add_drop" => "Füge DROP TABLE hinzu",
@@ -238,7 +238,7 @@ $lang = array(
 	"edit_col" => "Bearbeite Spalte '%s'",
 	"vac" => "Vakuum",
 	"vac_desc" => "Große Datenbanken müssen manchmal geVACUUMt werden, um ihre Größe auf dem Server zu reduzieren. Klicke auf den folgenden Button um die Datenbank '%s' zu VACUUMen.",
-	"vac_on_empty"=>"Datenbank-Datei aufräumen um ungenutzen Speicherplatz freizubekommen (Vakuum)",
+	"vac_on_empty" => "Datenbank-Datei aufräumen um ungenutzen Speicherplatz freizubekommen (Vakuum)",
 	"event" => "Ereignis",
 	"each_row" => "Für jede Zeile",
 	"define_index" => "Index-Eigenschaften angeben",
@@ -249,7 +249,7 @@ $lang = array(
 	"desc" => "Absteigend",
 	"warn0" => "Sie wurden gewarnt.",
 	"warn_passwd" => "Sie verwenden das Standard-Password, was gefährlich sein kann. Sie können es leicht im oberen Bereich von %s ändern.",
-	"warn_dumbass" => "Sie haben den Wert nicht verwendet.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Das Zählen der Anzahl Datensätze einiger Tabellen wurde übersprungen, da die Datenbank verhältnismäßig groß ist und 
 	für einige Tabellen kein Primärschlüssel definiert ist, sodass das Zählen der Datensätze lange dauern kann. Füge einen Primärschlüssel hinzu oder %serzwinge das Zählen%s.",
 	"sel_state" => "Select-Ausdruck",
@@ -258,7 +258,7 @@ $lang = array(
 	"choose_f" => "Datei wählen",
 	"instead" => "Anstatt",
 	"define_in_col" => "Wähle Index Spalte(n)",
-
+	
 	"delete_only_managed" => "Sie können nur Datenbanken löschen, die mit diesem Tool verwaltet werden!",
 	"rename_only_managed" => "Sie können nur Datenbanken umbenennen, die mit diesem Tool verwaltet werden!",
 	"db_moved_outside" => "Sie haben entweder versucht, die Datenbank in ein Verzeichnis zu verschieben, wo sie nicht mehr verwaltet werden kann, oder die Überprüfung, ob Sie das getan haben, schlug wegen ungenügenden Rechten fehl.",
@@ -268,19 +268,17 @@ $lang = array(
 	"directory_not_writable" => "Die Datenbank-Datei selbst ist schreibbar, aber um darin zu schreiben, muss auch das Verzeichnis, indem sie liegt schreibbar sein. Dies liegt daran, dass SQLite eine temporäre Sperrdatei darin ablegen muss.",
 	"tbl_inexistent" => "Tabelle %s existiert nicht",
 	"col_inexistent" => "Spalte %s  existiert nicht",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "Änderung der Tabelle %s fehlgeschlagen",
 	"alter_tbl_name_not_replacable" => "Der Tabellenname konnte nicht mit dem temporärem ersetzt werden",
 	"alter_no_def" => "keine ALTER Definition",
-	"alter_parse_failed" =>"das Parsen der ALTER Definition schlug fehl",
+	"alter_parse_failed" => "das Parsen der ALTER Definition schlug fehl",
 	"alter_action_not_recognized" => "ALTER Aktion konnte nicht erkannt werden",
 	"alter_no_add_col" => "keine Spalte, die hinzugefügt werden soll im ALTER Ausdruck erkannt",
-	"alter_pattern_mismatch"=>"Ihr ursprünglicher CREATE TABLE Ausdruck passt nicht auf unser Muster",
+	"alter_pattern_mismatch" => "Ihr ursprünglicher CREATE TABLE Ausdruck passt nicht auf unser Muster",
 	"alter_col_not_recognized" => "Konnte neuen oder alten Spaltennamen nicht erkennen",
 	"alter_unknown_operation" => "Unbekannte ALTER Operation!",
-
-	/* Help documentation */
+	
 	"help_doc" => "Dokumentation / Hilfe",
 	"help1" => "SQLite-Bibliothek Erweiterungen",
 	"help1_x" => "%s verwendet PHP Erweiterungen, welche den Zugriff auf SQLite Datenbanken erlauben. Aktuell unterstützt phpLiteAdmin PDO, SQLite3 und SQLiteDatabase. Sowohl PDO und SQLite3 werden für Version 3 von SQLite verwendet und SQLiteDatabase für Version 2. Falls in Ihrer PHP-Installation mehr als eine SQLite Erweiterung verfügbar ist, wird PDO und SQLite3 bevorzugt verwendet um den Vorteil der neuen Version nutzen zu können. Sollten Sie aber existierende SQLite-Datenbanken der Version 2 haben wird phpLiteAdmin SQLiteDatabase automatisch nur für diese Datenbanken verwenden. Es müssen nicht alle Datenbanken der gleichen Version sein. Zur Erzeugung neuer Datenbanken wird allerdings stets die beste verfügbare Version genutzt.",
@@ -304,4 +302,5 @@ $lang = array(
 	"help10_x" => "Partielle Indizes sind Indizes über einen Teil der Zeilen, der durch einen WHERE-Ausdruck definiert wird. Beachte, dass dies mindestens SQLite 3.8.0 erfordert and Datenbanken die partielle Indizes enthalten können nicht mehr mit älteren SQLite-Versionen geöffnet werden. Siehe <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite Dokumentation</a>.",
 	"help11" => "Maximale Größe von Datei-Uploads",
 	"help11_x" => "Die maximale Größe von Datei-Uploads wird durch drei PHP-Einstellungen bestimmt: <em>upload_max_filesize</em>, <em>post_max_size</em> und <em>memory_limit</em>. Die kleinste der dre begrenzt die maximale Größe für Datei-Uploads. Um größere Dateien hochzuladen, passen Sie diese Werte in Ihrer <em>php.ini</em>-Datei an."
+	
 );

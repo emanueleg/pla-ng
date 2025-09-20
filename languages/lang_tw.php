@@ -1,16 +1,17 @@
 <?php
-// Chinese language-texts for phpLiteAdmin
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Taiwanese language-texts
+// Translated by 
+//
 $lang = array(
-        "please_donate" => "請捐款",
-        "free_software" => "本工具為自由軟體",
 	"direction" => "LTR",
-	"date_format" => 'Y/m/d H:i:s',  // 參考 http://php.net/manual/en/function.date.php 以瞭解每個字義所代表的意思
+	"date_format" => 'Y/m/d H:i:s',
 	"ver" => "版本",
 	"for" => "for",
 	"to" => "成",
 	"go" => "執行",
 	"yes" => "Yes",
+	"no" => "No",	 // not yet translated
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "和CSV關聯的表格為",
@@ -54,6 +55,11 @@ $lang = array(
 	"autoincrement" => "自動遞增",
 	"not_null" => "非NULL",
 	"attention" => "Attention",
+	"none" => "None",	 // not yet translated
+	"as_defined" => "As defined",	 // not yet translated
+	"expression" => "Expression",	 // not yet translated
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "SQLite擴充功能",
 	"sqlite_ext_support" => "這顯示著在你所安裝的PHP版本中沒有受支援的SQLite擴充功能可取得. 你無法使用 %s 直到你安裝最新的版本.",
@@ -63,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "由於SQLite的限制, 僅欄位名稱和資料類型可以被修改.",
 	
 	"php_v" => "PHP版本",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "資料庫轉存",
 	"db_f" => "資料庫檔案",
@@ -80,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "資料庫, '%s', 不存在並不能建立. 因為當前目錄, '%s', 不可寫入. 除非讓它可寫入, 否則程式不能使用.",
 	"db_setup" => "設置資料庫, %s 出現問題. 將嘗試找出發生了什麼事情, 這樣你就可以更容易地解決這個問題",
 	"db_exists" => "名稱為 '%s' 的資料庫, 檔案或目錄已存在.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "已匯出",
 	"struct" => "結構",
@@ -94,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "PHP指令, 啟用'register_globals的'. 這是不恰當的. 你需要禁用它, 然後再繼續.",
 	"page_gen" => "頁面呈現 %s 秒.",
 	"powered" => "Powered by",
+	"free_software" => "本工具為自由軟體",
+	"please_donate" => "請捐款",
 	"remember" => "記住登入狀態",
 	"no_db" => "歡迎來到 %s. 你似乎選擇要用phpLiteAdmin來管理資料庫. 然而, %s 無法找到任何有效的SQLite資料庫. 您可以使用下面的表格來建立你的第一個資料庫.",
 	"no_db2" => "您指定的目錄不包含任何現有的資料庫管理, 目錄不可寫入. 這意味著你不能用%s建立任何新的資料庫. 要麼使目錄可寫入或手動上傳目錄資料庫.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "建立",
 	"created" => "建立完畢",
@@ -155,17 +167,18 @@ $lang = array(
 	"query_time" => "(查詢使用 %s 秒)",
 	"syntax_err" => "你查詢的語法有出現問題 (查詢未被執行)",
 	"run_sql" => "在資料庫 '%s' 中執行查詢",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "你確定要清空表格 '%s'?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "你確定要刪除表格 '%s'?",
-	"ques_drop_view" => "你確定要刪除視圖 '%s'?",
 	"ques_row_delete" => "你確定要刪除行 %s 從表格 '%s'?",
 	"ques_database_delete" => "你確定要刪除資料庫 '%s'?",
-	"ques_del_col" => "你確定要刪除列 %s 從表格 '%s'?",
+	"ques_column_delete" => "你確定要刪除列 %s 從表格 '%s'?",
 	"ques_index_delete" => "你確定要刪除索引 '%s'?",
 	"ques_trigger_delete" => "你確定要刪除觸發器 '%s'?",
+	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",	 // not yet translated
 	
 	"export_struct" => "匯出結構",
 	"export_data" => "匯出資料",
@@ -182,6 +195,7 @@ $lang = array(
 	"import_suc" => "匯入成功.",
 	"import_into" => "匯入",
 	"import_f" => "匯入文件",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "表格 '%s' 更改名稱為",
 	
 	"rows_records" => "行, 開始於 # ",
@@ -223,6 +237,7 @@ $lang = array(
 	"edit_col" => "修改列 '%s'",
 	"vac" => "壓縮",
 	"vac_desc" => "大型資料庫有時需要在伺服器上進行壓縮. 點擊下面的按鈕開始壓縮資料庫 '%s'.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "事件",
 	"each_row" => "在每行",
 	"define_index" => "定義索引屬性",
@@ -233,6 +248,8 @@ $lang = array(
 	"desc" => "降冪[DESC]",
 	"warn0" => "你已經受到警告.",
 	"warn_passwd" => "你正在使用默認的密碼, 這是比較危險的. 你可以很方便的在 %s 檔案中進行修改.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
+	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",	 // not yet translated
 	"sel_state" => "選擇語法",
 	"delimit" => "分隔符號",
 	"back_top" => "回到上面",
@@ -245,21 +262,21 @@ $lang = array(
 	"db_moved_outside" => "如果不是因為你曾經嘗試移動資料庫到不再被管理的資料夾中, 就要確定是否因為喪失權力所以導致動作失敗.",
 	"extension_not_allowed" => "你所提供的擴充功能不在被允許的擴充功能清單中. 請使用以下的擴充功能之一",
 	"add_allowed_extension" => "你可以新增你的擴充功能到設定檔中的下面列表 \$allowed_extensions",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "這資料庫檔案本身是可寫入的, 不過為了寫入資料, 其上層資料夾也需要可寫入. 這是因為SQLite會為了鎖定而將暫存檔放置此處.",
 	"tbl_inexistent" => "表格 %s 並不存在",
-
-	// 當更動表格發生錯誤所產生的訊息. 你不需要翻譯它們.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "更動表格 %s 失敗",
 	"alter_tbl_name_not_replacable" => "無法以暫存名稱取代本表格名稱",
 	"alter_no_def" => "沒 ALTER 定義",
-	"alter_parse_failed" =>"無法解析 ALTER 定義",
+	"alter_parse_failed" => "無法解析 ALTER 定義",
 	"alter_action_not_recognized" => "ALTER 動作無法被識別",
 	"alter_no_add_col" => "在 ALTER 語法中沒有偵測到要增加的欄位",
-	"alter_pattern_mismatch"=>"模式無法配對到你原本的 CREATE TABLE 語法",
+	"alter_pattern_mismatch" => "模式無法配對到你原本的 CREATE TABLE 語法",
 	"alter_col_not_recognized" => "無法識別新的或舊的欄位名稱",
 	"alter_unknown_operation" => "未知的 ALTER 操作!",
 	
-	/* Help documentation */
 	"help_doc" => "説明資料",
 	"help1" => "SQLite擴充功能庫",
 	"help1_x" => "%s 使用PHP擴充功能庫以允許和SQLite資料庫進行溝通. 目前, %s 支援 PDO, SQLite3, 和SQLiteDatabase. PDO和SQLite3兩者搭配SQLite版本3, 而SQLiteDatabase搭配版本2. 所以如果你的PHP安裝檔包含多於一個SQLite擴充功能庫, PDO和SQLite3將會優先採用以使用較好的技術. 不過, 如果你擁有的資料庫屬於SQLite第2版的資料, %s 將會對那些資料庫強制使用SQLiteDatabase. 並非所有資料庫都必須是相同版本. 不過在資料庫建立中, 將會採用最先進的擴充功能.",
@@ -278,7 +295,10 @@ $lang = array(
 	"help8" => "增加交易到已匯出的SQL檔案",
 	"help8_x" => "在匯出資料到既存的SQL檔案過程中, 你可以選擇以交易方式封裝語法, 這樣當在取用已匯出的資料檔的重要過程中時發生錯務, 該資料庫就可以還原到先前的狀態, 以防在搬移資料庫時發生資料部分更新.",
 	"help9" => "增加註解到已匯出的SQL檔案",
-	"help9_x" => "在匯出資料到既存的SQL檔案過程中, 你可以選擇包含註解來說明解釋每一個步驟, 這樣人們才能更瞭解正在發生什麼事."
+	"help9_x" => "在匯出資料到既存的SQL檔案過程中, 你可以選擇包含註解來說明解釋每一個步驟, 這樣人們才能更瞭解正在發生什麼事.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
 	
-	);
-?>
+);

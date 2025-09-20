@@ -1,14 +1,17 @@
 <?php
-// Russian language file by Boris Kurshev (13dagger)
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Russian language-texts
+// Translated by Boris Kurshev (13dagger)
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'g:ia \o\n F j, Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'g:ia \o\n F j, Y (T)',
 	"ver" => "версия",
 	"for" => "для",
 	"to" => "в",
 	"go" => "Готово",
 	"yes" => "Готово",
+	"no" => "No",	 // not yet translated
 	"sql" => "SQL",
 	"csv" => "CSV",
 	"csv_tbl" => "Таблица, к которой относится CSV",
@@ -52,9 +55,11 @@ $lang = array(
 	"autoincrement" => "Autoincrement",
 	"not_null" => "Not NULL",
 	"attention" => "Внимание",
-	"none" => "None",   #todo: translate
-	"as_defined" => "As defined",  #todo: translate
-	"expression" => "Expression",  #todo: translate
+	"none" => "None",
+	"as_defined" => "As defined",
+	"expression" => "Expression",
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "расширение SQLite",
 	"sqlite_ext_support" => "Похоже, не установлено ни одной поддерживаемой библиотеки SQLite в вашей сборке PHP. Вы не можете использовать %s, пока не установите хотя бы одну из них.",
@@ -64,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Из-за ограничений SQLite, только имя поля и тип данных могут быть изменены.",
 	
 	"php_v" => "версия PHP",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "дамп базы данных",
 	"db_f" => "файл базы данных",
@@ -81,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "База данных '%s' не существует и не может быть создана, т.к. в директории '%s' закрыты права на запись. Приложение бесполезно, пока вы не предоставите права.",
 	"db_setup" => "При установке БД %s случилась ошибка. Для помощи в решении проблемы предпримется еще попытка.",
 	"db_exists" => "База данных, файл или директория с именем '%s' уже существует.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "Экспортировано",
 	"struct" => "Структура",
@@ -95,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "Похоже параметр PHP 'register_globals' включен. Безобразие. Отключите его для продолжения работы.",
 	"page_gen" => "Время генерации страницы - %s сек.",
 	"powered" => "На базе",
+	"free_software" => "This is free software.",	 // not yet translated
+	"please_donate" => "Please donate.",	 // not yet translated
 	"remember" => "Запомнить",
 	"no_db" => "Добро пожаловать в %s. Похоже, вы выбрали директорию для поиска баз даных. Тем не менее, %s не может найти валидных баз данных SQLite. Вы можете создать новую базу с помощью формы ниже.",
 	"no_db2" => "Директория, которую вы указали, не содержит баз данных и не предоставляет прав на запись. Таким образом, вы не можете создать новую базу, используя %s. Либо предоставьте права на запись, либо загрузите базы данных в директорию вручную.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Создать",
 	"created" => "Была создана",
@@ -156,18 +167,17 @@ $lang = array(
 	"query_time" => "(Запрос занял %s сек)",
 	"syntax_err" => "В синтаксисе запроса ошибка (Запрос не был выполнен)",
 	"run_sql" => "Выполнить SQL запрос(ы) в базе данных '%s'",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "Вы уверены, что хотите очистить таблицу '%s'?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "Вы уверены, что хотите удалить таблицу '%s'?",
-	"ques_drop_view" => "Вы уверены, что хотите удалить представление '%s'?",
 	"ques_row_delete" => "Вы уверены, что хотите удалить строку(и) %s из таблицы '%s'?",
 	"ques_database_delete" => "Вы уверены, что хотите удалить базу данных '%s'?",
 	"ques_column_delete" => "Вы уверены, что хотите удалить поле(я) %s из таблицы '%s'?",
 	"ques_index_delete" => "Вы уверены, что хотите удалить индекс '%s'?",
 	"ques_trigger_delete" => "Вы уверены, что хотите удалить триггер '%s'?",
-	#todo: translate
 	"ques_primarykey_add" => "Are you sure you want to add a primary key for the column(s) %s in table '%s'?",
 	
 	"export_struct" => "Экспорт структуры",
@@ -185,6 +195,7 @@ $lang = array(
 	"import_suc" => "Импорт успешно завершен.",
 	"import_into" => "Импорт в",
 	"import_f" => "Файл для импорта",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "Переименовать таблицу '%s' в",
 	
 	"rows_records" => "строк(а), начиная с # ",
@@ -226,6 +237,7 @@ $lang = array(
 	"edit_col" => "Редактирование поля '%s'",
 	"vac" => "Vacuum",
 	"vac_desc" => "Большие базы данных иногда нуждаются в выполнении команды VACUUM для уменьшения объема временных данных на сервере. Нажмите кнопку ниже для применения VACUUM к базе данных '%s'.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "Событие",
 	"each_row" => "Для Каждой Строки",
 	"define_index" => "Определить параметры индекса",
@@ -236,7 +248,7 @@ $lang = array(
 	"desc" => "По убыванию",
 	"warn0" => "Вы были предупреждены.",
 	"warn_passwd" => "Вы используете пароль по умолчанию, что не безопасно. Вы можете поменять его вверху %s.",
-	#todo: translate
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
 	"sel_state" => "Выберите Определение",
 	"delimit" => "Разделитель",
@@ -250,21 +262,21 @@ $lang = array(
 	"db_moved_outside" => "Вы либо перенесли базу в директорию, где ей нельзя больше управлять, либо при проверке произошла ошибка из-за недостаточных прав.",
 	"extension_not_allowed" => "Используемое вами расширение не поддерживается. Пожалуйста, используйте одно из перечисленных расширений",
 	"add_allowed_extension" => "Вы можете добавить расширения в этот список, дополнив список \$allowed_extensions в конфигурации.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "Файл базы данных предоставляет права на запись, но директория, в которой он находится, должна также предоставлять права на запись. SQLite хранит в ней временные файлы.",
 	"tbl_inexistent" => "Таблица %s не существует",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "Изменение Таблицы %s не удалось",
 	"alter_tbl_name_not_replacable" => "нельзя заменить имя таблицы временным",
 	"alter_no_def" => "нет ALTER определения",
-	"alter_parse_failed" =>"не удалось распарсить ALTER определение",
+	"alter_parse_failed" => "не удалось распарсить ALTER определение",
 	"alter_action_not_recognized" => "ALTER действие не может быть распознано",
 	"alter_no_add_col" => "не обнаружено столбцов для добавления в определении ALTER",
-	"alter_pattern_mismatch"=>"Шаблон не соответствует вашему определению CREATE TABLE",
+	"alter_pattern_mismatch" => "Шаблон не соответствует вашему определению CREATE TABLE",
 	"alter_col_not_recognized" => "невозможно распознать новое или старое имя столбца",
 	"alter_unknown_operation" => "Неизвестная операция ALTER!",
 	
-	/* Help documentation */
 	"help_doc" => "Документация",
 	"help1" => "Библиотеки расширения SQLite",
 	"help1_x" => "%s использует PHP библиотеки расширения, которые позволяют взаимодействие с базами данных SQLite. В настоящий момент, %s поддерживает PDO, SQLite3 и SQLiteDatabase. PDO и SQLite3 работают с SQLite версии 3, SQLiteDatabase с версией 2. Т.о., если ваша сборка PHP содержит несколько библиотек расширения для SQLite, PDO и SQLite3 будут иметь приоритет, как лучшие технологии. Тем не менее, если существующие базы данных SQLite версии 2, %s придется использовать SQLiteDatabase только для этих баз. Не все базы данных должны быть одной версии. При создании базы, будет использовано самое совершенное расширение.",
@@ -283,7 +295,10 @@ $lang = array(
 	"help8" => "Добавление Транзакции в экспортируемый SQL Файл",
 	"help8_x" => "Во время процесса экспортирования в SQL файл, вы можете выбрать вставку запросов в TRANSACTION, т.о. если во время импортирования файла случится ошибка, база данных вернется в предыдущее состояние, предотвращая частичное изменение данных.",
 	"help9" => "Добавление Комментариев в экспортируемый SQL Файл",
-	"help9_x" => "Во время процесса экспортирования в SQL файл, вы можете выбрать вставку комментариев, которые объясняют каждый шаг, помогая лучше понимать процесс человеку, читающему файл."
+	"help9_x" => "Во время процесса экспортирования в SQL файл, вы можете выбрать вставку комментариев, которые объясняют каждый шаг, помогая лучше понимать процесс человеку, читающему файл.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
 	
-	);
-?>
+);

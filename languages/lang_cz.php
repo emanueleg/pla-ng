@@ -1,10 +1,11 @@
 <?php
-// Czech translation by Jan Turoň
-// version 1.9.8
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Czech language-texts
+// Translated by Jan Turoň
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'G:i \d\n\e j. n. Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'G:i \d\n\e j. n. Y (T)',
 	"ver" => "verze",
 	"for" => "pro",
 	"to" => "do",
@@ -59,7 +60,7 @@ $lang = array(
 	"expression" => "Výraz",
 	"download" => "Stažení",
 	"open_in_browser" => "Otevřít v prohlížeči",
-
+	
 	"sqlite_ext" => "SQLite rozšíření",
 	"sqlite_ext_support" => "Zdá se, že žádné z podporovaných rozšíření SQLite knihovny není k dispozici ve vaší instalaci PHP. Nemůžete používat %s, dokud alespoň jednu nenainstalujete.",
 	"sqlite_v" => "SQLite verze",
@@ -69,7 +70,7 @@ $lang = array(
 	
 	"php_v" => "PHP verze",
 	"new_version" => "Existuje nová verze!",
-
+	
 	"db_dump" => "Databázový výpis",
 	"db_f" => "Databázový soubor",
 	"db_ch" => "Změnit databázi",
@@ -84,11 +85,10 @@ $lang = array(
 	"db_create" => "Vytvořit novou databázi",
 	"db_vac" => "Databáze, '%s', byla vysáta.",
 	"db_not_writeable" => "Databáze '%s' neexistuje a nemůže být vytvořena, protože nadřazený adresář '%s' nemá právo zápisu. Aplikace je nepoužitelná, dokud toto oprávnění nepovolíte.",
-	"db_not_writable" => "Databázový soubor nemá právo zápisu, jeho obsah tedy nemůže být žádným způsobem změněn.",
 	"db_setup" => "Vyskytl se problém při nastavování vaší databáze %s. Pokusíme se zjistit, o co jde, abyste problém mohl snáze opravit.",
 	"db_exists" => "Databáze, jiný soubor nebo adresář jménem '%s' už existuje.",
 	"db_blank" => "Název databáze nemůže být prázdný.",
-
+	
 	"exported" => "Exportováno",
 	"struct" => "Struktura",
 	"struct_for" => "structura pro",
@@ -108,7 +108,8 @@ $lang = array(
 	"no_db" => "Vítente v %s. Zdá se, že jste nastavili prohledávání adresáře na databáze ke správě. Nicméně %s nemohl nalézt žádné platné SQLite databáze. Pro vytvoření první databáze použijte nížeuvedený formulář.",
 	"no_db2" => "Adresář, který jste zadali, neobsahuje žádné existující databáze ke správě a nemá oprávnění zápisu. To znamená, že pomocí %s nelze vytvořit žádné databáze. Buď povolte právo zápisu, nebo ručně nahrajte databáze do adresáře.",
 	"dir_not_executable" => "V zadaném adresáři nelze vyhledat žádné databáze, protože %s nemá nastaveno právo přístupu. Na Linuxu lze toto právo nastavit příkazem 'chmod +x %s'.",
-
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
+	
 	"create" => "Vytvořit",
 	"created" => "vyla vytvořena",
 	"create_tbl" => "Vytvořit novou tabulku",
@@ -169,12 +170,9 @@ $lang = array(
 	"recent_queries" => "Poslední dotazy",
 	"full_texts" => "Ukaž celé texty",
 	"no_full_texts" => "Zkrať dlouhé texty",
-
-	// requires adjustment: multiple tables may get emptied
+	
 	"ques_table_empty" => "Opravdu chcete vyprázdnit tabulku '%s'?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "Opravdu chcete odstranit tabulku '%s'?",
-	"ques_drop_view" => "Opravdu chcete odstranit pohled '%s'?",
 	"ques_row_delete" => "Opravdu chcete smazad řádky %s z tabulky '%s'?",
 	"ques_database_delete" => "Opravdu chcete to smazat databázi '%s'?",
 	"ques_column_delete" => "Opravdu chcete to odstranit sloupce %s z tabulky '%s'?",
@@ -250,6 +248,8 @@ $lang = array(
 	"desc" => "Sestupně",
 	"warn0" => "Byl jsi varován.",
 	"warn_passwd" => "Používáte výchozí heslo, což je nebezpečné. Můžete ho snadno změnit na začátku %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
+	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",	 // not yet translated
 	"sel_state" => "Výraz SELECT",
 	"delimit" => "Oddělovač",
 	"back_top" => "Zpět nahoru",
@@ -262,22 +262,21 @@ $lang = array(
 	"db_moved_outside" => "Buď jste se pokusili přesunout databázi do adresáře odkud nemůže být spravována, nebo kontrola, jestli jste tak opravdu učinil, selhala kvůli chybějícím oprávněním.",
 	"extension_not_allowed" => "Rozšíření, které jste poskytl, není v seznamu povolených rozšíření. Prosím použijte jedno z následujících rozšíření",
 	"add_allowed_extension" => "Do tohoto seznamu lze přidat rozšíření přidáním rozšíření do \$allowed_extensions v konfiguraci.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "Databázový soubor je zapisovatelný, ale pro zápis musí být povoleno oprávnění zápisu i na nadřazený adresář, protože SQLite sem umísťuje dočasné soubory kvůli zamykání.",
 	"tbl_inexistent" => "Tabulka %s neexistuje",
 	"col_inexistent" => "Sloupec %s neexistuje",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "Změna tabulky %s selhala",
 	"alter_tbl_name_not_replacable" => "Nemohu změnit název tabulky na název dočasné tabulky",
 	"alter_no_def" => "chybí ALTER definice",
-	"alter_parse_failed" =>"selhal rozbor ALTER definice",
+	"alter_parse_failed" => "selhal rozbor ALTER definice",
 	"alter_action_not_recognized" => "ALTER akce nerozpoznána",
 	"alter_no_add_col" => "v ALTER výrazu nebyl rozpoznán název sloupce pro přidání",
-	"alter_pattern_mismatch"=>"Vzorec neodpovídá původnímu CREATE TABLE výrazu",
+	"alter_pattern_mismatch" => "Vzorec neodpovídá původnímu CREATE TABLE výrazu",
 	"alter_col_not_recognized" => "nelze rozpoznat nový nebo původní název sloupce",
 	"alter_unknown_operation" => "Neznámá ALTER operace!",
 	
-	/* Help documentation */
 	"help_doc" => "Documentace - nápověda",
 	"help1" => "Rozšiřující knihovny SQLite",
 	"help1_x" => "%s používá PHP rozšiřující knihovny umožňující komunikaci se SQLite databázemi. Momentálně %s podporuje PDO, SQLite3, and SQLiteDatabase. Jak PDO tak SQLite3 umí verzi SQLite3, zatímco SQLiteDatabase umí jen verzi 2. Pokud tedy PHP instalace obsahuje více než jednu SQLite rozšiřující knihovnu, PDO and SQLite3 mají přednost kvůli použití lepší technologie. Pokud však máte existující databáze verze SQLite2, %s je vynuceno použití SQLiteDatabase pouze pro tyto databáze. Všechny databáze nemusí být jedné verze. Při vytváření databází se ale použije nejpokročilejší rozšíření.",
@@ -301,5 +300,5 @@ $lang = array(
 	"help10_x" => "Částečné indexy jsou indexy nad podmnožinou řádků tabulky používané v části WHERE. K tomu je zapotřebí verze SQLite 3.8.0 a novější, databázové soubory s částečnými indexy nebudou čitelné ani zapisovatelné ve starších verzích. Viz též <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite dokumentaci.</a>",
 	"help11" => "Maximální velikost nahrávaných souborů",
 	"help11_x" => "Maximální velikost nahrávaných souborů je určena třemi nastaveními PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> a <em>memory_limit</em>. Nejmenší z těchto tří limitů je maximální velikostí nahrávaných souborů. Pro nahrávání větších souborů upravte tyto hodnoty ve vašem <em>php.ini</em> souboru."
-	);
-?>
+	
+);

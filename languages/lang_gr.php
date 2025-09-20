@@ -1,9 +1,11 @@
 <?php
-// Greek translation by Vergerakis Panagiotis
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Greek language-texts
+// Translated by Vergerakis Panagiotis
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'g:ia \o\n F j, Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'g:ia \o\n F j, Y (T)',
 	"ver" => "έκδοση",
 	"for" => "για",
 	"to" => "έως",
@@ -56,6 +58,8 @@ $lang = array(
 	"none" => "Τίποτα",
 	"as_defined" => "Όπως ορίστηκε",
 	"expression" => "Έκφραση",
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "SQLite επέκταση",
 	"sqlite_ext_support" => "Φαίνεται ότι καμία από τις υποστηριζόμενες επεκτάσεις SQLite δεν είναι διαθέσιμη στην εγκατάσταση του PHP. Μάλλον δεν θα μπορείτε να χρησιμοποιήσετε το %s μέχρι να εγκατασταθεί τουλάχιστον μία.",
@@ -65,6 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Βάσει των περιορισμών της SQLite, μόνο ένα όνομα πεδίου και τύπος πεδίου μπορεί να μεταβληθεί.",
 	
 	"php_v" => "PHP έκδοση",
+	"new_version" => "There is a new version!",	 // not yet translated
 	
 	"db_dump" => "database dump",
 	"db_f" => "αρχείο ΒΔ",
@@ -82,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "Η ΒΔ, '%s', δεν μπορεί να δημιουργηθεί επειδή ο φάκελος, '%s', δεν έχει δικαιώματα εγγραφής. Αλλάξτε τα δικαιώματα του φακέλου ώστε να μπορείτε να χρησιμοποιήσετε την εφαρμογή.",
 	"db_setup" => "Υπάρχει πρόβλημα ορισμού της ΒΔ, %s. Θα γίνει μία προσπάθεια να βρεθεί το πρόβλημα ώστε να μπορείτε να το διορθώσετε",
 	"db_exists" => "Μία άλλη ΒΔ, άλλο αρχείο ή φάκελος με το όνομα '%s' υπάρχει ήδη.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "Εξαγωγή",
 	"struct" => "Δομή",
@@ -96,9 +102,13 @@ $lang = array(
 	"bad_php_directive" => "Φαίνεται ότι το PHP directive, 'register_globals' είναι ενεργό. Αυτό είναι πρόβλημα. Παρακαλώ απενεργοποιήστε για να συνεχίσετε.",
 	"page_gen" => "Η σελίδα δημιουργήθηκε σε %s δεύτερα.",
 	"powered" => "Powered by",
+	"free_software" => "This is free software.",	 // not yet translated
+	"please_donate" => "Please donate.",	 // not yet translated
 	"remember" => "Να με θυμάσαι",
 	"no_db" => "Καλώς ήρθατε στο %s. Φαίνεται ότι έχετε επιλέξει έναν φάκελο για αναζήτηση ΒΔ που θα διαχειριστείτε. Πάντως,το %s δεν μπορεί να βρει καμία έγκυρη SQLite ΒΔ. Μπορείτε να χρησιμοποιήσετε την παρακάτω φόρμα για να δημιουργήσετε την πρώτη σας ΒΔ.",
 	"no_db2" => "Ο φάκελος που επιλέξατε δεν περιέχει καμία ΒΔ για διαχείριση, και ο φάκελος δεν είναι εγγράψιμος. Αυτό σημαίνει ότι δεν μπορείτε να δημιουργήσετε καμία ΒΔ χρησιμοποιώντας το %s. Είτε κάντε το φάκελο εγγράψιμο ή χειροκίνητα ανεβάστε μία ΒΔ στο φάκελο.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Δημιουργία",
 	"created" => "δημιουργήθηκε",
@@ -157,12 +167,12 @@ $lang = array(
 	"query_time" => "(Το ερώτημα χρειάστηκε %s δεύτερα)",
 	"syntax_err" => "Υπάρχει πρόβλημα με τη σύνταξη της εντολής (Η αναζήτηση δεν εκτελέστηκε)",
 	"run_sql" => "Εκτέλεση κώδικα SQL στη ΒΔ '%s'",
+	"recent_queries" => "Recent Queries",	 // not yet translated
+	"full_texts" => "Show full texts",	 // not yet translated
+	"no_full_texts" => "Shorten long texts",	 // not yet translated
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "Είστε σίγουροι ότι θέλετε να αδειάσετε τον πίνακα '%s'?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "Είστε σίγουροι ότι θέλετε να διαγράψετε τον πίνακα '%s'?",
-	"ques_drop_view" => "Είστε σίγουροι ότι θέλετε να διαγράψετε το view '%s'?",
 	"ques_row_delete" => "Είστε σίγουροι ότι θέλετε να διαγράψετε την %s γραμμή από τον πίνακα '%s'?",
 	"ques_database_delete" => "Είστε σίγουροι ότι θέλετε να διαγράψετε τη ΒΔ '%s'?",
 	"ques_column_delete" => "Είστε σίγουροι ότι θέλετε να διαγράψετε %s στήλη(ες) από τον πίνακα '%s'?",
@@ -185,6 +195,7 @@ $lang = array(
 	"import_suc" => "Εισαγωγή επιτυχής.",
 	"import_into" => "Εισαγωγή στο",
 	"import_f" => "Αρχείο για εισαγωγή",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "Μετονομασία πίνακα '%s' σε",
 	
 	"rows_records" => "γραμμή(ες) που αρχίζουν από την εγγραφή # ",
@@ -226,6 +237,7 @@ $lang = array(
 	"edit_col" => "Επεξεργασία στήλης '%s'",
 	"vac" => "Καθάρισμα",
 	"vac_desc" => "Μεγάλες ΒΔ μερικές φορές χρειάζονται ΚΑΘΑΡΙΣΜΑ για να μειωθεί το μέγεθός τους. Πατήστε το κουμπί ΚΑΘΑΡΙΣΜΑ για καθάρισμα της ΒΔ '%s'.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "Event",
 	"each_row" => "Για κάθε γραμμή",
 	"define_index" => "Ορισμός ιδιοτήτων ευρετηρίου",
@@ -236,6 +248,7 @@ $lang = array(
 	"desc" => "Φθίνουσα σειρά",
 	"warn0" => "Προειδοποίηση.",
 	"warn_passwd" => "Προσοχή δεν έχετε αλλάξει το αρχικό password. Μπορείτε να κάνετε την αλλαγή στο αρχείο %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Η καταμέτρηση των εγγραφών παραλήφθηκε για κάποιους πίνακες επειδή η ΒΔ είναι σχετικά μεγάλη και μερικοί πίνακες δεν έχουν πρωτεύον κλειδί οπότε η καταμέτρηση αργεί. Προσθέστε πρωτεύον κλειδί σε αυτούς τους πίνακες ή %s εξαναγκασμένη καταμέτρηση%s.",
 	"sel_state" => "Επιλογή Statement",
 	"delimit" => "Διαχωριστικό",
@@ -249,21 +262,21 @@ $lang = array(
 	"db_moved_outside" => "Είτε προσπαθήσατε να μετακινήσετε τη ΒΔ σε φάκελο που δεν μπορεί να τον διαχειριστείτε πλέον, ή αν κάνατε έλεγχο φακέλου απέτυχε λόγω ελλιπών δικαιωμάτων.",
 	"extension_not_allowed" => "Η επέκταση που επιλέξατε δεν είναι ανάμεσα στις επιτρεπτές. Παρακαλώ επιλέξτε μία από τις παρακάτω",
 	"add_allowed_extension" => "Μπορείτε να προσθέσετε τις δικές σας επεκτάσεις στο αρχείο ρυθμίσεων στο σημείο \$allowed_extensions.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "Το αρχείο της ΒΔ έχει δικαιώματα εγγραφής αλλά για να γράψετε μέσα στη ΒΔ πρέπει και ο φάκελος που την περιέχει να έχει ανάλογα δικαιώματα. Αυτό διότι η SQLite δημιουργεί προσωρινά αρχεία στο φάκελο για να επιτύχει το κλείδωμα της ΒΔ κατά την εγγραφή.",
 	"tbl_inexistent" => "Ο πίνακας %s δεν υπάρχει",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "Altering of Table %s failed",
 	"alter_tbl_name_not_replacable" => "could not replace the table name with the temporary one",
 	"alter_no_def" => "no ALTER definition",
-	"alter_parse_failed" =>"failed to parse ALTER definition",
+	"alter_parse_failed" => "failed to parse ALTER definition",
 	"alter_action_not_recognized" => "ALTER action could not be recognized",
 	"alter_no_add_col" => "no column to add detected in ALTER statement",
-	"alter_pattern_mismatch"=>"Pattern did not match on your original CREATE TABLE statement",
+	"alter_pattern_mismatch" => "Pattern did not match on your original CREATE TABLE statement",
 	"alter_col_not_recognized" => "could not recognize new or old column name",
 	"alter_unknown_operation" => "Unknown ALTER operation!",
 	
-	/* Help documentation */
 	"help_doc" => "Help Documentation",
 	"help1" => "SQLite Library Extensions",
 	"help1_x" => "%s uses PHP library extensions that allow interaction with SQLite databases. Currently, %s supports PDO, SQLite3, and SQLiteDatabase. Both PDO and SQLite3 deal with version 3 of SQLite, while SQLiteDatabase deals with version 2. So, if your PHP installation includes more than one SQLite library extension, PDO and SQLite3 will take precedence to make use of the better technology. However, if you have existing databases that are of version 2 of SQLite, %s will be forced to use SQLiteDatabase for only those databases. Not all databases need to be of the same version. During the database creation, however, the most advanced extension will be used.",
@@ -282,6 +295,10 @@ $lang = array(
 	"help8" => "Add Transaction to Exported SQL File",
 	"help8_x" => "During the process for exporting to an SQL file, you may choose to wrap the queries around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the database can be reverted to its previous state, preventing partially updated data from populating the database.",
 	"help9" => "Add Comments to Exported SQL File",
-	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening."
-
+	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening.",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
+	
 );

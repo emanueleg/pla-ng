@@ -1,15 +1,12 @@
 <?php
-// Italian language 
 //
-// FRANCO TASSI - franco7tassi@gmail.com - 25.03.2013 
-// Pink Pantherchen - 16.01.2022 
-// Emanuele Goldoni - emanuele.goldoni@gmail.com - 27.01.204
+// Italian language-texts
+// Translated by Franco Tassi (franco7tassi@gmail.com)
+// Updated by Pink Pantherchen, Emanuele Goldoni
 //
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 2.0.1
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'G:i \d\e\l j M, Y \A\.\D\. (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'G:i \d\e\l j M, Y \A\.\D\. (T)',
 	"ver" => "versione",
 	"for" => "per",
 	"to" => "a",
@@ -112,6 +109,7 @@ $lang = array(
 	"no_db" => "Benvenuto in %s. Sembra che sia stato scelto di scansionare una directory per gestire i database. Comunque, %s potrebbe non trovare alcun database SQLite valido. E' possibile usare la forma sottostante per creare il tuo primo database.",
 	"no_db2" => "La directory specificata non contiene alcun database da gestire e la directory non è scrivibile. Questo significa che non è possibile creare alcun nuovo database usando %s. Rendere la directory scrivibile oppure aggiungere manualmente dei database nella directory.",
 	"dir_not_executable" => "La directory specificata non può essere scansionata alla ricerca di database poiché %s non ha permessi di esecuzione su di essa. Su Linux, usare 'chmod +x %s' per risolvere questo problema.",
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Crea",
 	"created" => "è stata creata",
@@ -121,6 +119,7 @@ $lang = array(
 	"create_index" => "Crea un nuovo indice sulla tabella",
 	"create_index1" => "Crea indice",
 	"create_view" => "Crea una nuova vista sul database",
+	
 	"trigger" => "Trigger",
 	"triggers" => "Triggers",
 	"trigger_name" => "Nome del trigger",
@@ -169,19 +168,17 @@ $lang = array(
 	"query_time" => "(Query elaborata in %s sec)",
 	"syntax_err" => "C'è un problema con la sintassi della tua query (La query non è stata eseguita)",
 	"run_sql" => "Esegui la(e) query SQL sul database '%s'",
-	
 	"recent_queries" => "Query recenti",
 	"full_texts" => "Mostra testi completi",
-	"no_full_texts" => "Abbrevia i testi lunghi",	
+	"no_full_texts" => "Abbrevia i testi lunghi",
 	
-	"ques_empty" => "Si è sicuri di voler svuotare la(e) tabella(e) '%s'?",
-	"ques_drop" => "Si è sicuri di voler eliminare la(e) tabella(e) / vista '%s'?",
-	"ques_drop_view" => "Si è sicuri di voler eliminare la vista '%s'?",
-	"ques_del_rows" => "Si è sicuri di voler cancellare la(e) riga(e) %s dalla tabella '%s'?",
-	"ques_del_db" => "Si è sicuri di voler cancellare il database '%s'?",
+	"ques_table_empty" => "Si è sicuri di voler svuotare la(e) tabella(e) '%s'?",
+	"ques_table_drop" => "Si è sicuri di voler eliminare la(e) tabella(e) / vista '%s'?",
+	"ques_row_delete" => "Si è sicuri di voler cancellare la(e) riga(e) %s dalla tabella '%s'?",
+	"ques_database_delete" => "Si è sicuri di voler cancellare il database '%s'?",
 	"ques_column_delete" => "Si è sicuri di voler cancellare la(e) colonna(e) '%s' dalla tabella '%s'?",
-	"ques_del_index" => "Si è sicuri di vole cancellare l'indice '%s'?",
-	"ques_del_trigger" => "Si è sicuri di voler cancellare il trigger '%s'?",
+	"ques_index_delete" => "Si è sicuri di vole cancellare l'indice '%s'?",
+	"ques_trigger_delete" => "Si è sicuri di voler cancellare il trigger '%s'?",
 	"ques_primarykey_add" => "Si è sicuri di voler aggiungere una chiave primaria per le colonne %s nella tabella '%s'?",
 	
 	"export_struct" => "Esporta con la struttura",
@@ -252,6 +249,7 @@ $lang = array(
 	"desc" => "Discendente",
 	"warn0" => "Siete stati avvisati.",
 	"warn_passwd" => "Si sta utilizzando la password di default e ciò può essere pericoloso. E' possibile cambiarla facilmente editando %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Il conteggio dei record è stato ignorato per alcune tabelle perché il database è relativamente grande e alcune tabelle non hanno chiavi primarie assegnate, quindi il conteggio potrebbe essere lento. Aggiungere una chiave primaria a queste tabelle o %s forzare il conteggio %s.",
 	"sel_state" => "Seleziona l'istruzione",
 	"delimit" => "Delimitatore",
@@ -269,19 +267,17 @@ $lang = array(
 	"directory_not_writable" => "Il file del database è di per sé editabile, ma per poterci scrivere, anche la directory che lo ospita deve essere aggiornabile. Questo perché SQLite ha bisogno di inserirvi file temporanei per il locking.",
 	"tbl_inexistent" => "La tabella %s non esiste",
 	"col_inexistent" => "La colonna %s non esiste",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "La modifica della tabella %s è fallita",
 	"alter_tbl_name_not_replacable" => "impossibile cambiare il nome della tabella in un nome temporaneo",
 	"alter_no_def" => "nessuna definizione ALTER",
-	"alter_parse_failed" =>"fallito il parsing (controllo) della definizione ALTER",
+	"alter_parse_failed" => "fallito il parsing (controllo) della definizione ALTER",
 	"alter_action_not_recognized" => "l'azione ALTER non è stata riconosciuta",
 	"alter_no_add_col" => "non è stata rilevata nessuna colonna da aggiungere nell'istruzione ALTER",
-	"alter_pattern_mismatch"=>"La sequenza non ha combaciato sull'istruzione originale CREATE TABLE",
+	"alter_pattern_mismatch" => "La sequenza non ha combaciato sull'istruzione originale CREATE TABLE",
 	"alter_col_not_recognized" => "non è stata rilevato il nome della nuova o della vecchia colonna",
 	"alter_unknown_operation" => "L'operazione ALTER non è riconosciuta!",
 	
-	/* Help documentation */
 	"help_doc" => "Documentazione",
 	"help1" => "SQLite Librerie di Estensioni",
 	"help1_x" => "%s usa Librerie di Estensioni di PHP che consentono di interagire con i database SQLite. Attualmente, %s supporta PDO, SQLite3, e SQLiteDatabase. Sia PDO che SQLite3 gestiscono la versione 3 di SQLite, mentre SQLiteDatabase gestisce la versione 2. Perciò, se l'installazione PHP include più di una libreria di estesione SQLite, PDO e SQLite3 avranno la precedenza per sfruttrare la tecnologia migliore. Comunque, se si hanno dei database nella versione 2 di SQLite, %s userà SQLiteDatabase solamente per quei database. Non tutti i database hanno bisogno di essere della stessa versione. Durante la creazione del database, comunque, verrà utilizzata l'estensione più recente.",
@@ -306,7 +302,4 @@ $lang = array(
 	"help11" => "Dimensione massima dei file caricati",
 	"help11_x" => "La dimensione massima dei file caricati è determinata da tre impostazioni PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> e <em>memory_limit</em>. La più piccola di queste tre limita la dimensione massima per i caricamenti di file. Per caricare file più grandi, impostare questi valori nel file <em>php.ini</em>."
 	
-	);
-
-
-?>
+);

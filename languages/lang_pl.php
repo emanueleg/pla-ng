@@ -1,11 +1,12 @@
 <?php
-// Polish translation by Maciek Dmytrow (https://www.facebook.com/maciek.dmytrow)
-// Last modified 31 January 2020 by Piotr Lenart (https://piotrlenart.pl)
-// Version 1.9.8
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Polish language-texts
+// Translated by Maciek Dmytrow (https://www.facebook.com/maciek.dmytrow)
+// Updated by Piotr Lenart (https://piotrlenart.pl)
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'G:i\, j-m-Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'G:i\, j-m-Y (T)',
 	"ver" => "wersja",
 	"for" => "dla",
 	"to" => "na",
@@ -108,6 +109,7 @@ $lang = array(
 	"no_db" => "Witaj w %s. Wygląda na to, że wskazany został katalog do przeszukania. Jednak %s nie odnalazł w nim żadnych prawidłowych baz danych SQLite. Możesz wykorzystać poniższy formularz, aby utworzyć nową bazę danych.",
 	"no_db2" => "We wskazanym katalogu nie odnalaziono żadnych istniejących baz danych do zarządzania, katalog zaś nie posiada praw do zapisu. Oznacza to, że nie możesz utworzyć żadnej nowej bazy danych za pomocą %s. Musisz nadać katalogowi prawa do zapisu lub samodzielnie umieścić w nim bazy danych.",
 	"dir_not_executable" => "Podany katalog nie może być przeglądany w poszukiwaniu baz danych, gdyż %s ma brak pozwolenia na wykonanie operacji. W systemie Linux ustaw 'chmod +x %s', aby to zmienić.",
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Utwórz",
 	"created" => "utworzono",
@@ -170,14 +172,13 @@ $lang = array(
 	"full_texts" => "Pokaż długi tekst",
 	"no_full_texts" => "Skróć długi tekst",
 	
-	"ques_empty" => "Czy na pewno chcesz opróżnić tabelę '%s'? Utracisz zawarte w niej dane.",
-	"ques_drop" => "Czy na pewno chcesz usunąć tabelę '%s'? Utracisz zawarte w niej dane.",
-	"ques_drop_view" => "Czy na pewno chcesz usunąć widok '%s'?",
-	"ques_del_rows" => "Czy na pewno chcesz usunąć wiersze %s z tabeli '%s'?",
-	"ques_del_db" => "Czy na pewno chcesz usunąć bazę danych '%s'? Utracisz zawarte w niej dane.",
+	"ques_table_empty" => "Czy na pewno chcesz opróżnić tabelę '%s'? Utracisz zawarte w niej dane.",
+	"ques_table_drop" => "Czy na pewno chcesz usunąć tabelę '%s'? Utracisz zawarte w niej dane.",
+	"ques_row_delete" => "Czy na pewno chcesz usunąć wiersze %s z tabeli '%s'?",
+	"ques_database_delete" => "Czy na pewno chcesz usunąć bazę danych '%s'? Utracisz zawarte w niej dane.",
 	"ques_column_delete" => "Czy na pewno chcesz usunąć kolumny %s z tabeli '%s'?",
-	"ques_del_index" => "Czy na pewno chcesz usunąć indeks '%s'?",
-	"ques_del_trigger" => "Czy na pewno chcesz usunąć wyzwalacz '%s'?",
+	"ques_index_delete" => "Czy na pewno chcesz usunąć indeks '%s'?",
+	"ques_trigger_delete" => "Czy na pewno chcesz usunąć wyzwalacz '%s'?",
 	"ques_primarykey_add" => "Czy na pewno chcesz dodać klucz główny do kolumn %s w tabeli '%s'?",
 	
 	"export_struct" => "Eksport ze strukturą",
@@ -195,8 +196,8 @@ $lang = array(
 	"import_suc" => "Import zakończony powodzeniem.",
 	"import_into" => "Import do",
 	"import_f" => "Plik do importowania",
-	"rename_tbl" => "Zmień nazwę tabeli '%s' na",
 	"max_file_size" => "Maksymalny rozmiar pliku",
+	"rename_tbl" => "Zmień nazwę tabeli '%s' na",
 	
 	"rows_records" => "wierszy zaczynając od rekordu # ",
 	"rows_aff" => "wierszy uwzględnionych.",
@@ -237,7 +238,7 @@ $lang = array(
 	"edit_col" => "Edycja kolumny '%s'",
 	"vac" => "Oczyść",
 	"vac_desc" => "Duże bazy danych wymagają czasami oczyszczenia, aby mniej obciążały serwer. Kliknij przycisk poniżej, aby oczyścić bazę danych '%s'.",
-	"vac_on_empty"=>"Odśwież plik bazy danych, aby odzyskać nieużywane miejsce (Vacuum)",
+	"vac_on_empty" => "Odśwież plik bazy danych, aby odzyskać nieużywane miejsce (Vacuum)",
 	"event" => "Zdarzenie",
 	"each_row" => "Dla każdego wiersza",
 	"define_index" => "Definiuj właściwości indeksu",
@@ -248,6 +249,7 @@ $lang = array(
 	"desc" => "Malejąco",
 	"warn0" => "Pamiętaj, że ostrzegaliśmy.",
 	"warn_passwd" => "Korzystasz z domyślnego hasła, co naraża bazy danych na poważne niebezpieczeństwo. Hasło możesz łatwo zmienić edytując %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Zliczanie rekordów zostało pominięte ponieważ twoja baza danych jest duża, a niektóre zawarte w niej tabele nie posiadają kluczy głównych. Zliczanie rekordów mogłoby trwać bardzo długo. Dodaj klucze główne do tych tabel lub %swymuś zliczanie%s.",
 	"sel_state" => "Kwerenda",
 	"delimit" => "Separator",
@@ -265,19 +267,17 @@ $lang = array(
 	"directory_not_writable" => "The database-file itself is writable, but to write into it, the containing directory needs to be writable as well. This is because SQLite puts temporary files in there for locking.",
 	"tbl_inexistent" => "Tabela %s nie istnieje",
 	"col_inexistent" => "Kolumna %s nie istnieje",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "Wprowadzanie zmian w tabeli %s nie powiodło się",
 	"alter_tbl_name_not_replacable" => "nie udało się zastąpić nazwy tabeli przez nazwę tymczasową",
 	"alter_no_def" => "brak definicji ALTER",
-	"alter_parse_failed" =>"przetwarzanie definicji ALTER nie powiodło się",
+	"alter_parse_failed" => "przetwarzanie definicji ALTER nie powiodło się",
 	"alter_action_not_recognized" => "czynność ALTER nie została rozpoznana",
 	"alter_no_add_col" => "wykryto brak kolumny do dodania w wyrażeniu ALTER",
-	"alter_pattern_mismatch"=>"Wzór nie pasował do twojego oryginalnego wyrażenia CREATE TABLE",
+	"alter_pattern_mismatch" => "Wzór nie pasował do twojego oryginalnego wyrażenia CREATE TABLE",
 	"alter_col_not_recognized" => "rozpoznanie nowej lub starej nazwy nie powiodło się",
 	"alter_unknown_operation" => "Nieznana operacja ALTER!",
 	
-	/* Help documentation */
 	"help_doc" => "– pomoc",
 	"help1" => "Rozszerzenia obsługujące SQLite",
 	"help1_x" => "%s wykorzystuje rozszerzenia PHP, które pozwalają na komunikację z bazami danych SQLite. Obecnie %s obsługuje PDO, SQLite3 i SQLiteDatabase. Zarówno PDO, jak też SQLite3 dotyczą wersji 3 SQLite, natomiast  SQLiteDatabase dotyczy wersji 2. Jeśli twoja instalacja PHP zawiera więcej niż jedno rozszerzenie do obsługi SQLite, do komunikacji wykorzystane zostaną w pierwszej kolejności PDO i SQLite3, aby wykorzystać najlepszą technologię. Jeśli jednak posiadasz istniejące bazy danych SQLite w wersji 2, %s wykorzysta SQLiteDatabase do obsługi wyłącznie tych baz danych. Nie wszystkie bazy danych muszą być w tej samej wersji. Jednak podczas tworzenia nowej bazy danych wykorzystane zostanie najbardziej zaawansowane rozszerzenie.",
@@ -301,5 +301,5 @@ $lang = array(
 	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. Zobacz <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",
 	"help11" => "Maksymalny rozmiar przesyłanego pliku",
 	"help11_x" => "Maksymalny rozmiar przesyłanego pliku jest określony przez trzy ustawienia PHP: <em>upload_max_filesize</em>, <em>post_max_size</em> oraz <em>memory_limit</em>. Najmniejszy z nich trzech określa maksymalny rozmiar przesyłanych plików.. Aby przesyłać większe pliki, dostosuj te wartości w pliku <em>php.ini</em>."
-
+	
 );

@@ -1,11 +1,12 @@
 <?php
-// French language-texts by Olivier Briat (nospam@briat.org)
-// mod by Pink Pantherchen
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 1.9.8.2
+//
+// French language-texts
+// Translated by Olivier Briat (nospam@briat.org)
+// Updated by Pink Pantherchen
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => '\à G\hi \l\e d/m/Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => '\à G\hi \l\e d/m/Y (T)',
 	"ver" => "version",
 	"for" => "pour",
 	"to" => "à",
@@ -55,12 +56,12 @@ $lang = array(
 	"autoincrement" => "Auto-incrémentation",
 	"not_null" => "Non NULL",
 	"attention" => "Attention",
-	
 	"none" => "Aucun",
 	"as_defined" => "Comme défini",
 	"expression" => "Expression",
 	"download" => "Télécharger",
-	"open_in_browser" => "Ouvrir dans le navigateur",	
+	"open_in_browser" => "Ouvrir dans le navigateur",
+	
 	"sqlite_ext" => "Extension SQLite",
 	"sqlite_ext_support" => "Il semble qu'aucune des extensions de la bibliothèque SQLite supportées ne soit disponible dans votre installation de PHP. Vous ne pourrez pas utiliser %s tant que vous n'aurez pas installé l'une d'entre elles.",
 	"sqlite_v" => "Version de SQLite",
@@ -108,6 +109,7 @@ $lang = array(
 	"no_db" => "Bienvenu dans %s. Il semble que vous ayez choisi un répertoire dans lequel rechercher une base à gérer. Mais, %s ne trouve pas de base SQLite valide. Utilisez le formulaire ci-dessous pour créer votre première base.",
 	"no_db2" => "Le répertoire que vous avez sélectionné ne contient pas de base à gérer et il n'est pas inscriptible. Cela signifie que vous ne pouvez pas créer de nouvelle base avec %s. Vous devez soit rendre ce répertoire inscriptible, soit charger manuellement la base dans ce répertoire.",
 	"dir_not_executable" => "Le répertoire que vous avez spécifié ne peut pas être scanné pour les bases de données car %s n'a pas de permissions d'exécution dessus. Sous Linux, utilisez 'chmod +x %s' pour résoudre ce problème.",
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Créer",
 	"created" => "créée",
@@ -170,14 +172,13 @@ $lang = array(
 	"full_texts" => "Afficher les textes complets",
 	"no_full_texts" => "Raccourcir les textes longs",
 	
-	"ques_empty" => "Êtes-vous sûr de vouloir vider la ou les table(s) '%s' ?",
-	"ques_drop" => "Êtes-vous sûr de vouloir supprimer la ou les table(s) / vue(s) '%s' ?",
-	"ques_drop_view" => "Êtes-vous sûr de vouloir supprimer la vue '%s' ?",
-	"ques_del_rows" => "Êtes-vous sûr de vouloir supprimer la ou les ligne(s) %s de la table '%s' ?",
-	"ques_del_db" => "Êtes-vous sûr de vouloir effacer la base '%s'?",
+	"ques_table_empty" => "Êtes-vous sûr de vouloir vider la ou les table(s) '%s' ?",
+	"ques_table_drop" => "Êtes-vous sûr de vouloir supprimer la ou les table(s) / vue(s) '%s' ?",
+	"ques_row_delete" => "Êtes-vous sûr de vouloir supprimer la ou les ligne(s) %s de la table '%s' ?",
+	"ques_database_delete" => "Êtes-vous sûr de vouloir effacer la base '%s'?",
 	"ques_column_delete" => "Êtes-vous sûr de vouloir effacer la ou les colonne(s) %s de la table '%s' ?",
-	"ques_del_index" => "Êtes-vous sûr de vouloir effacer l'index '%s' ?",
-	"ues_del_trigger" => "Êtes-vous sûr de vouloir effacer le déclencheur '%s' ?",
+	"ques_index_delete" => "Êtes-vous sûr de vouloir effacer l'index '%s' ?",
+	"ques_trigger_delete" => "Are you sure you want to delete trigger '%s'?",
 	"ques_primarykey_add" => "Êtes-vous sûr de vouloir ajouter une clé primaire pour la ou les colonnes %s de la table '%s'?",
 	
 	"export_struct" => "Exporter avec la structure",
@@ -237,7 +238,7 @@ $lang = array(
 	"edit_col" => "Édition de la colonne '%s'",
 	"vac" => "Nettoyer",
 	"vac_desc" => "Les bases de grande taille ont parfois besoin d'être nettoyées (VACUUMed) pour réduire leur empreinte sur le serveur. Cliquer sur le bouton ci-dessous pour nettoyer la base '%s'.",
-	"vac_on_empty"=>"Reconstruire le fichier de base de données pour récupérer l'espace inutilisé (Vacuum)",
+	"vac_on_empty" => "Reconstruire le fichier de base de données pour récupérer l'espace inutilisé (Vacuum)",
 	"event" => "Evénement",
 	"each_row" => "Pour chaque ligne",
 	"define_index" => "Définir les propriétés de l'Index",
@@ -248,7 +249,7 @@ $lang = array(
 	"desc" => "Descendant",
 	"warn0" => "Vous avez été prévenu.",
 	"warn_passwd" => "Vous utilisez le mot de passe par défaut, cela est risqué. Vous pouvez le modifier facilement en haut du fichier %s.",
-	"warn_dumbass" => "Vous n'avez pas utilisé cette valeur.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Le dénombrement des enregistrements n'a pas été effectué pour certaines tables car votre base de données est volumineuse et certaines de ses tables n'ont pas de clés primaires rendant leur dénombrement particulièrement long à calculer. Ajoutez une clé primaires à ses tables ou %sforcer le dénombrement%s.",
 	"sel_state" => "Choisir une déclaration",
 	"delimit" => "Délimiteur",
@@ -266,19 +267,17 @@ $lang = array(
 	"directory_not_writable" => "Le fichier de la base est bien inscriptible, mais pour le modifier, le répertoire parent doit être également inscriptible. Cela est dû au fait que SQLite place à l'intérieur de celui-ci des fichiers temporaire de verrouillage.",
 	"tbl_inexistent" => "La table %s n'existe pas",
 	"col_inexistent" => "La colonne %s n'existe pas",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "L'ALTERation de la table %s a échouée",
 	"alter_tbl_name_not_replacable" => "impossible de remplacer le nom de la table avec un nom temporaire",
 	"alter_no_def" => "pas de définition pour ALTER",
-	"alter_parse_failed" =>"impossible d'analyser votre définition ALTER",
+	"alter_parse_failed" => "impossible d'analyser votre définition ALTER",
 	"alter_action_not_recognized" => "L'action ALTER n'a pas été reconnue",
 	"alter_no_add_col" => "aucune colonne à ajouter n'a été détectée dans la déclaration ALTER ",
-	"alter_pattern_mismatch"=>"La structure ne correspond pas à votre déclaration initiale de CREATE TABLE",
+	"alter_pattern_mismatch" => "La structure ne correspond pas à votre déclaration initiale de CREATE TABLE",
 	"alter_col_not_recognized" => "impossible de reconnaitre le nouvel ou ancien nom de la colonne",
 	"alter_unknown_operation" => "opération ALTER inconnue !",
 	
-	/* Help documentation */
 	"help_doc" => "Aide",
 	"help1" => "Extensions de la bibliothèque SQLite",
 	"help1_x" => "%s utilise les extensions de la bibliothèque PHP permettant d'accéder à des bases de données SQLite. Actuellement, %s supporte PDO, SQLite3, et SQLiteDatabase. PDO et SQLite3 fonctionne avec la version 3 de SQLite, alors que SQLiteDatabase ne fonctionne qu'avec la version 2. Donc, si votre installation PHP inclus plus d'une extension de la bibliothèque SQLite, PDO et SQLite3 prendront le pas, permettant ainsi d'utiliser la meilleure technologie. Néanmoins, si vous avez des bases de données en version 2 de SQLite, %s forcera l'utilisation de SQLiteDatabase pour ces bases seules. Toutes les bases n'ont pas besoin d'être de même version. Au cours de la création de bases de données, l'extension la plus performante sera bien entendu utilisée.",
@@ -303,5 +302,4 @@ $lang = array(
 	"help11" => "Taille maximale des téléchargements de fichiers",
 	"help11_x" => "La taille maximale des téléchargements de fichiers est déterminée par trois paramètres PHP : <em>upload_max_filesize</em>, <em>post_max_size</em> et <em>memory_limit</em>. Le plus petit d'entre eux trois limite la taille maximale des téléchargements de fichiers. Pour télécharger des fichiers plus volumineux, ajustez ces valeurs dans votre fichier <em>php.ini</em>."
 	
-	);
-?>
+);

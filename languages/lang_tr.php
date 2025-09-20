@@ -1,13 +1,11 @@
 <?php
-// Türkçe dil metinleri.
-# REMOVE_FROM_BUILD
-// Versiyon 1.9.8
-// Bu dosya, sadece kendi çeviriniz için bir temel olarak hazırlanmıştır!
-# END REMOVE_FROM_BUILD
-// Nasıl çeviri yapacağınızı öğrenmek için wikimizi okuyun: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+//
+// Turkish language-texts
+// Translated by Mert Yakistir
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'g:ia \o\n F j, Y (T)',  // harflerin ne anlama geldiği için bkz. http://php.net/manual/en/function.date.php
+	"date_format" => 'g:ia \o\n F j, Y (T)',
 	"ver" => "versiyon",
 	"for" => "için",
 	"to" => "e",
@@ -21,7 +19,7 @@ $lang = array(
 	"srch_again" => "Tekrar Ara",
 	"login" => "Giriş Yap",
 	"logout" => "Çıkış Yap",
-	"view" => "Görünüm",              // burada, fiil olarak "görüntülemek" değil, isim olarak SQL görünümü kastedilmektedir
+	"view" => "Görünüm",
 	"confirm" => "Onayla",
 	"cancel" => "İptal",
 	"save_as" => "Farklı Kaydet",
@@ -90,7 +88,7 @@ $lang = array(
 	"db_setup" => "Veritabanınız, %s, kurulurken bir sorun oluştu. Sorunu daha kolay çözebilmeniz için ne olduğunu bulmaya çalışılacak",
 	"db_exists" => "'%s' adında bir veritabanı, başka bir dosya veya dizin zaten var.",
 	"db_blank" => "Veritabanı adı boş bırakılamaz.",
-		
+	
 	"exported" => "Dışa Aktarıldı",
 	"struct" => "Yapı",
 	"struct_for" => "için yapı",
@@ -239,7 +237,7 @@ $lang = array(
 	"edit_col" => "'%s' sütunu düzenleniyor",
 	"vac" => "Vacuum",
 	"vac_desc" => "Büyük veritabanlarının, sunucudaki ayak izlerini azaltmak için bazen VACUUM yapılması gerekir. '%s' veritabanını VACUUM yapmak için aşağıdaki düğmeye tıklayın.",
-	"vac_on_empty"=>"Kullanılmayan alanı kurtarmak için veritabanı dosyasını yeniden oluştur (Vacuum)",
+	"vac_on_empty" => "Kullanılmayan alanı kurtarmak için veritabanı dosyasını yeniden oluştur (Vacuum)",
 	"event" => "Olay",
 	"each_row" => "Her Satır İçin",
 	"define_index" => "Dizin özelliklerini tanımla",
@@ -268,19 +266,17 @@ $lang = array(
 	"directory_not_writable" => "Veritabanı dosyasının kendisi yazılabilir, ancak içine yazmak için, içerdiği dizinin de yazılabilir olması gerekir. Bunun nedeni, SQLite'ın kilitlenmek için oraya geçici dosyalar koymasıdır.",
 	"tbl_inexistent" => "Tablo %s mevcut değil",
 	"col_inexistent" => "Sütun %s mevcut değil",
-
-	// ALTER TABLE başarısız olduğunda oluşabilecek hatalar. Bunları çevirmeniz zorunlu değil.
+	
 	"alter_failed" => "Tablo %s değiştirilemedi",
 	"alter_tbl_name_not_replacable" => "tablo adını geçici adla değiştiremedi",
 	"alter_no_def" => "ALTER tanımı yok",
-	"alter_parse_failed" =>"ALTER tanımı ayrıştırılamadı",
+	"alter_parse_failed" => "ALTER tanımı ayrıştırılamadı",
 	"alter_action_not_recognized" => "ALTER eylemi tanınamadı",
 	"alter_no_add_col" => "ALTER ifadesinde eklenecek sütun algılanmadı",
-	"alter_pattern_mismatch"=>"Orijinal CREATE TABLE ifadenizle kalıp eşleşmedi",
+	"alter_pattern_mismatch" => "Orijinal CREATE TABLE ifadenizle kalıp eşleşmedi",
 	"alter_col_not_recognized" => "yeni veya eski sütun adı tanınamadı",
 	"alter_unknown_operation" => "Bilinmeyen ALTER işlemi!",
 	
-	/* Yardım dokümantasyonu */
 	"help_doc" => "Yardım Dokümantasyonu",
 	"help1" => "SQLite Kütüphane Uzantıları",
 	"help1_x" => "%s, SQLite veritabanlarıyla etkileşime izin veren PHP kütüphane uzantılarını kullanır. Şu anda, %s PDO, SQLite3 ve SQLiteDatabase'i desteklemektedir. Hem PDO hem de SQLite3, SQLite'ın 3. versiyonuyla ilgilenirken, SQLiteDatabase 2. versiyonuyla ilgilenir. Bu nedenle, PHP kurulumunuz birden fazla SQLite kütüphane uzantısı içeriyorsa, daha iyi teknolojiden yararlanmak için PDO ve SQLite3 öncelikli olacaktır. Ancak, SQLite'ın 2. versiyonunda mevcut veritabanlarınız varsa, %s sadece bu veritabanları için SQLiteDatabase'i kullanmak zorunda kalacaktır. Tüm veritabanlarının aynı versiyonda olması gerekmez. Ancak, veritabanı oluşturma sırasında en gelişmiş uzantı kullanılacaktır.",
@@ -304,5 +300,5 @@ $lang = array(
 	"help10_x" => "Kısmi dizinler, bir WHERE yan tümcesiyle belirtilen bir tablonun satırlarının bir alt kümesi üzerindeki dizinlerdir. Bunun en az SQLite 3.8.0 gerektirdiğini ve kısmi dizinlere sahip veritabanı dosyalarının daha eski versiyonlar tarafından okunamaz veya yazılamaz olacağını unutmayın. <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite dokümantasyonuna</a> bakın.",
 	"help11" => "Dosya yüklemelerinin maksimum boyutu",
 	"help11_x" => "Dosya yüklemelerinin maksimum boyutu üç PHP ayarı tarafından belirlenir: <em>upload_max_filesize</em>, <em>post_max_size</em> ve <em>memory_limit</em>. Bu üç sınırdan en küçüğü, dosya yüklemeleri için maksimum boyutu sınırlar. Daha büyük dosyalar yüklemek için, bu değerleri <em>php.ini</em> dosyanızda ayarlayın."
-
+	
 );

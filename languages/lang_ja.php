@@ -1,10 +1,11 @@
 <?php
-// Japanese translation by Muka2533
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 1.9.8
+//
+// Japanese language-texts
+// Translated by Muka2533
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'Y年n月j日 H:i:s (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'Y年n月j日 H:i:s (T)',
 	"ver" => "バージョン",
 	"for" => "for",
 	"to" => "to",
@@ -18,7 +19,7 @@ $lang = array(
 	"srch_again" => "別の検索",
 	"login" => "ログイン",
 	"logout" => "ログアウト",
-	"view" => "ビュー",              // here, the noun SQL view is meant, not the verb "to view"
+	"view" => "ビュー",
 	"confirm" => "確認",
 	"cancel" => "キャンセル",
 	"save_as" => "名前を付けて保存",
@@ -59,17 +60,17 @@ $lang = array(
 	"expression" => "Expression",
 	"download" => "ダウンロード",
 	"open_in_browser" => "ブラウザで開く",
-
+	
 	"sqlite_ext" => "SQLite 拡張機能",
 	"sqlite_ext_support" => "インストールされたPHPでは、サポートされているSQLiteライブラリ拡張機能が利用できないようです。少なくとも1つをインストールするまで、%s を使用できません。",
 	"sqlite_v" => "SQLite バージョン",
 	"sqlite_v_error" => "データベースはSQLiteバージョン %s ですが、インストールされたPHPには、このバージョンを処理するために必要な拡張機能が含まれていません。この問題を修正するには、データベースを削除して %s でデータベースを自動的に作成するか、SQLiteバージョン %s として手動で再作成します。",
 	"report_issue" => "問題を適切に診断できません。問題の報告を提出してください。",
 	"sqlite_limit" => "SQLiteの制限により、変更できるのはフィールド名とデータ型のみです。",
-
+	
 	"php_v" => "PHP バージョン",
 	"new_version" => "新しいバージョンがあります！",
-
+	
 	"db_dump" => "データベースのダンプ",
 	"db_f" => "データベースのファイル",
 	"db_ch" => "データベースを変更",
@@ -87,7 +88,7 @@ $lang = array(
 	"db_setup" => "データベース %s のセットアップ中に問題が発生しました。問題をより簡単に修正できるように、何が起こっているのかを見つける試みが行われます。",
 	"db_exists" => "'%s' という名前のデータベース、他のファイルまたはディレクトリは既に存在します。",
 	"db_blank" => "データベース名を空白にすることはできません。",
-
+	
 	"exported" => "エクスポートされた日時",
 	"struct" => "構造",
 	"struct_for" => "構造 for",
@@ -107,7 +108,8 @@ $lang = array(
 	"no_db" => "%s へようこそ。管理するデータベースのディレクトリをスキャンすることを選択したようです。しかし、%s は有効なSQLiteデータベースを見つけることができませんでした。以下のフォームを使用して、最初のデータベースを作成できます。",
 	"no_db2" => "指定したディレクトリには、管理する既存のデータベースが含まれておらず、ディレクトリは書き込み可能ではありません。つまり、%s を使用して新しいデータベースを作成することはできません。ディレクトリを書き込み可能にするか、データベースを手動でディレクトリにアップロードします。",
 	"dir_not_executable" => "%s には実行権限がないため、指定したディレクトリでデータベースをスキャンできません。Linuxでは、'chmod +x %s' を使用してこれを修正します。",
-
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
+	
 	"create" => "作成",
 	"created" => "作成されました",
 	"create_tbl" => "新しいテーブルを作成",
@@ -116,7 +118,7 @@ $lang = array(
 	"create_index" => "テーブルに新しいインデックスを作成",
 	"create_index1" => "インデックスを作成",
 	"create_view" => "データベースに新しいビューを作成",
-
+	
 	"trigger" => "トリガ",
 	"triggers" => "トリガ",
 	"trigger_name" => "トリガ名",
@@ -152,11 +154,11 @@ $lang = array(
 	"val" => "値",
 	"update" => "更新",
 	"comments" => "コメント",
-
+	
 	"specify_fields" => "テーブルフィールドの数を指定する必要があります。",
 	"specify_tbl" => "テーブル名を指定する必要があります。",
 	"specify_col" => "列を指定する必要があります。",
-
+	
 	"tbl_exists" => "同じ名前のテーブルが既に存在します。",
 	"show" => "表示",
 	"show_rows" => "%s 行表示",
@@ -168,17 +170,16 @@ $lang = array(
 	"recent_queries" => "最近のクエリ",
 	"full_texts" => "すべてのテキストを表示",
 	"no_full_texts" => "テキストを短く表示",
-
-	"ques_empty" => "本当にテーブル '%s' を空にしますか？",
-	"ques_drop" => "本当にテーブル '%s' を削除しますか？",
-	"ques_drop_view" => "本当にビュー '%s' を削除しますか？",
-	"ques_del_rows" => "本当に行 %s をテーブル '%s' から削除しますか？",
-	"ques_del_db" => "本当にデータベース '%s' を削除しますか？",
+	
+	"ques_table_empty" => "本当にテーブル '%s' を空にしますか？",
+	"ques_table_drop" => "本当にテーブル '%s' を削除しますか？",
+	"ques_row_delete" => "本当に行 %s をテーブル '%s' から削除しますか？",
+	"ques_database_delete" => "本当にデータベース '%s' を削除しますか？",
 	"ques_column_delete" => "本当にカラム %s をテーブル '%s' から削除しますか？",
-	"ques_del_index" => "本当にインデックス '%s' を削除しますか？",
-	"ques_del_trigger" => "本当にトリガ '%s' を削除しますか？",
+	"ques_index_delete" => "本当にインデックス '%s' を削除しますか？",
+	"ques_trigger_delete" => "本当にトリガ '%s' を削除しますか？",
 	"ques_primarykey_add" => "本当にカラム %s (テーブル '%s' 内) にプライマリーキーを追加しますか？",
-
+	
 	"export_struct" => "構造付きでエクスポート",
 	"export_data" => "データ付きでエクスポート",
 	"add_drop" => "DROP TABLE を追加",
@@ -196,21 +197,21 @@ $lang = array(
 	"import_f" => "インポートするファイル",
 	"max_file_size" => "最大ファイルサイズ",
 	"rename_tbl" => "テーブル '%s' の名前を変更",
-
+	
 	"rows_records" => "行 開始 from レコード # ",
 	"rows_aff" => "影響を受けた行",
-
+	
 	"as_a" => "as",
 	"readonly_tbl" => "'%s' はビューです。つまり、これは読み取り専用テーブルとして扱われるSELECTステートメントです。 レコードを編集または挿入することはできません。",
 	"chk_all" => "全て選択",
 	"unchk_all" => "全て未選択",
 	"with_sel" => "選択したものを",
-
+	
 	"no_tbl" => "データベースにテーブルはありません。",
 	"no_chart" => "これを読み取ることができる場合は、グラフを生成できなかったことを意味します。 表示しようとしているデータは、グラフに適していない場合があります。",
 	"no_rows" => "選択した範囲の行がテーブルにありません。",
 	"no_sel" => "何も選択していません。",
-
+	
 	"chart_type" => "グラフの種類",
 	"chart_bar" => "棒グラフ",
 	"chart_pie" => "円グラフ",
@@ -236,7 +237,7 @@ $lang = array(
 	"edit_col" => "カラム '%s' を編集",
 	"vac" => "バキューム",
 	"vac_desc" => "サーバー上の占有領域を削減するために、サイズの大きいデータベース '%s' をバキュームする必要がある場合があります。下のボタンをクリックして、データベースをバキュームします。(VACUUM)",
-	"vac_on_empty"=>"未使用の占有領域を回復するためにデータベースファイルを再構築します。 (VACUUM)",
+	"vac_on_empty" => "未使用の占有領域を回復するためにデータベースファイルを再構築します。 (VACUUM)",
 	"event" => "イベント",
 	"each_row" => "行ごと",
 	"define_index" => "インデックスプロパティを定義する",
@@ -247,7 +248,7 @@ $lang = array(
 	"desc" => "降順",
 	"warn0" => "警告されました。",
 	"warn_passwd" => "危険なデフォルトのパスワードを使用しています。%s の上部で簡単に変更できます。",
-	"warn_mbstring" =>"mbstring 拡張機能がインストールされていないか、PHPで有効になっていません。ASCII文字のみを使用する場合は全て機能しますが、マルチバイト文字ではバグが発生する可能性があります。mbstring をインストールして有効化してください。",
+	"warn_mbstring" => "mbstring 拡張機能がインストールされていないか、PHPで有効になっていません。ASCII文字のみを使用する場合は全て機能しますが、マルチバイト文字ではバグが発生する可能性があります。mbstring をインストールして有効化してください。",
 	"counting_skipped" => "データベースのサイズが比較的大きい、または一部のテーブルに主キーが割り当てられていないがために、カウントが遅くなっているため、一部のテーブルではカウントがスキップされました。これらのテーブルに主キーを追加するか、%sforce counting%s 。",
 	"sel_state" => "ステートメントを選択",
 	"delimit" => "デリミタ",
@@ -255,7 +256,7 @@ $lang = array(
 	"choose_f" => "ファイルを選択",
 	"instead" => "代替",
 	"define_in_col" => "インデックス列を定義",
-
+	
 	"delete_only_managed" => "このツールで管理されているデータベースのみ削除できます！",
 	"rename_only_managed" => "このツールで管理されているデータベースのみ名前を変更できます！",
 	"db_moved_outside" => "データベースを管理できないディレクトリに移動しようとしたか、権限がないために、これを実行したかどうかのチェックに失敗しました。",
@@ -265,19 +266,17 @@ $lang = array(
 	"directory_not_writable" => "データベースファイル自体は書き込み可能ですが、それに書き込むには、それを含むディレクトリも書き込み可能である必要があります。これは、SQLiteがロックのために一時ファイルをそこに置くためです。",
 	"tbl_inexistent" => "テーブル %s は存在しません",
 	"col_inexistent" => "カラム %s は存在しません",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	
 	"alter_failed" => "テーブル %s の変更に失敗しました",
 	"alter_tbl_name_not_replacable" => "テーブル名を一時的な名前に置き換えることができませんでした",
 	"alter_no_def" => "ALTER 定義なし",
-	"alter_parse_failed" =>"ALTER 定義の解析に失敗しました",
+	"alter_parse_failed" => "ALTER 定義の解析に失敗しました",
 	"alter_action_not_recognized" => "ALTER アクションを認識できませんでした",
 	"alter_no_add_col" => "追加する列が ALTER ステートメントで検出されませんでした",
-	"alter_pattern_mismatch"=>"元の CREATE TABLE ステートメントでパターンが一致しませんでした",
+	"alter_pattern_mismatch" => "元の CREATE TABLE ステートメントでパターンが一致しませんでした",
 	"alter_col_not_recognized" => "新しいカラム名または古いカラム名を認識できませんでした",
 	"alter_unknown_operation" => "不明な ALTER 操作！",
-
-	/* Help documentation */
+	
 	"help_doc" => "ヘルプドキュメント",
 	"help1" => "SQLiteライブラリ拡張",
 	"help1_x" => "%s は、SQLiteデータベースとのやり取りを可能にするPHPライブラリ拡張機能を使用します。現在、%s はPDO、SQLite3、およびSQLiteDatabaseをサポートしています。PDOとSQLite3はどちらもバージョン3のSQLiteを扱い、SQLiteDatabaseはバージョン2を扱います。そのため、PHPインストールに複数のSQLiteライブラリ拡張が含まれている場合、PDOとSQLite3が優先され、より優れたテクノロジーを利用します。ただし、SQLiteのバージョン2の既存のデータベースがある場合、%s はそれらのデータベースに対してのみSQLiteDatabaseを使用するように強制されます。すべてのデータベースが同じバージョンである必要はありません。ただし、データベースの作成時には、最も新しい拡張機能が使用されます。",
@@ -301,5 +300,5 @@ $lang = array(
 	"help10_x" => "部分インデックスは、WHERE句で指定されたテーブルの行のサブセットに対するインデックスです。これには少なくともSQLite 3.8.0が必要であり、部分インデックスを含むデータベースファイルは、古いバージョンでは読み取りまたは書き込みできません。<a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLiteのドキュメント</a>をご覧ください。",
 	"help11" => "ファイルアップロードの最大サイズ",
 	"help11_x" => "ファイルアップロードの最大サイズは、3つのPHP設定: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em> によって決定されます。これら3つの最小値は、ファイルアップロードの最大サイズを制限します。より大きなファイルをアップロードするには、<em>php.ini</em> ファイルでこれらの値を調整します。"
-
+	
 );

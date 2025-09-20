@@ -1,10 +1,11 @@
 <?php
-// Dutch (Flemish) language-texts By Leo Van Nieuwenhuyse.
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
-// Version 1.9.8
+//
+// Dutch (Flemish) language-texts
+// Translated by Leo Van Nieuwenhuyse
+//
 $lang = array(
 	"direction" => "LTR",
-	"date_format" => 'j/n/Y \o\m G\ui (e)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
+	"date_format" => 'j/n/Y \o\m G\ui (e)',
 	"ver" => "versie",
 	"for" => "voor",
 	"to" => "naar:",
@@ -57,6 +58,8 @@ $lang = array(
 	"none" => "Geen",
 	"as_defined" => "Zoals gedefiniëerd",
 	"expression" => "Expressie",
+	"download" => "Download",	 // not yet translated
+	"open_in_browser" => "Open in browser",	 // not yet translated
 	
 	"sqlite_ext" => "SQLite extensie",
 	"sqlite_ext_support" => "Het blijkt dat geen van de ondersteunde SQLite library extensies beschikbaar is in de installatie van PHP. U kan %s niet gebruiken tot u minstens één ervan installeert.",
@@ -66,7 +69,7 @@ $lang = array(
 	"sqlite_limit" => "Door de beperkingen van SQLite, kan enkel de veldnaam en het gegevenstype gewijzigd worden",
 	
 	"php_v" => "PHP versie",
-	"new_version" => "Er bestaat een nieuwe versie!",	
+	"new_version" => "Er bestaat een nieuwe versie!",
 	
 	"db_dump" => "databank dump",
 	"db_f" => "databank bestand",
@@ -84,6 +87,7 @@ $lang = array(
 	"db_not_writeable" => "De databank, '%s', bestaat niet en kan niet gecreëerd worden omdat de map, '%s', niet beschrijfbaar is. De toepassing wordt onbruikbaar tot u de map beschrijfbaar maakt.",
 	"db_setup" => "Er deed zich een probleem voor bij het opzetten van uw databank,%s. Er zal een poging gedaan worden om te achterhalen wat fout ging opdat u het probleem gemakkelijker zou kunnen oplossen.",
 	"db_exists" => "Een databank, ander bestand of map met de naam '%s' bestaat reeds.",
+	"db_blank" => "The database name cannot be blank.",	 // not yet translated
 	
 	"exported" => "Geëxporteerd",
 	"struct" => "Structuur",
@@ -99,10 +103,12 @@ $lang = array(
 	"page_gen" => "De pagina werd gegenereerd in %s seconden.",
 	"powered" => "Aangedreven door",
 	"free_software" => "Dit is vrije software.",
-	"please_donate" => "Graag uw gift.",	
+	"please_donate" => "Graag uw gift.",
 	"remember" => "Onthoud me op deze computer",
 	"no_db" => "Welkom bij %s. Het blijkt dat u de keuze maakte een map te doorzoeken om databanken te kunnen beheren. Echter, %s kon geen geldige SQLite-databanken vinden. U kan het formulier hieronder gebruiken om uw eerste databank aan te maken.",
 	"no_db2" => "De map die u opgaf bevat geen bestaande te beheren databanken, en er kan niet in deze map geschreven worden. Dit betekent dat u geen nieuwe databanken met behulp van %s kan maken. Maak ofwel de map beschrijfbaar, of plaats manueel databanken in de map.",
+	"dir_not_executable" => "The directory you specified cannot be scanned for databases as %s has no execute permissions on it. On Linux, use 'chmod +x %s' to fix this.",	 // not yet translated
+	"filesystem_permission_denied" => "Permission denied. Check file system permissions.",	 // not yet translated
 	
 	"create" => "Creëer",
 	"created" => "werd gecreëerd",
@@ -161,16 +167,12 @@ $lang = array(
 	"query_time" => "(Query duurde %s sec)",
 	"syntax_err" => "Er is een probleem met de syntax van uw query (Query werd niet uitgevoerd)",
 	"run_sql" => "Voer SQL query/queries uit op databank '%s'",
-	
 	"recent_queries" => "Recente Queries",
 	"full_texts" => "Toon volledige teksten",
 	"no_full_texts" => "Verkort lange teksten",
 	
-	// requires adjustment: multiple tables may get emptied
 	"ques_table_empty" => "Bent u zeker dat u de tabel '%s' wenst leeg te maken?",
-	// requires adjustment: multiple tables may get emptied and it may also be views
 	"ques_table_drop" => "Bent u zeker dat u de tabel '%s' wenst te verwijderen?",
-	"ques_drop_view" => "Bent u zeker dat u de view '%s' wenst te verwijderen?",
 	"ques_row_delete" => "Bent u zeker dat u '%s' rij(en) van tabel '%s' wenst te verwijderen?",
 	"ques_database_delete" => "Bent u zeker dat u de databank '%s' wenst te verwijderen?",
 	"ques_column_delete" => "Bent u zeker dat u %s kolomm(en) van tabel '%s' wenst te verwijderen?",
@@ -193,6 +195,7 @@ $lang = array(
 	"import_suc" => "De Import was succesvol.",
 	"import_into" => "Importeren in",
 	"import_f" => "Bestand dat u wenst te importeren",
+	"max_file_size" => "Maximum file size",	 // not yet translated
 	"rename_tbl" => "Hernoem tabel '%s' naar:",
 	
 	"rows_records" => " rij(en) beginnend bij rij # ",
@@ -234,6 +237,7 @@ $lang = array(
 	"edit_col" => "Opmaak van kolom '%s'",
 	"vac" => "Vacuum",
 	"vac_desc" => "Grote databanken moeten af en toe ge-VACUUMd worden om hun voetafdruk op de server te verminderen. Klik op de knop hieronder om databank '%s' te VACUUMen.",
+	"vac_on_empty" => "Rebuild database file to recover unused space (Vacuum)",	 // not yet translated
 	"event" => "Event",
 	"each_row" => "Voor iedere rij",
 	"define_index" => "Definiëer indexeigenschappen",
@@ -244,6 +248,7 @@ $lang = array(
 	"desc" => "Dalend",
 	"warn0" => "U bent gewaarschuwd.",
 	"warn_passwd" => "U gebruikt het standaard wachtwoord, wat gevaarlijk kan zijn. U kan het eenvoudig wijzigen bovenaan in %s.",
+	"warn_mbstring" => "The mbstring extension is not installed or not enabled in your PHP. As long as you stick to ASCII characters, everything will work, but you may experience strange bugs with multibyte characters. Better install and enable mbstring!",	 // not yet translated
 	"counting_skipped" => "Het tellen van de rijen werd overgeslagen voor sommige tabellen omdat uw databank relatief groot is, en sommige tabellen geen primaire sleutels hebben, hierdoor zou het tellen langzaam worden. Voeg een primaire sleutel toe aan deze tabellen of %sdwing het tellen af%s",
 	"sel_state" => "'SELECT' statement",
 	"delimit" => "Scheidingsteken",
@@ -257,30 +262,30 @@ $lang = array(
 	"db_moved_outside" => "Je probeerde ofwel om de databank te verplaatsen naar een map waar ze niet langer kan worden beheerd, of het nazicht faalde wegens ontbrekende rechten.",
 	"extension_not_allowed" => "De extensie die u opgaf is er geen uit de lijst van toegelaten extensies. Gelieve een van de volgende extensies te gebruiken",
 	"add_allowed_extension" => "U kan extensies aan deze lijst toevoegen door deze in de \$allowed_extensions van het configuratiebestand toe te voegen.",
+	"database_not_writable" => "The database-file is not writable, so its content cannot be changed in any way.",	 // not yet translated
 	"directory_not_writable" => "Het databankbestand op zich is beschrijfbaar, maar om erin weg te schrijven dient de map eveneens beschrijfbaar te zijn. De reden hiervoor is dat SQLite tijdelijke bestanden voor het vergrendelen in deze map plaatst.",
 	"tbl_inexistent" => "Tabel %s bestaat niet",
-
-	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
+	"col_inexistent" => "Column %s does not exist",	 // not yet translated
+	
 	"alter_failed" => "Het wijzigen van tabel %s faalde",
 	"alter_tbl_name_not_replacable" => "kon de tabelnaam niet vervangen door de tijdelijke naam",
 	"alter_no_def" => "geen 'ALTER' definitie",
-	"alter_parse_failed" =>"onmogelijk om 'ALTER' definitie te parsen",
+	"alter_parse_failed" => "onmogelijk om 'ALTER' definitie te parsen",
 	"alter_action_not_recognized" => "'ALTER' actie kon niet herkend worden",
 	"alter_no_add_col" => "geen kolom om toe te voegen gevonden in het 'ALTER' statement",
-	"alter_pattern_mismatch"=>"Het patroon komt niet overeen met dat van de originele 'CREATE TABLE' statement",
+	"alter_pattern_mismatch" => "Het patroon komt niet overeen met dat van de originele 'CREATE TABLE' statement",
 	"alter_col_not_recognized" => "de nieuwe of oude kolomnaal konden niet herkend worden",
 	"alter_unknown_operation" => "Ongekende 'ALTER' operatie!",
 	
-	/* Help documentation */
 	"help_doc" => "Help Documentation",
 	"help1" => "SQLite Library Extensies",
-	"help1_x" => "<br />%s gebruikt PHP library extensies die de interactie met de SQLite databanken toelaten.<br /><br />Actueel ondersteund %s PDO, SQLite3 en SQLiteDatabase.<br /><br />Zowel PDO als SQLite3 kunnen overweg met versie 3 van SQLite, dit terwijl SQLiteDatabase overweg kan met versie 2.<br /><br />Indien uw PHP installatie meer dan één SQLite library extensie bevat, zullen PDO en SQLite3 voorrang krijgen, dit om een betere technologie te benutten.<br /><br/ >Als u echter over bestaande databanken met versie 2 van SQLite beschikt zal %s afdwingen om SQLiteDatabase te gebruiken voor die databanken.<br /><br />Niet alle databanken hoeven dezelfde versie te hebben.<br /><br />Tijdens het creëren van een databank zal echter de meest geavanceerde extensie gebruikt worden.<br /><br />",                                                   
+	"help1_x" => "<br />%s gebruikt PHP library extensies die de interactie met de SQLite databanken toelaten.<br /><br />Actueel ondersteund %s PDO, SQLite3 en SQLiteDatabase.<br /><br />Zowel PDO als SQLite3 kunnen overweg met versie 3 van SQLite, dit terwijl SQLiteDatabase overweg kan met versie 2.<br /><br />Indien uw PHP installatie meer dan één SQLite library extensie bevat, zullen PDO en SQLite3 voorrang krijgen, dit om een betere technologie te benutten.<br /><br/ >Als u echter over bestaande databanken met versie 2 van SQLite beschikt zal %s afdwingen om SQLiteDatabase te gebruiken voor die databanken.<br /><br />Niet alle databanken hoeven dezelfde versie te hebben.<br /><br />Tijdens het creëren van een databank zal echter de meest geavanceerde extensie gebruikt worden.<br /><br />",
 	"help2" => "Een nieuwe databank creëren",
 	"help2_x" => "<br />Als u een nieuwe databank creëert zal de naam die u opgaf aangevuld worden met een geschikte bestandsextensie<br />(.db, .db3, .sqlite, enz...), maar dit enkel indien u zelf geen extensie opgaf.<br /><br />De databank zal gecreëerd worden in de map die u specifiëerde in de \$directory variabele.<br /><br />",
 	"help3" => "Tabellen vs. Views",
 	"help3_x" => "<br />Op de databankhoofdpagina staat er een lijst van tabellen en views.<br /><br />Omdat views alleen-lezen zijn, zullen bepaalde handelingen worden uitgeschakeld. <br /><br />Deze uitgeschakelde handelingen onderscheiden zich door het weglaten ervan op de rij van de view waar ze dienden voor te komen.<br /><br />Indien u de gegevens van een view wenst te wijzigen dient u deze view te verwijderen en een nieuwe view te creëren met een passend 'SELECT' statement die andere tabellen ondervraagt.<br /><br />Voor meer informatie, kijk naar <a href='http://en.wikipedia.org/wiki/View_(database)' target='_blank'>http://en.wikipedia.org/wiki/View_(database)</a><br /><br />",
 	"help4" => "Een 'SELECT' statement schrijven voor een nieuwe View",
-	"help4_x" => "<br />Wanneer u een nieuwe view wenst te creëren, dient u een SQL 'SELECT' statement te schrijven dat het als de gegevens van de view zal gebruiken.<br /><br />Een view is gewoonweg een alleen-lezen tabel die toegankelijk is en ondervraagd kan worden als een reguliere tabel, met die uitzondering dat men de gegevens niet kan wijzigen door toevoeging of rijopmaak.<br /><br />Een view wordt vooral gebruikt om gemakkelijk gegevens op te halen.<br /><br />",	
+	"help4_x" => "<br />Wanneer u een nieuwe view wenst te creëren, dient u een SQL 'SELECT' statement te schrijven dat het als de gegevens van de view zal gebruiken.<br /><br />Een view is gewoonweg een alleen-lezen tabel die toegankelijk is en ondervraagd kan worden als een reguliere tabel, met die uitzondering dat men de gegevens niet kan wijzigen door toevoeging of rijopmaak.<br /><br />Een view wordt vooral gebruikt om gemakkelijk gegevens op te halen.<br /><br />",
 	"help5" => "Exporteer een structuur naar een SQL-bestand",
 	"help5_x" => "<br />Tijdens het proces voor het exporteren naar een SQL-bestand, kan u ervoor kiezen om de queries die de tabellen en de kolommen creëren mee in het bestand te plaatsen.<br /><br />",
 	"help6" => "Exporteer gegevens naar een SQL-bestand",
@@ -290,6 +295,10 @@ $lang = array(
 	"help8" => "Voeg 'TRANSACTION' toe aan een export SQL-Bestand",
 	"help8_x" => "<br />Tijdens het proces voor het exporteren naar een SQL-bestand, kan u ervoor kiezen om een 'TRANSACTION' rond de queries te plaatsen, opdat indien er zich een fout zou voordoen om het even wanneer tijdens de import van het geëxporteerd bestand, de databank terug kan gezet worden in zijn vorige staat, om zo gedeeltelijk gewijzigde gegevens op de databank te voorkomen.<br /><br />",
 	"help9" => "Voeg 'COMMENT' toe aan een export SQL-bestand",
-	"help9_x" => "<br />Tijdens het proces voor het exporteren naar een SQL-bestand, kan u ervoor kiezen om commentaren die iedere stap van het proces uitleggen, mee in het bestand te plaatsen, opdat iedereen beter zou verstaan wat er gebeurd.<br /><br />"
-
+	"help9_x" => "<br />Tijdens het proces voor het exporteren naar een SQL-bestand, kan u ervoor kiezen om commentaren die iedere stap van het proces uitleggen, mee in het bestand te plaatsen, opdat iedereen beter zou verstaan wat er gebeurd.<br /><br />",
+	"help10" => "Partial Indexes",	 // not yet translated
+	"help10_x" => "Partial indexes are indexes over a subset of the rows of a table specified by a WHERE clause. Note this requires at least SQLite 3.8.0 and database files with partial indexes won't be readable or writable by older versions. See the <a href='https://www.sqlite.org/partialindex.html' target='_blank'>SQLite documentation.</a>",	 // not yet translated
+	"help11" => "Maximum size of file uploads",	 // not yet translated
+	"help11_x" => "The maximum size of file uploads is determined by three PHP settings: <em>upload_max_filesize</em>, <em>post_max_size</em> and <em>memory_limit</em>. The smallest of these three limits the maximum size for file uploads. To upload larger files, adjust these values in your <em>php.ini</em> file."	 // not yet translated
+	
 );
