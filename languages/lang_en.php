@@ -4,7 +4,7 @@
 // Version 1.9.8
 // This file is only meant as a basis for you to do your own translation!
 # END REMOVE_FROM_BUILD
-// Read our wiki on how to translate: https://bitbucket.org/phpliteadmin/public/wiki/Localization
+// Read our wiki on how to translate: https://github.com/emanueleg/pla-ng/wiki/Localization
 $lang = array(
 	"direction" => "LTR",
 	"date_format" => 'g:ia \o\n F j, Y (T)',  // see http://php.net/manual/en/function.date.php for what the letters stand for
