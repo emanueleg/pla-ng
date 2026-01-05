@@ -88,7 +88,7 @@ See instructions at https://github.com/emanueleg/pla-ng/wiki/Installation
 
 ## Configuration
 
-**NEW** as of 1.9.4: You can now configure phpLiteAdmin in an external file. If
+You can configure phpLiteAdmin in an external file. If
 you want to do this:
 
 -   rename `phpliteadmin.config.sample.php` into `phpliteadmin.config.php`
@@ -97,8 +97,7 @@ you want to do this:
 
 See https://github.com/emanueleg/pla-ng/wiki/Configuration for details.
 
-1.   Open `phpliteadmin.config.php` (or `phpliteadmin.php` before 1.9.4) in
-     a text editor.
+1.   Open `phpliteadmin.config.php` in a text editor.
 	
 2.   If you want to have a directory scanned for your databases instead of
      listing them manually, specify the directory as the value of the 
