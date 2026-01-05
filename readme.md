@@ -24,13 +24,15 @@ phpLiteAdmin 2.0 (NextGen) Github: https://github.com/emanueleg/pla-ng/
 
 ## News
 
-**12.06.2025: pla-ng 2.0.2 released [Download now](https://github.com/emanueleg/pla-ng/releases/tag/v2.0.2)**
+- **01.01.2026: pla-ng 2.0.3 released [Download now](https://github.com/emanueleg/pla-ng/releases/tag/v2.0.3)**
 
-**27.01.2024: pla-ng 2.0.1 released**
+- **12.06.2025: pla-ng 2.0.2 released**
 
-**19.01.2024: pla-ng 2.0.0 released**
+- **27.01.2024: pla-ng 2.0.1 released**
 
-**05.09.2019: phpLiteAdmin 1.9.8.2 released**
+- **19.01.2024: pla-ng 2.0.0 released**
+
+- **05.09.2019: phpLiteAdmin 1.9.8.2 released**
 
 ## Features
 
@@ -65,7 +67,7 @@ https://demo.phpliteadmin.org/
 
 ## Requirements
 
--   a server with PHP >= 5.2.4 installed (but PHP >= 7.0 is a nice-to-have requirement)
+-   a server with PHP >= 7.0 installed (but PHP >= 8.0 is a nice-to-have requirement)
 -   at least one PHP SQLite library extension installed and enabled: PDO,
     SQLite3, or SQLiteDatabase
     
@@ -105,14 +107,14 @@ See https://github.com/emanueleg/pla-ng/wiki/Configuration for details.
 3.   If you want to specify your databases manually, set the value of the
      `$directory` variable as false and modify the `$databases` array to
      hold the databases you would like to manage.
-	
-    -   The path field is the file path of the database relative to where
+     
+     *   The path field is the file path of the database relative to where
         `phpliteadmin.php` will be located on the server. For example, if
         `phpliteadmin.php` is located at "databases/manager/phpliteadmin.php" and
         you want to manage "databases/yourdatabase.sqlite", the path value
         would be "../yourdatabase.sqlite".
 		
-    -   The name field is the human-friendly way of referencing the database
+     *   The name field is the human-friendly way of referencing the database
         within the application. It can be anything you want.
 
 4.   Modify the `$password` variable to be the password used for gaining access
@@ -174,3 +176,4 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+
