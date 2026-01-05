@@ -2693,7 +2693,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 					$field = $tableInfo[$i]['name'];
 					$type = strtoupper($tableInfo[$i]['type']);
 					$typeAffinity = get_type_affinity($type);
-					if($tableInfo[$i]['dflt_value'] === "NULL")
+					if($tableInfo[$i]['dflt_value'] === "NULL" || $tableInfo[$i]['dflt_value'] === NULL)
 						$value = NULL;
 					elseif(preg_match('/^BLOB/', $type) && $hexblobs)
 						$value = htmlencode(bin2hex(trim(trim($tableInfo[$i]['dflt_value']), "'")));
