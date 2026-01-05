@@ -74,7 +74,7 @@ class Database
 		if (is_string($ids))
 			$ids = array($ids);
 
-		if ($this->type == 'PDO') {
+		if ($this->type == 'PDO' && version_compare(PHP_VERSION, '8.4.0') < 0) {
 			foreach ($ids as $id) {
 				$this->db->sqliteCreateFunction($id, $id, -1);
 			}
