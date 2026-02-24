@@ -197,6 +197,13 @@ fieldset
 	padding:15px;
 	background-color:#e0ebf6;
 }
+/* style for much more visible message */
+.danger {
+	border-color:#fff;
+	background-color:#dc3545;
+	color:#fff;
+	font-weight:bold;
+}
 /* tab navigation for each table */
 .tab
 {

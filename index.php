@@ -3422,7 +3422,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 
 		if ($auth->isPasswordDefault())
 		{
-			echo "<div class='confirm' style='margin:20px 0px;'>";
+			echo "<div class='confirm danger' style='margin:20px 0px;'>";
 			echo sprintf($lang['warn_passwd'],(is_readable('phpliteadmin.config.php')?'phpliteadmin.config.php':basename(__FILE__)))."<br />".$lang['warn0'];
 			echo "</div>";
 		}
