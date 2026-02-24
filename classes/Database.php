@@ -33,7 +33,11 @@ class Database
 			switch(true)
 			{
 				case ((!isset($data['type']) || $data['type']!=2) && (FORCETYPE=="PDO" || (FORCETYPE==false && class_exists("PDO") && in_array("sqlite", PDO::getAvailableDrivers()) && ($ver==-1 || $ver==3)))):
-					$this->db = new PDO("sqlite:".$this->data['path']);
+					if (version_compare(PHP_VERSION, '8.4.0') < 0) {
+						$this->db = new PDO("sqlite:".$this->data['path']);
+					} else {
+						$this->db = new Pdo\Sqlite("sqlite:".$this->data['path']);
+					}
 					if($this->db!=NULL)
 					{
 						// Stick with PHP before 8 default error handling.
@@ -74,7 +78,7 @@ class Database
 		if (is_string($ids))
 			$ids = array($ids);
 
-		if ($this->type == 'PDO' && version_compare(PHP_VERSION, '8.4.0') < 0) {
+		if ($this->type == 'PDO') {
 			foreach ($ids as $id) {
 				$this->db->sqliteCreateFunction($id, $id, -1);
 			}
