@@ -1,32 +1,36 @@
 /*
 phpLiteAdmin Default Theme
-Created by Dane Iracleous on 6/1/11
+Originally created by Dane Iracleous
 */
 
 /* overall styles for entire page */
-body
-{
+body {
 	margin: 0px;
 	padding: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #000000;
 	background-color: #e0ebf6;
+	overflow:auto;
 }
+.body_tbl td {
+	padding:9px 2px 9px 9px;
+}
+.left_td {
+	width:100px;
+}
+
 /* general styles for hyperlink */
-a
-{
+a {
 	color: #03F;
 	text-decoration: none;
 	cursor :pointer;
 }
-a:hover
-{
+a:hover {
 	color: #06F;
 }
-/* horizontal rule */
-hr
-{
+
+hr {
 	height: 1px;
 	border: 0;
 	color: #bbb;
@@ -34,42 +38,50 @@ hr
 	width: 100%;	
 }
 /* logo text containing name of project */
-h1
-{
+h1 {
 	margin: 0px;
 	padding: 5px;
 	font-size: 24px;
 	background-color: #f3cece;
 	text-align: center;
-	margin-bottom: 10px;
 	color: #000;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	-moz-border-radius-topleft:5px;
 	-moz-border-radius-topright:5px;
 }
+/* the div container for the links */
+#headerlinks {
+	text-align:center;
+	margin-bottom:10px;
+	padding:5px 15px;
+	border-color:#03F;
+	border-width:1px;
+	border-style:solid;
+	border-left-style:none;
+	border-right-style:none;
+	font-size:12px;
+	background-color:#e0ebf6;
+	font-weight:bold;
+}
 /* version text within the logo */
-h1 #version
-{
+h1 #version {
 	color: #000000;
 	font-size: 16px;
 }
 /* logo text within logo */
-h1 #logo
-{
+h1 #logo {
 	color:#000;
 }
 /* general header for various views */
-h2
-{
+h2 {
 	margin:0px;
 	padding:0px;
 	font-size:14px;
 	margin-bottom:20px;
 }
 /* input buttons and areas for entering text */
-input, select, textarea
-{
+input, select, textarea, .CodeMirror {
 	font-family:Arial, Helvetica, sans-serif;
 	background-color:#eaeaea;
 	color:#03F;
@@ -82,17 +94,20 @@ input, select, textarea
 	padding:3px;
 }
 /* just input buttons */
-input.btn
-{
-	cursor:pointer;	
+input.btn {
+	cursor:pointer;
 }
-input.btn:hover
-{
+input.btn:hover {
 	background-color:#ccc;
 }
+/* form label */
+fieldset label {
+	min-width: 200px;
+	display: block;
+	float: left;
+}
 /* general styles for hyperlink */
-fieldset
-{
+fieldset {
 	padding:15px;
 	border-color:#03F;
 	border-width:1px;
@@ -102,15 +117,12 @@ fieldset
 	background-color:#f9f9f9;
 }
 /* outer div that holds everything */
-#container
-{
+#container {
 	padding:10px;
 }
 /* div of left box with log, list of databases, etc. */
-#leftNav
-{
-	float:left;
-	width:250px;
+#leftNav {
+	min-width:250px;
 	padding:0px;
 	border-color:#03F;
 	border-width:1px;
@@ -120,15 +132,16 @@ fieldset
 	border-radius:5px;
 	-moz-border-radius:5px;
 }
-/* div holding the content to the right of the leftNav */
-#content
-{
-	overflow:hidden;
-	padding-left:10px;
+/* the database select list / select box */
+.databaseList select {
+	max-width: 200px;
+}
+/* The table that hold left */
+.viewTable tr td {
+	padding:1px;
 }
 /* div holding the login fields */
-#loginBox
-{
+#loginBox {
 	width:500px;
 	margin-left:auto;
 	margin-right:auto;
@@ -141,13 +154,11 @@ fieldset
 	-moz-border-radius:5px;
 }
 /* div under tabs with tab-specific content */
-#main
-{
+#main {
 	border-color:#03F;
 	border-width:1px;
 	border-style:solid;
 	padding:15px;
-	overflow:auto;
 	background-color:#FFF;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
@@ -157,8 +168,7 @@ fieldset
 	-moz-border-radius-topright:5px;
 }
 /* odd-numbered table rows */
-.td1
-{
+.td1 {
 	background-color:#f9e3e3;
 	text-align:right;
 	font-size:12px;
@@ -166,8 +176,7 @@ fieldset
 	padding-right:10px;
 }
 /* even-numbered table rows */
-.td2
-{
+.td2 {
 	background-color:#f3cece;
 	text-align:right;
 	font-size:12px;
@@ -175,8 +184,7 @@ fieldset
 	padding-right:10px;
 }
 /* table column headers */
-.tdheader
-{
+.tdheader {
 	border-color:#03F;
 	border-width:1px;
 	border-style:solid;
@@ -189,8 +197,7 @@ fieldset
 	-moz-border-radius:5px;
 }
 /* div holding the confirmation text of certain actions */
-.confirm
-{
+.confirm {
 	border-color:#03F;
 	border-width:1px;
 	border-style:dashed;
@@ -205,8 +212,7 @@ fieldset
 	font-weight:bold;
 }
 /* tab navigation for each table */
-.tab
-{
+.tab {
 	display:block;
 	padding:5px;
 	padding-right:8px;
@@ -227,8 +233,7 @@ fieldset
 	-moz-border-radius-topright:5px;
 }
 /* pressed state of tab */
-.tab_pressed
-{
+.tab_pressed {
 	display:block;
 	padding:5px;
 	padding-right:8px;
@@ -248,31 +253,63 @@ fieldset
 	-moz-border-radius-topleft:5px;
 	-moz-border-radius-topright:5px;
 }
-/* tooltip styles */
-#tt
-{
+/* help section */
+.helpq {
+	font-size:11px;
+	font-weight:normal;
+}
+#help_container {
+	padding:0px;
+	font-size:12px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#ffffff;
+}
+.help_outer {
+	background-color:#FFF;
+	padding:0px;
+	height:300px;
+	position:relative;
+}
+.help_list {
+	padding:10px;
+	height:auto;
+}
+
+.headd {
+	font-size:14px;
+	font-weight:bold;	
+	display:block;
+	padding:10px;
+	background-color:#e0ebf6;
+	border-color:#03F;
+	border-width:1px;
+	border-style:solid;
+	border-left-style:none;
+	border-right-style:none;
+}
+.help_inner {
+	padding:10px;
+}
+.help_top {
+	display:block;
 	position:absolute;
-	display:block;
+	right:10px;
+	bottom:10px;	
 }
-#tttop
-{
-	display:block;
-	height:5px;
-	margin-left:5px;
-	overflow:hidden
+.warning, .delete, .empty, .drop, .delete_db {
+	color:red;
 }
-#ttcont
-{
-	display:block;
-	padding:2px 12px 3px 7px;
-	margin-left:5px;
-	background:#f3cece;
-	color:#333
+.sidebar_table {
+	font-size:11px;
 }
-#ttbot
-{
-	display:block;
-	height:5px;
-	margin-left:5px;
-	overflow:hidden
+.active_table, .active_db {
+	text-decoration:underline;
+}
+.null {
+	color:#888;
+}
+.found {
+	background:#FFFF00;
+	text-decoration:none;
 }

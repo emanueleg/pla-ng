@@ -8,12 +8,23 @@ body {
 	background-color: #e0ebf6;
 	overflow:auto;
 }
-.body_tbl td{ padding:9px 2px 9px 9px; }
-.left_td{ width:100px; }
+.body_tbl td {
+	padding:9px 2px 9px 9px;
+}
+.left_td {
+	width:100px;
+}
 
 /* general styles for hyperlink */
-a { color: #03F; text-decoration: none; cursor :pointer; }
-a:hover { color: #06F; }
+a {
+	color: #03F;
+	text-decoration: none;
+	cursor :pointer;
+}
+a:hover {
+	color: #06F;
+}
+
 hr {
 	height: 1px;
 	border: 0;
@@ -49,9 +60,14 @@ h1 {
 	font-weight:bold;
 }
 /* version text within the logo */
-h1 #version { color: #000000; font-size: 16px; }
+h1 #version {
+	color: #000000;
+	font-size: 16px;
+}
 /* logo text within logo */
-h1 #logo { color:#000; }
+h1 #logo {
+	color:#000;
+}
 /* general header for various views */
 h2 {
 	margin:0px;
@@ -73,8 +89,12 @@ input, select, textarea, .CodeMirror {
 	padding:3px;
 }
 /* just input buttons */
-input.btn { cursor:pointer; }
-input.btn:hover { background-color:#ccc; }
+input.btn {
+	cursor:pointer;
+}
+input.btn:hover {
+	background-color:#ccc;
+}
 /* form label */
 fieldset label {
 	min-width: 200px;
@@ -92,7 +112,9 @@ fieldset {
 	background-color:#f9f9f9;
 }
 /* outer div that holds everything */
-#container { padding:10px; }
+#container {
+	padding:10px;
+}
 /* div of left box with log, list of databases, etc. */
 #leftNav {
 	min-width:250px;
@@ -110,7 +132,9 @@ fieldset {
 	max-width: 200px;
 }
 /* The table that hold left */
-.viewTable tr td{ padding:1px; }
+.viewTable tr td {
+	padding:1px;
+}
 /* div holding the login fields */
 #loginBox {
 	width:500px;
@@ -175,6 +199,13 @@ fieldset {
 	padding:15px;
 	background-color:#e0ebf6;
 }
+/* style for much more visible message */
+.danger {
+	border-color:#fff;
+	background-color:#dc3545;
+	color:#fff;
+	font-weight:bold;
+}
 /* tab navigation for each table */
 .tab {
 	display:block;
@@ -218,7 +249,10 @@ fieldset {
 	-moz-border-radius-topright:5px;
 }
 /* help section */
-.helpq { font-size:11px; font-weight:normal; }
+.helpq {
+	font-size:11px;
+	font-weight:normal;
+}
 #help_container {
 	padding:0px;
 	font-size:12px;
@@ -230,10 +264,12 @@ fieldset {
 	background-color:#FFF;
 	padding:0px;
 	height:300px;
-	
 	position:relative;
 }
-.help_list { padding:10px; height:auto; }
+.help_list {
+	padding:10px;
+	height:auto;
+}
 
 .headd {
 	font-size:14px;
@@ -247,15 +283,28 @@ fieldset {
 	border-left-style:none;
 	border-right-style:none;
 }
-.help_inner { padding:10px;	}
+.help_inner {
+	padding:10px;
+}
 .help_top {
 	display:block;
 	position:absolute;
 	right:10px;
 	bottom:10px;	
 }
-.warning, .delete, .empty, .drop, .delete_db { color:red; }
-.sidebar_table { font-size:11px; }
-.active_table, .active_db { text-decoration:underline; }
-.null { color:#888; }
-.found { background:#FFFF00; text-decoration:none; }
+.warning, .delete, .empty, .drop, .delete_db {
+	color:red;
+}
+.sidebar_table {
+	font-size:11px;
+}
+.active_table, .active_db {
+	text-decoration:underline;
+}
+.null {
+	color:#888;
+}
+.found {
+	background:#FFFF00;
+	text-decoration:none;
+}
