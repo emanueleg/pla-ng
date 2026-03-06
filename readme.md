@@ -24,15 +24,12 @@ phpLiteAdmin 2.0 (NextGen) Github: https://github.com/emanueleg/pla-ng/
 
 ## News
 
-- **01.01.2026: pla-ng 2.0.3 released [Download now](https://github.com/emanueleg/pla-ng/releases/tag/v2.0.3)**
-
-- **12.06.2025: pla-ng 2.0.2 released**
-
-- **27.01.2024: pla-ng 2.0.1 released**
-
-- **19.01.2024: pla-ng 2.0.0 released**
-
-- **05.09.2019: phpLiteAdmin 1.9.8.2 released**
+- **24-02-2026: pla-ng 2.0.4 released [Download now](https://github.com/emanueleg/pla-ng/releases/tag/v2.0.4)**
+- 01-01-2026: pla-ng 2.0.3 released
+- 12-06-2025: pla-ng 2.0.2 released
+- 27-01-2024: pla-ng 2.0.1 released
+- 19-01-2024: pla-ng 2.0.0 released
+- 05-09-2019: phpLiteAdmin 1.9.8.2 released
 
 ## Features
 
@@ -175,4 +172,5 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+
 
