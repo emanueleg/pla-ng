@@ -8,7 +8,6 @@ which integrates recent updates and small patches.
 pla-ng is not a rewrite of phpLiteAdmin, nor will never be. Consider pla-ng just 
 an "updated version of phpLiteAdmin", usable on PHP >= 8.0 without much troubles.
 
-
 ## What is phpLiteAdmin?
 
 phpLiteAdmin is a web-based SQLite database admin tool written in PHP with
@@ -55,12 +54,10 @@ phpLiteAdmin 2.0 (NextGen) Github: https://github.com/emanueleg/pla-ng/
 -   Allows multiple installations on the same server, each with a different password
 -   Secure password-protected interface with login screen and cookies
 
-
 ## Demo
 
 A live demo of the original phpLiteAdmin can be found here:
 https://demo.phpliteadmin.org/
-
 
 ## Requirements
 
@@ -70,7 +67,6 @@ https://demo.phpliteadmin.org/
     
 PHP usually comes with the SQLite3 extension installed
 and enabled by default so no custom action is necessary.
-
 
 ## Download
 
@@ -124,8 +120,8 @@ See https://github.com/emanueleg/pla-ng/wiki/Configuration for details.
 	
 7.   Open a web browser and navigate to the uploaded `phpliteadmin.php` file. You
      will be prompted to enter a password. Use the same password you set in step 4.
-     
-## Code Repository and pull requests
+
+## Code repository and pull requests
 
 The code repository is available both on github:
 
@@ -133,7 +129,6 @@ Github: https://github.com/emanueleg/pla-ng
 
 You are welcome to fork the project and send us pull requests on any of these
 platforms.
-
 
 ## Installing a theme
 	
@@ -146,12 +141,26 @@ platforms.
 	
 4.   Your theme will automatically override the default.
 
-
 ## Getting help
 
 The project's wiki provides information on how to do certain things and is
 located at https://github.com/emanueleg/pla-ng/wiki/Home .
 
+## Strict No LLM / No AI Policy
+
+No LLM-generated content, whether it be code or prose.
+
+No paraphrasing LLM-generated content.
+
+No LLMs for editing, including fixing spelling or grammatical errors.
+
+No LLMs for translation. English is encouraged, but not required. You are welcome to post in your native language and rely on others to have their own translation tools of choice to interpret your words.
+
+No LLMs for brainstorming and then sharing the results of that brainstorming, even if you create the prose. If you use a chatbot to give you advice on a comment on the issue tracker, that comment is unwelcome.
+
+No LLMs for finding bugs.
+
+No talking about use of chatbot/LLM services.
 
 ## Reporting errors and bugs
 
@@ -172,5 +181,4 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
-
 
