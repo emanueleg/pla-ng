@@ -6,7 +6,7 @@ phpLiteAdmin development is stalling: pla-ng is a fork of this well known tool
 which integrates recent updates and small patches.
 
 pla-ng is not a rewrite of phpLiteAdmin, nor will never be. Consider pla-ng just 
-an "updated version of phpLiteAdmin", usable on PHP >= 8.0 without much troubles.
+an "updated version of phpLiteAdmin", usable on PHP 8 (including PHP 8.5) without troubles.
 
 ## What is phpLiteAdmin?
 
@@ -17,7 +17,8 @@ that is dropped into a directory on a server and then visited in a browser.
 There is no installation required. The available operations, feature set,
 interface, and user experience is comparable to that of phpMyAdmin.
 
-Official Website of the original version: https://www.phpliteadmin.org/
+Official website of the original version: https://www.phpliteadmin.org/
+[WARNING: this site is not maintained and currently not safe - click at your own risk]
 
 phpLiteAdmin 2.0 (NextGen) Github: https://github.com/emanueleg/pla-ng/
 
